@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang = "en">
+<head>
+<title>Simple tables</title>
+<link rel=stylesheet type=text/css href="../static/TEST.css">
+<link rel=stylesheet type=text/css href="../static/sideBar.css">
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+
+<script>
+function returnPage() {
+  window.history.back();
+}
+</script>
+<style>
+  body{
+    font-family: 'Open Sans';font-size: 22px;
+
+  }
+
+h1, h2       { color: #ff751a; }
+
+</style>
+</head>
+<div style = "background-color: #ffffff; zoom: 75%">
+<nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="http://justinfarrow.com">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <i class="fa fa-laptop fa-2x"></i>
+                        <span class="nav-text">
+                            Players
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-list fa-2x"></i>
+                        <span class="nav-text">
+                            Data
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-folder-open fa-2x"></i>
+                        <span class="nav-text">
+                            Settings
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+
+  
+<div style = "color: #ff751a; margin-top:-20px;">
+<h4 style = "text-decoration: underline; cursor: pointer; position: relative; left: 60px;" onclick ="returnPage()">&laquo; Back</h4>
+</div>
+
+<img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:250px; height: 250px; border-radius: 50%; position: relative; top: 0px; left: 80px;">
+
+
+<div style = "position: relative; left: 150px;"> 
+<div style = "position: relative; left: 200px; bottom: 150px; font-size: medium;"><h1>Marcus Blumenfeld</h1></div>
+<div style = "position: relative; left: 495px; bottom: 200px; font-size: medium;"> <h3>class of 2023</h3></div>
+<div style = "position: relative; left: 200px; bottom: 220px; font-size: 42px;"><b>#09</b></div>
+<div style = "position: relative; left: 280px; bottom: 265px; font-size: 22px;"><b> Forward</b></div>
+<div style = "position: relative; top: 20px;">
+<div style = "background-color:#E2F4FF; padding: 20px; height: 40px; width: 170px; position: relative; left: 200px; bottom: 250px; border-radius: 6px;">
+  <img src="..\static\goal.png" alt="Flowers in Chania" width="60" height="50" style = "border-radius: 8px; position: relative;">
+  <h3 style = "position: relative; left: 100px; bottom: 80px;">07</h3>
+  <p style = "position: relative; left: 70px; bottom: 110px; font-size: large;">Total Shots</p>
+</div>
+<div style = "background-color:#E2F4FF; padding: 20px; height: 40px; width: 170px; position: relative; left: 420px; bottom: 330px; border-radius: 6px;">
+  <img src="..\static\target.png" alt="Flowers in Chania" width="60" height="50" style = "border-radius: 8px; position: relative;">
+  <h3 style = "position: relative; left: 100px; bottom: 80px;">07</h3>
+  <p style = "position: relative; left: 70px; bottom: 110px; font-size: large;">Total Shots</p>
+</div>
+
+<div style = "background-color:#E2F4FF; padding: 20px; height: 40px; width: 170px; position: relative; left: 640px; bottom: 410px; border-radius: 6px;">
+  <img src="..\static\stock.png" alt="Flowers in Chania" width="60" height="50" style = "border-radius: 8px; position: relative;">
+  <h3 style = "position: relative; left: 70px; bottom: 80px; color: green">On Par</h3>
+  <p style = "position: relative; left: 60px; bottom: 110px; font-size: large;">Performance</p>
+</div>
+</div>
+</div>
+</div>
+<div class=page style = "overflow-x: auto; position: relative; bottom: 250px; left: 100px;">    
+  {% for table in tables %}
+    <h2>{{titles[loop.index]}}</h2>
+    {{ table|safe }}
+  {% endfor %}
+</div>
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/uniconlabs" title="Uniconlabs">Uniconlabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/jonathan-cornell" title="Jonathan Cornell">Jonathan Cornell</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</body>
+</html>

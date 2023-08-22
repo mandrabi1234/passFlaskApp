@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang = "en">
+<head>
+<title>Team Season Stats</title>
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+
+<link rel=stylesheet type=text/css href="../static/TEST.css">
+<link rel = "stylesheet" href = "../static/Menu.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script>
+function returnPage() {
+  window.history.back();
+}
+</script>
+<style>
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  color: lightskyblue;
+}
+a:active{
+  background-color: #f2f2f2;
+  color: #333;
+}
+h1, h2       { color: black; }
+
+</style>
+<body style = "background: linear-gradient(225deg, rgba(190,193,214,1) 17%, rgba(255,255,255,1) 100%);">
+
+<!-- <div class="navbar" style = "width: auto; height: auto;">
+
+  <a href="/">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Analytics 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2 style = "color: white;">Analytics Menu</h2>
+      </div>   
+      <div class="row" style = "background-color: #ccc;">
+        <div class="column">
+          <h3 class = "menuSection" onClick = "window.location.href = '../analysis-season/playerSelection';">Data Selection</a></h3>
+          <a href = "../analysis-season"> Team </a>
+          <a href = "../analysis-home/playerSelection">Player Selection</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Analysis Selection</h3>
+          <a href="../analysis-season">Seasonal Analysis</a>
+          <a href="../analysis-game">per Game Analysis</a>
+          <a href="../analysis-season/teamVisuals">Visual Analysis</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Reference Material</h3>
+          <a href="../analysis-home">Analytics Explained</a>
+          <a href="../analysis-home/metric_index">Performance Metric Index</a>
+          <a href="../externalReference">External Resources</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <a href="../about">About</a>
+    <a href="../analysis-home/metric_index">Performance Metric Index</a>
+  </div> -->
+
+<div style = "margin-top: -20px;">
+<h4 class = "Occidental" style = "color: black; text-decoration: underline; cursor: pointer;" onclick ="returnPage()">&laquo;Back</h4>
+<h4 onClick = "window.location.href = '../dashboard-season';" style = "text-decoration: underline; margin-top: -20px; color: black; cursor: pointer;"class = "Occidental">&larr;Season Dashboard</h4>
+</div>
+<div style = "margin-top: 10px; margin-bottom: 10px;">
+<a href="../analysis-season/team-SeasonBreakdown" class="Occidental" style ="background-color: whitesmoke;  padding: 2px; border-radius: 4px; color: black"><b>Season Stats</b></a>
+<a href="../analysis-season/teamBreakdown" class="Occidental" style = "background-color: whitesmoke;  padding: 2px; border-radius: 4px; color: black"><b>Oxy Stats</b></a>
+<a href="../analysis-season/oppBreakdown" class="Opponent" style = "background-color: whitesmoke; padding: 2px; border-radius: 4px; color: black" ><b>Opposition Stats</b></a>
+</div>
+
+
+<div class=page style = "overflow-x: auto;">
+    
+  <h1 style = "margin-bottom:10px;">Occidental Stats ####-## (Season)</h1>
+  {% for table in tables %}
+    {{ table|safe }}
+  {% endfor %}
+</div>
+</body>
+</html>

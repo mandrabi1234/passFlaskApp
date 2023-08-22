@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang = "en">
+<head>
+<title>Simple tables</title>
+<link rel=stylesheet type=text/css href="../static/TEST.css">
+<link rel=stylesheet type=text/css href="../static/Menu.css">
+
+<script>
+function returnPage() {
+  window.history.back();
+}
+</script>
+<style>
+h1, h2       { color: black; }
+
+</style>
+</head>
+<body style = "background: linear-gradient(225deg, rgba(190,193,214,1) 17%, rgba(255,255,255,1) 100%);">  
+<div style = "color: black; margin-top:-20px;">
+<h4 style = "text-decoration: underline; cursor: pointer;" onclick ="returnPage()">&laquo; Back</h4>
+</div>
+
+<div class=page style = "overflow-x: auto;">    
+  <h1>Player Stats: Biola University (Home)</h1>
+  {% for table in tables %}
+    <h2>{{titles[loop.index]}}</h2>
+    {{ table|safe }}
+  {% endfor %}
+</div>
+</body>
+</html>

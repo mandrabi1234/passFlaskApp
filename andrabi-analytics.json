@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "andrabi-analytics",
+  "private_key_id": "c37cbe5e682d211acbe8c0d6fb96f3239fe8a64a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCWPVwPC9St61k/\nJ4/xjLsebwqW5uQDn9+w1bMCktUdjDyP6iy5/psnMq3qKmI+hKIpJ8TOVV1n6tGG\n7D8OpzJ9ZKQ8nVQ6L7ghGFk9wVbU5aelljbDqB/rVzmCEWPFNqVSxv1/GMfd4hay\nSu68G8pzSJtSoBrTv5ea/AP+2QjAc8CTKUeKrivOsGOCDpXSuBfafWDMK/By4dhd\nAHQEdlKHtfCOAOmiL6YVM96n0ZrLSrZ0DAxsYC/Yqd/c+oNKt01RI6P+PHgDCET/\ns5jsf9EdwYkF2E5jzNRHUyhlp6d8GX6dVVKr04lHdIxKx3WBlySjHdVNw+mBsZJU\nrLGH4thTAgMBAAECggEAEaHe6YcmbUj3PvG6M4ukNFSs5fvwG7rKKntSGIW6DE82\nll9R43xNokKQ5bAWuqafT3wy3VJodXc6Iv8cAXC+/LdwjQqb5X5POlcctiI4OiE/\n1S+1eq4DHQAuKCU5U95vdbET9DQo1NIhfshLj3klf/UwAXj33Q0Z0l8sat7253sg\nOCSoeyaN3Fv6aG/dOhGHgHR2aIzQOpzS07UObarGP+jIxsJ3NpNKOZzonbBCtFRT\nioYmNIfBp6w3SHGUrxWGmxIt5eoyiwdaaUA6cnKW67L7ccfv/6toAR1rRs938bII\ndrdUpyEsHcuK/+wT5ePwk7DRUGSq4rE3Cqq8KrdlFQKBgQDLvMrUx7sQSB0ccer8\nv3RqZ/sXGpXgh/23trqOMqfFVSYO8cDwVspNh2SB6PatuhLLCAy3wVOLba7RRmkN\nybMF53V1ANx0BbkjwKHwHmyzbBBLoTVVwSsTnOEffBsJJWRY9LWmVnP4AZC74Lck\nkOIoAgojpojB/ItWwtKvubGhlwKBgQC8x23BKssAIuFEwK6q5psk6z75/vaCKmTv\nyc6a7JwlfyVvOuvANkLBHgXffxrROP2+j4muvnR2xZ2ufk8e6VY7td+cTmaKYXZs\nTBQEFEBvlBtGuGpDc/i3chDVf5EFJV2W7ka6NsqmIE66P6hxwkPoQV+uFbuekC3y\nWZfg1voepQKBgQCSck5JzJfGCFAElk4XB3ei1MNDxDRfhOD3IT3P4NF/oskMjPHm\n0DvyppO0XcSS8+F2V37sxuZKnri+bSIuawFoCQwA4nGUZFjEPj8o3nW8Mr0z39j6\nnzNbkbSwcQDt/ha3ao731cTeTCHBKrH6crpdj7nCDn7XEbUG1FulPJFWWQKBgBto\nbPPtrZlwdvpPa0yevImoqfUL4mhVlWAHEbsGfUkoY5v5lv7KIfj9zeZ8Ar27o4OG\nPXwkZK5V1KXf6sbXI9D5f+SmsVaH/fSNOx64ff51J1ymK69tZ//iTLVilwCDQ0pF\nf/lLOTLTX/rEgUU66jcPPr/8ocfMsQ8NmPJo49mNAoGAbYI79yw/H2gTBrziqB4g\ntxPSUITp0/Ueuz2KKSQAB6NmWWGFWZd/pO1PwtTRdPVPulnyRvdavgnLny8Ar4fB\nxOZYScz4wBs7OQMIxPw10YViDS92v1BZjJ01DuioORMIBgYEQxd4GCftvIo8q8RH\nPD3JfYPhJQbqn7MatgXct7M=\n-----END PRIVATE KEY-----\n",
+  "client_email": "andrabi-analytics@andrabi-analytics.iam.gserviceaccount.com",
+  "client_id": "115878694116968996596",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/andrabi-analytics%40andrabi-analytics.iam.gserviceaccount.com"
+}

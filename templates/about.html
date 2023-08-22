@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+
+<link rel = "stylesheet" href = "../static/testerStyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.menuSection{
+  text-decoration-color: black;
+  color: black;
+}
+.menuSection:hover{
+text-decoration: underline;
+transition: 0.3s;
+
+
+
+}
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+ background-color:  #ddd;
+  color: black;}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background-color: rgb(255,117,26);
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.columnPerformance {
+    width: 50%;
+    height: auto;
+    display: block;
+  }
+
+  .columnStats{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+
+.cardPerformance {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ff751a;
+  width: 50%;
+  height: auto;
+}
+
+.containerPerformance {
+  padding: 0 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containerPerformance::after, .rowPerformance::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+
+@media screen and (max-width: 650px) {
+  .columnPerformance {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .columnStats{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+
+.cardPerformance {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ff751a;
+  width: 50%;
+  height: auto;
+}
+
+.containerPerformance {
+  padding: 0 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containerPerformance::after, .rowPerformance::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.buttonPerformance {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonPerformance:hover {
+  background-color: #555;
+}
+
+  .legend {
+      background-color: #8c8c8c;
+      width: auto;
+      padding: 10px;
+      border-radius: 4px;
+      color: #f2f2f2;
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+</style>
+<title> Oxy Analytics/About</title> 
+
+</head>
+<body id = "body" style="background-image: url('../static/home_background3.jpg'); color: #f2f2f2; text-shadow: 0.3px 0.3px #333;">
+
+<div class="navbar" style = "background-color: #333;">
+
+<div style = "margin-left: 10px; cursor: pointer;" onClick = "window.location.href = '/';">
+    <h1 style = "color: #f2f2f2; text-shadow: 0.3px 0.3px #333;"> Oxy Analytics</h1>
+    <p style = "color: #f2f2f2; text-shadow: 0.3px 0.3px #333; margin-top: -15px;"><b>Occidental College's student-run sports analysis service</b></p>
+</div>
+  <a href="/">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Analytics 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>Analytics Menu</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3 class = "menuSection" onClick = "window.location.href = '../analysis-season/playerSelection';">Data Selection</a></h3>
+          <a href = "analysis-season/teamBreakdown"> Team </a>
+          <a href = "../analysis-home/playerSelection">Player Selection</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Analysis Selection</h3>
+          <a href="../analysis-season">Seasonal Analysis</a>
+          <a href="../analysis-game">per Game Analysis</a>
+          <a href="../analysis-season/teamVisuals">Visual Analysis</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Reference Material</h3>
+          <a href="../analysis-home">Analytics Explained</a>
+          <a href="../analysis-home/metric_index">Performance Metric Index</a>
+          <a href="#">External Resources</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <a href="../about">About</a>
+  </div>
+
+  </div> <h1 align = "center" style = "text-decoration: underline; margin-left: auto; margin-right: auto; margin-bottom: 20px;">About Us</h1>
+
+
+  
+    <div class="cardPerformance" align = "center" style = "margin-left: auto; margin-right: auto;">
+      <div class="containerPerformance" align = "center" style =  "margin-left: auto; margin-right: auto; background-color:#ffbf80; color: black;">
+      <img src="../static/mohiProfile2.jpg" alt="Jane" align = "center" style=" width: 100%; height: auto; margin-top: 10px; background-color: transparent;">
+        <h1 style = "text-decoration: underline">Mohi Andrabi</h1>
+        <h2 id="Mohititle"><i>Founder</i></h2>
+        <h2>Occidental College '21</h2>
+        <h2><i>mandrabi@oxy.edu</i></h2>
+      </div>
+    </div>
+    <ul align = "center" style = "margin: auto; margin-top: 20px;" class = "legend"> 
+    <h2 align = "center" style = "text-decoration: underline">Mission Statement</h2>
+    <li>Oxy Analytics was technically created as my senior Computer Science thesis project.
+     However, it's been my tentative brainchild since Fall 2019, and is something I intend to improve and upgrade as time goes on. Basically, 
+     I wanted to indulge my affinity for soccer analytics, while also serving a school-related need. 
+
+
+    </li>
+    </ul>
+
+    <!--
+    https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-59.jpg?max_width=300
+    https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-59.jpg?max_width=160&max_height=210
+    <div id = "wrapper" align = "right", vertical-align: top, margin: 0>
+        <div class = "chart">
+            <h3 Population of Endangered Species from 2012 to 2016</h3>
+            <table id = "data-table" border = "1" cellpadding = "100" cellspacing = "5"
+            summary = "The effects of the zombie outbreak on the population of endangered species from 2012 to 2016">
+                <caption> Best/Worst (Teams)</caption>
+               <tbody>
+                  <tr>
+                     <th scope="row">Conversion Rate</th>
+                     <td>Best: Pomona-Pitzer (80%)</td>
+                     <td>Worst: Occidental (30%)</td>
+                  </tr>
+                  <tr>
+                     <th scope="row">Chance Quality</th>
+                     <td>Best: Occidental (60%)</td>
+                     <td>Worst: Pomona-Pitzer (40%)</td>
+                  </tr>
+                  <tr>
+                     <th scope="row">Other Metrics...</th>
+                     <td>Best: Team (%)</td>
+                     <td>Worst: Team (%)</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+<nav vertical-align: top>
+    <ul>
+        
+        <li><a href = "index">
+            <i class = "fab fa-instagram"></i><span>Home</span>
+        </a></li>
+        
+        <li><a href = "players">
+            <i class = "fab fa-facebook-f"></i><span>Player</span>
+        </a></li>
+        
+        <li><a href = "season">
+            <i class = "fab fa-twitter"></i><span>Seasonal</span>
+        </a></li>
+
+        <li><a href = "games">
+            <i class = "fab fa-instagram"></i><span>Games</span>
+        </a></li>
+
+         
+    </ul>
+</nav>
+
+<div>
+    <h1 id = "xgtitle" align = "center" style = "text-decoration: underline;">xG: Home_Team vs Away_Team</h1>
+    <img src="xGChart.jpg" alt="Game xG Chart" width="500" height="300" id = "xgchart" align = "center">
+</div>
+
+<table id="q-graph" align = "center" border = "1" cellpadding = "5" cellspacing = "5">
+    <caption id = "caption" style = "text-decoration: underline" align = "center">Best/Worst (Teams)</caption>
+    <thead>
+        <tr>
+         <th></th>
+            <th class="convR">Conversion Rate</th>
+            <th class="ChQ">Chance Quality</th>
+            <th class = "OM"> Other Metrics...</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="qtr" id="q1">
+        <th scope="column"></th>
+        <td class="convR bar" ><p>Best: Pomona-Pitzer (80%)</p></td>
+        <td class="convR bar" id = "B2"><p> Best: Occidental (60%)</p></td>
+        <td class="OM bar"><p>Best: Team_Name (x %)</p></td>
+
+    </tr>
+        <tr class="qtr" id="q2">
+        <th scope="column"></th>
+        <td class="ChQ bar"><p>Worst: Occidental (30%)</p></td>
+        <td class="ChQ bar" id = "W2"><p>Worst: Pomona-Pitzer (20%)</p></td>
+        <td class="OM bar"><p>Worst: Team_Name (y %)</p></td>
+
+    </tr>
+    </tbody>
+
+
+
+    <h1 id = "oxy_title" align = "center" style="text-decoration: underline;">Oxy Specs</h1>
+    <img src="ShotPerc.png" alt="Shot % Chart" width="425" height="350" id = "shotperc" align = "center">
+    <h5 id = "perctitle" align = "center" style = "text-decoration: underline;"> Shot Location Tracker (% of total shots taken in different field locations)</h5>
+
+
+
+</table>
+
+<table id="q-graph2" align = "center" border = "1" cellpadding = "5" cellspacing = "5">
+    <caption id = "caption" align = "center"style = "text-decoration: underline" >Best/Worst (Individual Players)</caption>
+    <thead>
+        <tr>
+         <th></th>
+            <th class="convR">Conversion Rate</th>
+            <th class="ChQ">Chance Quality</th>
+            <th class = "OM"> Other Metrics...</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="qtr" id="q1">
+        <th scope="column"></th>
+        <td class="convR bar" ><p>Best: Nicolas Eble (80%)</p></td>
+        <td class="convR bar" id = "B2"><p> Best: Marcus Blumenfeld (60%)</p></td>
+        <td class="OM bar"><p>Best: Player_Name (x %)</p></td>
+
+    </tr>
+        <tr class="qtr" id="q2">
+        <th scope="column"></th>
+        <td class="ChQ bar"><p>Worst: Adrian Paredes (30%)</p></td>
+        <td class="ChQ bar" id = "W2"><p>Worst: Adrian Paredes (20%)</p></td>
+        <td class="OM bar"><p>Worst: Player_Name (y %)</p></td>
+
+    </tr>
+    <tr class="qtr" id="q3">
+        <th scope="column"></th>
+        <td class="OM bar"><p>Best: Team_Name (x %)</p></td>
+        <td class="OM bar"><p>Worst: Team_Name (y %)</p></td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<table id="q-graph3" align = "left" border = "1" cellpadding = "5" cellspacing = "5">
+    <caption id = "caption" align = "center"style = "text-decoration: underline" > xG Per Player</caption>
+    <thead>
+        <tr>
+         <th></th>
+            <th class = "jersey" style="text-decoration: underline;"><u>Player No.</u></th>
+            <th class="PLr"style="text-decoration: underline;"><u>Player Name</u></th>
+            <th class="xG"style="text-decoration: underline;"><u>xG</u></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="qtr" id="q1">
+        <th scope="column"></th>
+        <td class = "convR bar"><p><b>Jersey No.</b></p></td>
+        <td class="convR bar" ><p><b>Name (Pos.)</b></p></td>
+        <td class="convR bar" id = "B2"><p> <b># xG</b></p></td>
+    </tr>
+        <tr class="qtr" id="q2">
+        <th scope="column"></th>
+        <td class = "ChQ bar"><p> 25</p></td>
+        <td class="ChQ bar"><p>Benjamin Tucker (CB)</p></td>
+        <td class="ChQ bar" id = "W2"><p>0.0</p></td>
+    </tr>
+    
+    </table>
+        <h1 id = "xg_analysis" align = "center" style="text-decoration: underline;">xG Analysis</h1>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+-->
+</body>
+</html>

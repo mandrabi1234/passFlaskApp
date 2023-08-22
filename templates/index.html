@@ -1,0 +1,254 @@
+<html>
+  <head>
+    <link rel = "stylesheet" href = "../static/sideBar.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+  <style>
+      body{
+        font-family: 'Open Sans';font-size: 22px;
+
+      }
+
+      .matchResult {
+     position: absolute;
+      float: center;
+      width: 800px;
+      height: 100px;
+      padding: 0 5px;
+      margin-left: 95px;
+      margin-right: auto;
+      margin-bottom: 25px;
+    }
+
+    .matchStats {
+      /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+      padding: 5px;
+      text-align: center;
+      background-color: #ffffff;
+      color: white;
+      height: 150px;
+      width: auto;
+      border-radius: 4px;
+
+    }
+
+    .columnStats{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  .flex-parent-element {
+  display: flex;
+  width: 100%;
+}
+
+.flex-child-element {
+  flex: 1;
+  background-color:#FFFFFF;
+  border-radius: 4px;
+  margin: 10px;
+  width: 500px;
+}
+
+.flex-child-element:first-child {
+  margin-right: 5px;
+  width: 900px;
+}
+
+.vertical-menu {
+  width: 500px;
+  height: 597px;
+  overflow-y: auto;
+  font-size: 25px;
+}
+
+.vertical-menu a {
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.home{
+    background-color: #E2F4FF;
+    color: #27B0FF;
+}
+.opponent{
+ background-color: #FFF0D2;
+ color: #ECA720;
+}
+.doughnut {
+    display: block;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(25deg);
+    border: 10px solid grey;
+    border-top: 10px solid #00C820;
+    border-left: 10px solid #00C820;
+    border-right: 10px solid #00C820;
+}
+
+  </style>
+  </head>
+  <body style = "background: linear-gradient(225deg, rgba(190,193,214,1) 17%, rgba(255,255,255,1) 100%);">
+
+    <div class="area" style = "background: transparent">
+      <div><a href="../"><img src="../static/logo-no-background.png" width = "150px;" style = "margin-top: 10px; margin-left: 60px; width: 200px; height: auto;"/></a></div>
+
+        <h1 style = "margin-left: 70px;"> Current Game</h1>
+    <div class = "dashboardStats" style = "position: relative; right: 30px;">    
+    <div class="matchResult">
+    
+    <div class="matchStats" style = "width: 1020px; height: 300px;  border-radius: 12px;">
+    <h2 text-align = "left" style = "margin-top: -5px; color: #000000">Scoreboard</h2>
+    
+    </div>
+    <div class = "shotChart" style = " position: relative; left: 200px; bottom: 220px; ">
+        <img src="..\slknflktatic\Oxy Logo.png" alt="HOME TEAM" width="150" height="150" style = "border-radius: 12px; position: relative; z-index: 1;">
+            <br>
+        <div style = "position: relative; right: 20px;">HOME TEAM</div>
+        <div style = "position: relative; left: 200px; bottom: 110px; font-size: 35px;">--</div>
+    
+    </div>
+    
+        <div class = "shotChart" style = " position: relative; left: 670px; bottom: 445px; ">
+            <img src="..\static\slkPom Logo.svg" alt="AWAY TEAM" width="150" height="150" style = "border-radius: 12px; position: relative; z-index: 1;">
+                <br>
+            <div style = "position: relative; ">AWAY TEAM</div>
+            <div style = "position: relative; right: 50px; bottom: 110px; font-size: 35px;">--</div>
+
+            </div>
+            
+    <div class="flex-parent-element" style = "position: relative; right: 10px; width: 820px; bottom: 455px; height: 830px;">
+        <div class="flex-child-element magenta" style =  "background-color: #FFFFFF;  border-radius: 12px;">
+            <h3 style = "margin-top: 5px; margin-left: 5px;">Shot Stats</h3>
+            <h5 style = "margin-top: 5px; margin-left: 10px;"> Shots on Target</h5>
+            <div style = "position: relative;">
+                <div class = "home" style = "padding-left: 15px; border-radius: 12px;margin-left: 325px; position: relative; right: 280px; top: 10px;"><div style = "position: relative; left: 45px;">Home</div></div>
+                <div class = "opponent" style = " padding-left: 10px; padding-right: 75px; padding-top: 2px; padding-bottom: 2px; border-radius: 12px; margin-left: 325px; position: relative; right: 35px; bottom: 20px;"><div style = "position: relative; left: 30px;">Opponent</div></div>
+                <div style = "position: relative; bottom: 60px;">
+                <div style = "position: relative; left: 115px; top: 135px; font-size: 32px;"><b>--</b>/ <div style = "font-size: large; position: relative; left: 30px; bottom: 20px;">--</div></div>    
+                <div class = "doughnut" style = "position: relative; left: 140px; top: 95px; width: 160px; height: 160px;"></div>
+                <div style = "position: relative; left: 360px; bottom: 110px; font-size: 32px;"><b>--</b>/ <div style = "font-size: large; position: relative; left: 30px; bottom: 20px;">--</div></div>    
+                <div class = "doughnut" style = "position: relative; top: -150px; left: 380px; width: 160px; height: 160px;"></div>
+              </div>
+            </div>
+    <div style = "position: relative; bottom: 230px;">
+        <h5 style = "margin-top: 5px; margin-left: 10px;"> Expected Goals</h5>
+        <div class = "home" style = "padding-left: 15px; border-radius: 12px;margin-left: 325px; position: relative; right: 280px; top: 10px;"><div style = "position: relative; left: 45px;">Home</div></div>
+        <div class = "opponent" style = " padding-left: 10px; padding-right: 75px; padding-top: 2px; padding-bottom: 2px; border-radius: 12px; margin-left: 325px; position: relative; right: 35px; bottom: 20px;"><div style = "position: relative; left: 30px;">Opponent</div></div>
+        <div style = "position: relative; bottom: 60px;">
+        <div style = "position: relative; left: 115px; top: 135px; font-size: 32px;"><b>--</b>/ <div style = "font-size: large; position: relative; left: 30px; bottom: 20px;">--</div></div>    
+        <div class = "doughnut" style = "position: relative; left: 140px; top: 95px; width: 160px; height: 160px;"></div>
+        <div style = "position: relative; left: 360px; bottom: 110px; font-size: 32px;"><b>--</b>/ <div style = "font-size: large; position: relative; left: 30px; bottom: 20px;">--</div></div>    
+        <div class = "doughnut" style = "position: relative; top: -150px; left: 380px; width: 160px; height: 160px;"></div>
+        </div>
+    </div>
+                     
+        </div>
+        <div class="flex-child-element green" style = " border-radius: 12px;">
+            <h3 style = "margin-top: 5px; margin-left: 5px;">Player Peformance Data</h3>
+           
+<div class="vertical-menu">
+    <a href="../analysis-home/playerBreakdown-benHarding">  <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">   Aiden Aley - 8</a>
+    <a href="../analysis-home/playerBreakdown-benHarding">  <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">   Andrew Notter - 9</a>
+    <a href="../analysis-home/playerBreakdown-benHarding">  <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">   Casey Scott - 30</a>
+    <a href="../analysis-home/playerBreakdown-benHarding"> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">     Charlie Miller - 17</a>
+    <a href="../analysis-home/playerBreakdown-benHarding"> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Christian Corcoran - 03</a>
+    <a href="../analysis-home/playerBreakdown-benHarding"> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Coleman Bellin - 20</a>
+    <a href="../analysis-home/playerBreakdown-benHarding"> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Diego Cavalie - 27</a>
+    <a href="../analysis-home/playerBreakdown-benHarding"> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Ethan Carr - 12</a>
+    <a href="../analysis-home/playerBreakdown-benHarding"> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Evan Karp - 21</a>
+    <a href="../analysis-home/playerBreakdown-benHarding"> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Joseph Schwartz - 10</a>
+    <a href="../analysis-home/playerBreakdown-benHarding"> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Joseph Bassett - 33</a>
+    <a href="../analysis-home/playerBreakdown-benHarding"> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Joshua Hamlett - 14</a>
+
+    <a href="../analysis-home/playerBreakdown-spencerShearer"> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Justin Nishimoto - 22</a>
+    <a href="../analysis-home/playerBreakdown-ryanWilson"> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;"> Kai Fiedelholtz - 7</a>
+    <a href="../analysis-home/playerBreakdown-nicEble"> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Kyle Hollman - 23</a>
+ <a href="../analysis-home/playerBreakdown-benSimon"><img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Lukas Howlett - 19</a>
+  <a href="../analysis-home/playerBreakdown-jasperBrannon"><img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Marcus Chmielewski - 5</a>
+  <a href="../analysis-home/playerBreakdown-adrianParedes"><img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Maxwell Stanley - 25</a>
+<a href="../analysis-home/playerBreakdown-jakeFoster"><img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Oury Diane - 11</a>
+<a href="../analysis-home/playerBreakdown-joeySchwartz"><img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Paris Pappas - 24</a>
+<a href="../analysis-home/playerBreakdown-tyeHernandez"><img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Riley Nyhan - 0</a>
+
+<a href="../analysis-home/playerBreakdown-mattTeplitz"><img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Sammy Gramlich - 01</a>
+<a href="../analysis-home/playerBreakdown-marcBlumenfeld"><img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Samuel Jenkins - 4</a>
+<a href="../analysis-home/playerBreakdown-seanKim"><img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Sebastian Romero - 15</a>
+<a href="../analysis-home/playerBreakdown-tylerWray"> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Sebastian Langer-Chan - 13</a>
+<a href="../analysis-home/playerBreakdown-jazzHenry"><img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Tyler Na-Nakornpanom - 29</a>
+<a href="../analysis-home/playerBreakdown-teaganJarvis"><img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Vicente Navarro - 6</a>
+  
+  </div>
+
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <div class = "shotChart" style = " position: relative; left: 1115px; width: 380px;">
+    <img src="..\static\Game 5 Shot Map.png" alt="Flowers in Chania" width="750" height="1130" style = "border-radius: 8px;">
+ 
+        <br>
+    </div>
+
+</div>
+<nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="/">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Main Dashboard
+
+                        </span>
+                    </a>
+                  
+                </li>
+
+                <li>
+                  <a href="/dashboard-season">
+                    <i class="fa fa-home fa-2x"></i>
+                    <span class="nav-text">
+                        Season Overview
+                    </span> 
+                </li>
+
+                <li>
+                  <a href="/dashboard-gameData">
+                    <i class="fa fa-home fa-2x"></i>
+                    <span class="nav-text">
+                        Game Data
+                    </span> 
+                </li>
+                
+                <li class="has-subnav">
+                    <a href="../analysis-home/playerSelection">
+                        <i class="fa fa-list fa-2x"></i>
+                        <span class="nav-text">
+                            Players
+                        </span>
+                    </a>
+                    
+                </li>
+            </ul>
+        </nav>
+
+  </body>
+    </html>

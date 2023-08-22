@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang = "en">
+<head>
+<title>Simple tables</title>
+<link rel=stylesheet type=text/css href="../static/TEST.css">
+<link rel=stylesheet type=text/css href="../static/Menu.css">
+
+<script>
+function returnPage() {
+  window.history.back();
+}
+</script>
+<style>
+h1, h2       { color: black; }
+
+#profileBanner img {
+float: left;
+} 
+
+#profileBanner #profileText{
+float: right;
+} 
+</style>
+</head>
+<body style = "background: linear-gradient(225deg, rgba(190,193,214,1) 17%, rgba(255,255,255,1) 100%);">
+<div class="navbar" style = "background-color: #333;">
+  <a href="/">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Analytics 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>Analytics Menu</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3 class = "menuSection" onClick = "window.location.href = '../analysis-season/playerSelection';">Data Selection</a></h3>
+          <a href = "../analysis-season/teamBreakdown"> Team </a>
+          <a href = "../analysis-home/playerSelection">Player Selection</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Analytics</h3>
+          <a href="../analysis-season">Main Dashboard</a>
+          <a href="../analysis-season">Season Dashboard</a>
+          <a href="../analysis-game">Game Data</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <a href="../about">About</a>
+  <a href="../analysis-home/metric_index">Performance Metric Index</a>
+
+  </div>
+  
+<div style = "color: #ff751a; margin-top:-20px;">
+<h4 style = "text-decoration: underline; cursor: pointer;" onclick ="returnPage()">&laquo; Back</h4>
+</div>
+
+<div class= page style = "overflow-x: auto;">
+  <div id = "profileBanner" style = " padding: 25px;">  
+  <!-- <h1>Player Stats</h1>  -->
+  <img src="../static/blankProfile.jpg" style = "padding-right: 25px; width: 107px; height: auto;"/>   
+  <h1>Adrian Paredes - Midfielder, #14</h1>
+  <h2><img src="../static/iconTotalShots.png" style = "padding-top: 3px; padding-left: 5px; padding-right: 5px; width: 40px; height: auto;"/> Total Shots {{totalShots}} | Shots on Target {{sot}} | Performance {{perf}}</h2>
+  <!--Enter -->
+  </div>
+  <br>
+  <br>
+  <br>
+  {% for table in tables %}
+    <h2>{{titles[loop.index]}}</h2>
+    {{ table|safe }}
+  {% endfor %}
+</div>
+</body>
+</html>

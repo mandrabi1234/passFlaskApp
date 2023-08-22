@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" href = "../static/testerStyle.css">
+<!-- <link rel = "stylesheet" href = "../static/Menu.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel = "stylesheet" href = "../static/sideBar.css">
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+<style>
+  body{
+    font-family: 'Open Sans';font-size: 22px;
+
+  }
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+</style>
+</head>
+<body id = "body" style="background: linear-gradient(225deg, rgba(190,193,214,1) 17%, rgba(255,255,255,1) 100%); color: black;">
+    <!--<canvas id = "myChart" width = "400" height = "400"></canvas>
+   <script src = "chart.js"></script> -->
+
+
+<!--
+<div class="navbar" style = "background-color: #333;">
+<div style = "margin: 0px 0px 5px 10px;">
+    <h1 style = "color: #f2f2f2; text-shadow: 0.3px 0.3px #333;"> Oxy Analytics</h1>
+    <p style = "color: #f2f2f2; text-shadow: 0.3px 0.3px #333;"><b>Occidental College's student-run sports analysis service</b></p>
+</div>
+
+  <a href="/">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Analytics 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>Analytics Menu</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3 class = "menuSection" onClick = "window.location.href = '../analysis-season/playerSelection';">Data Selection</a></h3>
+          <a href = "../analysis-season/teamBreakdown"> Team </a>
+          <a href = "../analysis-home/playerSelection">Player Selection</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Analysis Selection</h3>
+          <a href="../analysis-season">Seasonal Analysis</a>
+          <a href="../analysis-game">per Game Analysis</a>
+          <a href="../analysis-season/teamVisuals">Visual Analysis</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Reference Material</h3>
+          <a href="../analysis-home">Analytics Explained</a>
+          <a href="../analysis-home/metric_index">Performance Metric Index</a>
+          <a href="#">External Resources</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <a href="../about">About</a>
+  </div>
+<h1 id = "oxy_title" align = "center" style="text-decoration: underline; text-shadow: 2px 2px #333; color: #f2f2f2;"><i>Player Selection: Occidental College 2019-2020 Roster </i></h1>
+<button onclick="topFunction()" id="myBtn" title="Go to top" style = "color: #333; background-color: #b3b3b3;"><i class="arrow up"></i> Top</button>
+<!--
+<div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="Search for a player...">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+</div>
+
+<div class="vertical-menu" align = "left"  style="float: left; margin: 3px 12px 3px 10px;" >
+  <a href="#" class="active">Player Selection</a>
+  <a href = "analysis-season"> Team </a>
+  <a href="../analysis-season/ben_harding">Ben Harding - 0</a>
+  <a href="#">Jacob Gitin - 00</a>
+  <a href="#">Scott Drazan -01</a>
+  <a href="#">Riley Mccabe - 02</a>
+  <a href="#">Spencer Shearer - 03</a>
+  <a href="#">Ryan Wilson - 04</a>
+  <a href="#">David Paine - 05</a>
+  <a href="#">Nicolas Eble - 06</a>
+  <a href="#">Matthew Teplitz - 07</a>
+  <a href="#">Ben Simon - 08</a>
+  <a href="#">Marcus Blumen. - 09</a>
+  <a href="#">Jasper Brannon - 10</a>
+  <a href="#">Matthew Anzal. - 11</a>
+  <a href="#">Sean Kim - 12</a>
+  <a href="#">Jack Meeker - 13</a>
+  <a href="#">Adrian Paredes - 14</a>
+  <a href="#">Logan Myers - 16</a>
+  <a href="#">Tyler Wray - 17</a>
+  <a href="#">Jake Foster - 18</a>
+  <a href="#">Joey Schwartz - 19</a>
+  <a href="#">Jazz Henry - 20</a>
+  <a href="#">Teagan Jarvis - 21</a>
+  <a href="#">Tye Hernandez - 22</a>
+  <a href="#">Miles Robertson - 23</a>
+  <a href="#">Caleb Jordening - 24</a>
+  <a href="#">Neython Streitz - 25</a>
+  <a href="#">Ben Tucker - 27</a>
+  <a href="#">Luke Haas - 30</a>
+  <a href="#">Eric Dacosta - 31</a>
+</div>
+
+
+<button class = "button" align = "left"  style=" float: left; margin: 340px 0px 0 -210px;" onClick = "window.location.href = '/analysis-game/team-game1-playerBreakdown';">Player Breakdown</button>
+<button class = "button" align = "left"  style=" float: left; margin: 280px 0px 0 -210px;">Visual Analysis</button>
+<button class = "button" align = "left"  style=" float: left; margin: 220px 0px 0 -210px;">Text Analysis</button>
+<button class = "button" align = "left"  style=" float: left; margin: 400px 0px 0 -210px;"  onclick="window.location.href= '../analysis-home';">Analytics Explained</button>
+
+
+<img src="../static/ShotPerc.png" alt="Shot % Chart" width="750" height="600" id = "shotperc" style="float: center; margin: 3px 12px -600px 200px;">
+
+
+<div class="card" style = "margin: 3px 12px 200px 1210px;">
+  <div class="container">
+    <h3 align = "center">Game Stats</h3>
+    <h4 align = "center"> Actual Result: 2 - 1 (Win)</h4>
+    <h4 align = "center"> Expected Result: 2 - 2 (Draw)</h4>
+    <h3 align = "center"></h3> 
+        <p><b>aG: 2</b></p>
+        <p><b>OppaG: 1</b></p>
+        <p><b>xG: 2</b></p>
+        <p><b>OppxG: 2</b></p>
+        <p><b>aGD: +1</b></p>
+        <p><b>xGD: 0</b></p>
+        <p><b>aP: 3</b></p>
+        <p><b>xP: 1</b><p>  
+  </div>
+</div>
+
+<h5 id = "perctitle" align = "center" style = "margin: -20px 0px 0px 0px; text-decoration: underline; text-shadow: 2px 2px #333; color: #f2f2f2;"> Shot Location Tracker (% of total shots taken in different field locations)</h5>
+-->
+
+<body style = "font-family: 'Open Sans'; font-size: 22px; background: linear-gradient(225deg, rgba(190,193,214,1) 17%, rgba(255,255,255,1) 100%);">
+<h1 style = "margin-left: 70px;"> Player Selection</h1>
+<div id = "playerSelect">
+<main class="grid">
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-benHarding';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png"  alt=" Profile" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Christian Corcoran - #03</h3>
+    </div>
+  </article>
+
+   <article onclick = "window.location.href = '../analysis-home/playerBreakdown-jacobGitin';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png"  alt="Adrian Paredes Profile" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;">
+    <div class="text">
+      <h3 style = "text-decoration: underline;">Sam Jenkins - #04</h3>
+    </div>
+  </article>
+  
+    <article onclick = "window.location.href = '../analysis-home/playerBreakdown-scottDrazan';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png"  alt="Adrian Paredes Profile" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Marcus Chmielewski #05</h3>
+    </div>
+  </article>
+
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-rileyMccabe';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Vicente Navarro - #06</h3>
+    </div>
+  </article>
+
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-spencerShearer';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png"  alt="Adrian Paredes Profile" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Kai Fiedelholtz - #07</h3>
+    </div>
+  </article>
+  
+   <article onclick = "window.location.href = '../analysis-home/playerBreakdown-ryanWilson';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png"  alt="Adrian Paredes Profile" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Aiden Aley - #08</h3>
+    </div>
+  </article>
+  
+    <article onclick = "window.location.href = '../analysis-home/playerBreakdown-davidPaine';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png"  alt="Adrian Paredes Profile" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Andrew Notter - #09</h3>
+    </div>
+  </article>
+
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-nicEble';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Joseph Schwartz - #10</h3>
+    </div>
+  </article>
+  
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-mattTeplitz';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Oury Diane - #11</h3>
+    </div>
+  </article>
+
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-benSimon';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Ethan Carr - #12</h3>
+    </div>
+  </article>
+  
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-marcBlumenfeld';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Sebastian Langer Chan - #13</h3>
+    </div>
+  </article>
+  
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-jasperBrannon';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Joshua Hamlett - #14</h3>
+    </div>
+  </article>
+  
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-mattAnzalone';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Sebastian Romero - #15</h3>
+    </div>
+  </article>
+    
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-seanKim';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;"alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Liam Tzortis - #16</h3>
+    </div>
+  </article>
+
+<article onclick = "window.location.href = '../analysis-home/playerBreakdown-jackMeeker';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Charlie Miller - #17</h3>
+    </div>
+  </article>
+
+  
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-adrianParedes';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Lukas Howlett - #19</h3>
+    </div>
+  </article>
+    
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-loganMyers';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Coleman Bellin - #20</h3>
+    </div>
+  </article>
+
+<article onclick = "window.location.href = '../analysis-home/playerBreakdown-tylerWray';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Evan Karp - #21</h3>
+    </div>
+  </article>
+
+  
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-jakeFoster';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Justin Nishimoto - #22</h3>
+    </div>
+  </article>
+    
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-joeySchwartz';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Kyle Hollman - #23</h3>
+    </div>
+  </article>
+
+<article onclick = "window.location.href = '../analysis-home/playerBreakdown-jazzHenry';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png"  alt=" Profile" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Paris Pappas - #24</h3>
+    </div>
+  </article>
+
+  
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-teaganJarvis';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Max Stanley - #25</h3>
+    </div>
+  </article>
+    
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-tyeHernandez';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Diego Cavalie - #27</h3>
+    </div>
+  </article>
+
+<article onclick = "window.location.href = '../analysis-home/playerBreakdown-milesRobertson';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Tyler Na-Nakornpanom - #29</h3>
+    </div>
+  </article>
+
+  
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-calebJorden';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Riley Nyhan - #0</h3>
+    </div>
+  </article>
+    
+  <article onclick = "window.location.href = '../analysis-home/playerBreakdown-neythonStreitz';" style = "background-color:#ffffff; border-radius: 8px; height: 400px;"">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Sammy Gramlich -  #01</h3>
+    </div>
+  </article>
+
+<article onclick = "window.location.href = '../analysis-home/playerBreakdown-benTucker';"style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline">Casey Scott - #30</h3>
+    </div>
+  </article>
+
+  <article  style = "background-color:#ffffff; border-radius: 8px; height: 400px;">
+    <img src="../static/rosterShot.png" style = "position: relative; left: 20px; top: 20px; height: 300px; width: 220px; border-radius: 8px;" alt="Adrian Paredes Profile">
+    <div class="text">
+      <h3 style = "text-decoration: underline"> Joseph Bassett - #33</h3>
+    </div>
+  </article>
+</main>
+</div>
+
+<nav class="main-menu">
+  <ul>
+      <li>
+          <a href="/">
+              <i class="fa fa-home fa-2x"></i>
+              <span class="nav-text">
+                  Main Dashboard
+
+              </span>
+          </a>
+        
+      </li>
+
+      <li>
+        <a href="/dashboard-season">
+          <i class="fa fa-home fa-2x"></i>
+          <span class="nav-text">
+              Season Overview
+          </span> 
+      </li>
+
+      <li>
+        <a href="/dashboard-gameData">
+          <i class="fa fa-home fa-2x"></i>
+          <span class="nav-text">
+              Game Data
+          </span> 
+      </li>
+      
+      <li class="has-subnav">
+          <a href="../analysis-home/playerSelection">
+              <i class="fa fa-list fa-2x"></i>
+              <span class="nav-text">
+                  Players
+              </span>
+          </a>
+          
+      </li>
+  </ul>
+</nav>
+
+<h5 align = "right" style = "color: #f2f2f2;">roster images courtesy of oxyathletics.com</h5>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html> 

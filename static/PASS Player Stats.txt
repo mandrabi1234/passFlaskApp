@@ -1,0 +1,5604 @@
+/* Rectangle 140 */
+
+position: absolute;
+width: 441px;
+height: 499px;
+left: 100px;
+top: 252px;
+
+background: rgba(255, 255, 255, 0.45);
+border-radius: 10px;
+
+
+/* Player scroll */
+
+position: absolute;
+width: 441px;
+height: 499px;
+left: 100px;
+top: 252px;
+overflow-y: scroll;
+
+
+
+/* Group 53 */
+
+position: absolute;
+width: 419px;
+height: 58px;
+left: 6px;
+top: 504px;
+
+
+
+/* Rectangle 87 */
+
+position: absolute;
+width: 419px;
+height: 58px;
+left: 6px;
+top: 504px;
+
+background: #FFFFFF;
+
+
+/* Group 21 */
+
+position: absolute;
+width: 39px;
+height: 40px;
+left: 14px;
+top: 513px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 3.17%;
+right: 87.98%;
+top: 102.81%;
+bottom: -10.82%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 43.72px;
+height: 44.65px;
+left: 13.62px;
+top: 509.14px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Jacob Gitin */
+
+position: absolute;
+width: 84.78px;
+height: 19px;
+left: 76.98px;
+top: 523px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* #00 */
+
+position: absolute;
+width: 28.6px;
+height: 19px;
+left: 225.85px;
+top: 521px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Goal Keeper */
+
+position: absolute;
+width: 82.74px;
+height: 19px;
+left: 318.52px;
+top: 521px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 54 */
+
+position: absolute;
+width: 419px;
+height: 53px;
+left: 6px;
+top: 577px;
+
+
+
+/* Rectangle 90 */
+
+position: absolute;
+width: 419px;
+height: 53px;
+left: 6px;
+top: 577px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Group 23 */
+
+position: absolute;
+width: 39px;
+height: 41px;
+left: 16px;
+top: 583px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 3.63%;
+right: 87.53%;
+top: 116.83%;
+bottom: -25.05%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 45.36px;
+height: 45px;
+left: 13.04px;
+top: 581px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Scott Drazan */
+
+position: absolute;
+width: 103.19px;
+height: 19px;
+left: 82.91px;
+top: 592px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* #01 */
+
+position: absolute;
+width: 28.61px;
+height: 19px;
+left: 231.81px;
+top: 592px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Goal Keeper */
+
+position: absolute;
+width: 82.75px;
+height: 19px;
+left: 324.5px;
+top: 592px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 55 */
+
+position: absolute;
+width: 419px;
+height: 55px;
+left: 6px;
+top: 646px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 419px;
+height: 55px;
+left: 6px;
+top: 646px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Riley McCabe */
+
+position: absolute;
+width: 103.17px;
+height: 19px;
+left: 82.92px;
+top: 664px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* #02 */
+
+position: absolute;
+width: 28.6px;
+height: 19px;
+left: 231.83px;
+top: 665px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Defense */
+
+position: absolute;
+width: 82.74px;
+height: 19px;
+left: 324.52px;
+top: 665px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 56 */
+
+position: absolute;
+width: 39px;
+height: 42px;
+left: 16px;
+top: 654px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 3.63%;
+right: 87.53%;
+top: 131.06%;
+bottom: -39.48%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 43.97px;
+height: 43.55px;
+left: 13.53px;
+top: 651.18px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 57 */
+
+position: absolute;
+width: 419px;
+height: 55px;
+left: 6px;
+top: 717px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 419px;
+height: 55px;
+left: 6px;
+top: 717px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Spencer Shearer */
+
+position: absolute;
+width: 117.63px;
+height: 19px;
+left: 79.88px;
+top: 736px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* #03 */
+
+position: absolute;
+width: 28.2px;
+height: 19px;
+left: 226.68px;
+top: 736px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Midfield */
+
+position: absolute;
+width: 81.57px;
+height: 19px;
+left: 318.06px;
+top: 736px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 58 */
+
+position: absolute;
+width: 419px;
+height: 55px;
+left: 6px;
+top: 782px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 419px;
+height: 55px;
+left: 6px;
+top: 782px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Ryan Wilson */
+
+position: absolute;
+width: 117.63px;
+height: 19px;
+left: 79.88px;
+top: 801px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* #04 */
+
+position: absolute;
+width: 28.2px;
+height: 19px;
+left: 226.68px;
+top: 801px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Midfield */
+
+position: absolute;
+width: 81.57px;
+height: 19px;
+left: 318.06px;
+top: 801px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 59 */
+
+position: absolute;
+width: 419px;
+height: 55px;
+left: 6px;
+top: 859px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 419px;
+height: 55px;
+left: 6px;
+top: 859px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* David Paine */
+
+position: absolute;
+width: 117.63px;
+height: 19px;
+left: 79.88px;
+top: 878px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* #05 */
+
+position: absolute;
+width: 28.2px;
+height: 19px;
+left: 226.68px;
+top: 878px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Defense */
+
+position: absolute;
+width: 81.57px;
+height: 19px;
+left: 318.06px;
+top: 878px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 60 */
+
+position: absolute;
+width: 419px;
+height: 53px;
+left: 6px;
+top: 930px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 419px;
+height: 53px;
+left: 6px;
+top: 930px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Robert Hawk */
+
+position: absolute;
+width: 120px;
+height: 18.31px;
+left: 79.77px;
+top: 947.35px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* #06 */
+
+position: absolute;
+width: 28.86px;
+height: 18.31px;
+left: 226.32px;
+top: 947.35px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Forward */
+
+position: absolute;
+width: 83.5px;
+height: 18.31px;
+left: 319.76px;
+top: 947.35px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 61 */
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: 16px;
+top: 724px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 3.63%;
+right: 87.3%;
+top: 145.09%;
+bottom: -53.11%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 44.58px;
+height: 43.45px;
+left: 13.5px;
+top: 722.19px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 62 */
+
+position: absolute;
+width: 40px;
+height: 41px;
+left: 16px;
+top: 790px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 3.63%;
+right: 87.3%;
+top: 158.32%;
+bottom: -66.53%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 44.58px;
+height: 44.52px;
+left: 14px;
+top: 789px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 63 */
+
+position: absolute;
+width: 40px;
+height: 41px;
+left: 16px;
+top: 939px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 3.63%;
+right: 87.3%;
+top: 188.18%;
+bottom: -96.39%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 44.58px;
+height: 44.69px;
+left: 15px;
+top: 938px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 64 */
+
+position: absolute;
+width: 40px;
+height: 44px;
+left: 16px;
+top: 864px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 3.63%;
+right: 87.3%;
+top: 173.15%;
+bottom: -81.96%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 44.58px;
+height: 44.69px;
+left: 13.5px;
+top: 863.13px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 76 */
+
+position: absolute;
+width: 95px;
+height: 38.4px;
+left: 874px;
+top: -350px;
+
+
+
+/* Rectangle 142 */
+
+position: absolute;
+width: 95px;
+height: 32px;
+left: 874px;
+top: -347px;
+
+background: #E2F4FF;
+border-radius: 5px;
+
+
+/* Group 71 */
+
+position: absolute;
+width: 79px;
+height: 38.4px;
+left: 882px;
+top: -350px;
+
+
+
+/* Subpar */
+
+position: absolute;
+width: 71px;
+height: 24px;
+left: 886px;
+top: -350px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+
+color: #E3CD00;
+
+
+
+/* Performance */
+
+position: absolute;
+width: 79px;
+height: 19.4px;
+left: 882px;
+top: -331px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+
+color: #676767;
+
+
+
+/* Group 32 */
+
+position: absolute;
+width: 419px;
+height: 53px;
+left: 6px;
+top: 80px;
+
+
+
+/* Rectangle 90 */
+
+position: absolute;
+width: 419px;
+height: 53px;
+left: 6px;
+top: 80px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Group 23 */
+
+position: absolute;
+width: 39px;
+height: 41px;
+left: 16px;
+top: 86px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 3.63%;
+right: 87.53%;
+top: 17.23%;
+bottom: 74.55%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 45.36px;
+height: 45px;
+left: 13.04px;
+top: 84px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Scott Drazan */
+
+position: absolute;
+width: 103.19px;
+height: 19px;
+left: 82.91px;
+top: 95px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* #01 */
+
+position: absolute;
+width: 28.61px;
+height: 19px;
+left: 231.81px;
+top: 95px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Goal Keeper */
+
+position: absolute;
+width: 82.75px;
+height: 19px;
+left: 324.5px;
+top: 95px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 33 */
+
+position: absolute;
+width: 419px;
+height: 55px;
+left: 6px;
+top: 149px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 419px;
+height: 55px;
+left: 6px;
+top: 149px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Riley McCabe */
+
+position: absolute;
+width: 103.17px;
+height: 19px;
+left: 82.92px;
+top: 167px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* #02 */
+
+position: absolute;
+width: 28.6px;
+height: 19px;
+left: 231.83px;
+top: 168px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Defense */
+
+position: absolute;
+width: 82.74px;
+height: 19px;
+left: 324.52px;
+top: 168px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 24 */
+
+position: absolute;
+width: 39px;
+height: 42px;
+left: 16px;
+top: 157px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 3.63%;
+right: 87.53%;
+top: 31.46%;
+bottom: 60.12%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 43.97px;
+height: 43.55px;
+left: 13.53px;
+top: 154.18px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 49 */
+
+position: absolute;
+width: 419px;
+height: 55px;
+left: 6px;
+top: 220px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 419px;
+height: 55px;
+left: 6px;
+top: 220px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Spencer Shearer */
+
+position: absolute;
+width: 117.63px;
+height: 19px;
+left: 79.88px;
+top: 239px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* #03 */
+
+position: absolute;
+width: 28.2px;
+height: 19px;
+left: 226.68px;
+top: 239px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Midfield */
+
+position: absolute;
+width: 81.57px;
+height: 19px;
+left: 318.06px;
+top: 239px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 50 */
+
+position: absolute;
+width: 419px;
+height: 55px;
+left: 6px;
+top: 291px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 419px;
+height: 55px;
+left: 6px;
+top: 291px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Ryan Wilson */
+
+position: absolute;
+width: 117.63px;
+height: 19px;
+left: 79.88px;
+top: 310px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* #04 */
+
+position: absolute;
+width: 28.2px;
+height: 19px;
+left: 226.68px;
+top: 310px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Midfield */
+
+position: absolute;
+width: 81.57px;
+height: 19px;
+left: 318.06px;
+top: 310px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 51 */
+
+position: absolute;
+width: 419px;
+height: 55px;
+left: 6px;
+top: 363px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 419px;
+height: 55px;
+left: 6px;
+top: 363px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* David Paine */
+
+position: absolute;
+width: 117.63px;
+height: 19px;
+left: 79.88px;
+top: 382px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* #05 */
+
+position: absolute;
+width: 28.2px;
+height: 19px;
+left: 226.68px;
+top: 382px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Defense */
+
+position: absolute;
+width: 81.57px;
+height: 19px;
+left: 318.06px;
+top: 382px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 52 */
+
+position: absolute;
+width: 419px;
+height: 53px;
+left: 6px;
+top: 433px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 419px;
+height: 53px;
+left: 6px;
+top: 433px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Robert Hawk */
+
+position: absolute;
+width: 120px;
+height: 18.31px;
+left: 79.77px;
+top: 450.35px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* #06 */
+
+position: absolute;
+width: 28.86px;
+height: 18.31px;
+left: 226.32px;
+top: 450.35px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Forward */
+
+position: absolute;
+width: 83.5px;
+height: 18.31px;
+left: 319.76px;
+top: 450.35px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 25 */
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: 16px;
+top: 227px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 3.63%;
+right: 87.3%;
+top: 45.49%;
+bottom: 46.49%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 44.58px;
+height: 43.45px;
+left: 13.5px;
+top: 225.19px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 26 */
+
+position: absolute;
+width: 40px;
+height: 41px;
+left: 16px;
+top: 293px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 3.63%;
+right: 87.3%;
+top: 58.72%;
+bottom: 33.07%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 44.58px;
+height: 44.52px;
+left: 14px;
+top: 292px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 27 */
+
+position: absolute;
+width: 40px;
+height: 41px;
+left: 16px;
+top: 442px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 3.63%;
+right: 87.3%;
+top: 88.58%;
+bottom: 3.21%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 44.58px;
+height: 44.69px;
+left: 15px;
+top: 441px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 27 */
+
+position: absolute;
+width: 40px;
+height: 44px;
+left: 16px;
+top: 367px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 3.63%;
+right: 87.3%;
+top: 73.55%;
+bottom: 17.64%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 44.58px;
+height: 44.69px;
+left: 13.5px;
+top: 366.13px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 31 */
+
+position: absolute;
+width: 419px;
+height: 58px;
+left: 6px;
+top: 7px;
+
+
+
+/* Rectangle 87 */
+
+position: absolute;
+width: 419px;
+height: 58px;
+left: 6px;
+top: 7px;
+
+background: #FFFFFF;
+border: 2px solid #38B2F9;
+box-sizing: border-box;
+
+
+/* Group 21 */
+
+position: absolute;
+width: 39px;
+height: 40px;
+left: 14px;
+top: 16px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 3.17%;
+right: 87.98%;
+top: 3.21%;
+bottom: 88.78%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 43.72px;
+height: 44.65px;
+left: 13.62px;
+top: 12.14px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Jacob Gitin */
+
+position: absolute;
+width: 84.78px;
+height: 19px;
+left: 76.98px;
+top: 26px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* #00 */
+
+position: absolute;
+width: 28.6px;
+height: 19px;
+left: 225.85px;
+top: 24px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Goal Keeper */
+
+position: absolute;
+width: 82.74px;
+height: 19px;
+left: 318.52px;
+top: 24px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Background Pattern */
+
+position: absolute;
+width: 1258.72px;
+height: 946px;
+left: 11px;
+top: -170px;
+
+
+
+/* Vector 7 */
+
+position: absolute;
+width: 883px;
+height: 794px;
+left: 380px;
+top: -109px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Vector 8 */
+
+position: absolute;
+width: 883px;
+height: 794px;
+left: 328px;
+top: -101.76px;
+
+background: rgba(255, 255, 255, 0.2);
+transform: rotate(-4.43deg);
+
+
+/* Rectangle 66 */
+
+position: absolute;
+width: 1152px;
+height: 700px;
+left: 11px;
+top: 76px;
+
+
+
+/* Player Stats */
+
+position: absolute;
+width: 188px;
+height: 43px;
+left: 106px;
+top: 64px;
+
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 43px;
+
+color: #000000;
+
+
+
+/* Group 37 */
+
+position: absolute;
+width: 28px;
+height: 562px;
+left: 531px;
+top: 176px;
+
+
+
+/* Line 10 */
+
+position: absolute;
+width: 562px;
+height: 0px;
+left: 559px;
+top: 176px;
+
+border: 1px solid #A8A8A8;
+transform: rotate(90deg);
+
+
+/* Rectangle 86 */
+
+position: absolute;
+width: 5px;
+height: 91px;
+left: 531px;
+top: 262px;
+
+background: #C4C4C4;
+border-radius: 25px;
+
+
+/* Rectangle 88 */
+
+position: absolute;
+width: 557px;
+height: 578px;
+left: 580px;
+top: 173px;
+
+background: #FFFFFF;
+border-radius: 15px;
+
+
+/* 2020-21 Season */
+
+position: absolute;
+width: 197px;
+height: 28px;
+left: 760px;
+top: 269px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #8F8F8F;
+
+
+
+/* Group 67 */
+
+position: absolute;
+width: 334px;
+height: 75px;
+left: 760px;
+top: 204px;
+
+
+
+/* Jacob Gitin */
+
+position: absolute;
+width: 331px;
+height: 59px;
+left: 763px;
+top: 204px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+
+color: #000000;
+
+
+
+/* Class of 2020 */
+
+position: absolute;
+width: 153.43px;
+height: 28.41px;
+left: 882px;
+top: 209px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 20px;
+
+color: #000000;
+
+
+
+/* #00 */
+
+position: absolute;
+width: 41px;
+height: 27px;
+left: 760px;
+top: 236px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+
+color: #000000;
+
+
+
+/* Goal Keeper */
+
+position: absolute;
+width: 143px;
+height: 38px;
+left: 810px;
+top: 241px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 20px;
+
+color: #000000;
+
+
+
+/* Group 22 */
+
+position: absolute;
+width: 123px;
+height: 123px;
+left: 605px;
+top: 201px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 52.52%;
+right: 36.81%;
+top: 28.63%;
+bottom: 53.85%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 136.86px;
+height: 143.33px;
+left: 599.96px;
+top: 195.56px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 29 */
+
+position: absolute;
+width: 431px;
+height: 32px;
+left: 100px;
+top: 176px;
+
+
+
+/* Rectangle 89 */
+
+position: absolute;
+width: 431px;
+height: 32px;
+left: 100px;
+top: 176px;
+
+background: #FFFFFF;
+border-radius: 20px;
+
+
+/* image 1 */
+
+position: absolute;
+width: 19.69px;
+height: 19px;
+left: 112.43px;
+top: 183px;
+
+background: url(image.png);
+background-blend-mode: darken;
+
+
+/* Search */
+
+position: absolute;
+width: 46.62px;
+height: 19px;
+left: 145.59px;
+top: 183px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #838383;
+
+
+
+/* Group 30 */
+
+position: absolute;
+width: 307px;
+height: 19px;
+left: 178px;
+top: 225px;
+
+
+
+/* NAME */
+
+position: absolute;
+width: 39px;
+height: 19px;
+left: 178px;
+top: 225px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #4A4A4A;
+
+
+
+/* NUMBER */
+
+position: absolute;
+width: 58px;
+height: 19px;
+left: 325px;
+top: 225px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #4A4A4A;
+
+
+
+/* POSITION */
+
+position: absolute;
+width: 62px;
+height: 19px;
+left: 423px;
+top: 225px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #4A4A4A;
+
+
+
+/* Rectangle 98 */
+
+position: absolute;
+width: 517px;
+height: 373px;
+left: 600px;
+top: 347px;
+
+background: #FFEBD9;
+
+
+/* Rectangle 101 */
+
+position: absolute;
+width: 517px;
+height: 25px;
+left: 600px;
+top: 605px;
+
+background: #FFFEFE;
+
+
+/* Rectangle 102 */
+
+position: absolute;
+width: 517px;
+height: 25px;
+left: 600px;
+top: 655px;
+
+background: #FFFEFE;
+
+
+/* Rectangle 106 */
+
+position: absolute;
+width: 517px;
+height: 25px;
+left: 600px;
+top: 707px;
+
+background: #FFFEFE;
+
+
+/* Rectangle 103 */
+
+position: absolute;
+width: 5px;
+height: 85px;
+left: 1123px;
+top: 425px;
+
+background: #C4C4C4;
+border-radius: 25px;
+
+
+/* Rectangle 100 */
+
+position: absolute;
+width: 517px;
+height: 25px;
+left: 600px;
+top: 555px;
+
+background: #FFFEFE;
+
+
+/* Rectangle 100 */
+
+position: absolute;
+width: 517px;
+height: 25px;
+left: 600px;
+top: 505px;
+
+background: #FFFEFE;
+
+
+/* Rectangle 100 */
+
+position: absolute;
+width: 517px;
+height: 25px;
+left: 600px;
+top: 455px;
+
+background: #FFFEFE;
+
+
+/* Rectangle 100 */
+
+position: absolute;
+width: 517px;
+height: 25px;
+left: 600px;
+top: 406px;
+
+background: #FFFEFE;
+
+
+/* Rectangle 105 */
+
+position: absolute;
+width: 78px;
+height: 366px;
+left: 600px;
+top: 367px;
+
+background: #FFFFFF;
+border: 0.5px solid #AAAAAA;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+/* Group 79 */
+
+position: absolute;
+width: 361px;
+height: 20px;
+left: 705px;
+top: 561px;
+
+
+
+/* 8.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 705px;
+top: 562px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 4.1 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 754px;
+top: 561px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 8.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 802px;
+top: 561px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 3.4 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 849px;
+top: 561px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.70 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 914px;
+top: 561px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.05 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 978px;
+top: 561px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 9.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 1046px;
+top: 561px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 80 */
+
+position: absolute;
+width: 361px;
+height: 19px;
+left: 705px;
+top: 587px;
+
+
+
+/* 9.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 705px;
+top: 587px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 1.2 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 754px;
+top: 587px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 6.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 802px;
+top: 587px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 7.9 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 849px;
+top: 587px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.03 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 914px;
+top: 587px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.08 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 978px;
+top: 587px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 7.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 1046px;
+top: 587px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 81 */
+
+position: absolute;
+width: 361px;
+height: 20px;
+left: 705px;
+top: 610px;
+
+
+
+/* 3.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 705px;
+top: 610px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 6.3 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 754px;
+top: 611px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 4.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 802px;
+top: 611px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 6.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 849px;
+top: 611px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.02 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 914px;
+top: 611px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.01 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 978px;
+top: 611px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 9.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 1046px;
+top: 611px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 78 */
+
+position: absolute;
+width: 361px;
+height: 20px;
+left: 705px;
+top: 536px;
+
+
+
+/* 9.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 705px;
+top: 536px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 2.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 802px;
+top: 537px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 1.6 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 849px;
+top: 537px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.00 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 914px;
+top: 537px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.9 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 754px;
+top: 537px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.01 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 978px;
+top: 537px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 1.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 1046px;
+top: 537px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 99 */
+
+position: absolute;
+width: 361px;
+height: 20px;
+left: 705px;
+top: 510px;
+
+
+
+/* 8.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 705px;
+top: 510px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 9.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 802px;
+top: 511px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 5.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 849px;
+top: 511px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.00 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 914px;
+top: 511px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 3.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 754px;
+top: 511px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.00 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 978px;
+top: 511px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 8.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 1046px;
+top: 511px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 100 */
+
+position: absolute;
+width: 361px;
+height: 20px;
+left: 705px;
+top: 485px;
+
+
+
+/* 12.0 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 705px;
+top: 485px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 6.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 802px;
+top: 486px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 5.9 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 849px;
+top: 486px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.07 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 914px;
+top: 486px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.5 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 754px;
+top: 486px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.05 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 978px;
+top: 486px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 1046px;
+top: 486px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 101 */
+
+position: absolute;
+width: 369px;
+height: 20px;
+left: 705px;
+top: 460px;
+
+
+
+/* 3.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 705px;
+top: 460px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 3.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 802px;
+top: 461px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 4.8 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 849px;
+top: 461px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.50 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 914px;
+top: 461px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.8 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 754px;
+top: 461px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.06 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 978px;
+top: 461px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 16.0 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 1046px;
+top: 461px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 102 */
+
+position: absolute;
+width: 361px;
+height: 20px;
+left: 705px;
+top: 436px;
+
+
+
+/* 2.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 705px;
+top: 436px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 5.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 802px;
+top: 437px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 5.1 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 849px;
+top: 437px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.00 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 914px;
+top: 437px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.9 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 754px;
+top: 437px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.02 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 978px;
+top: 437px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 7.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 1046px;
+top: 437px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 103 */
+
+position: absolute;
+width: 369px;
+height: 20px;
+left: 705px;
+top: 412px;
+
+
+
+/* 8.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 705px;
+top: 412px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 4.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 802px;
+top: 413px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 3.4 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 849px;
+top: 413px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.08 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 914px;
+top: 413px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 2.3 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 754px;
+top: 413px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.05 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 978px;
+top: 413px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 12.0 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 1046px;
+top: 413px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 104 */
+
+position: absolute;
+width: 361px;
+height: 20px;
+left: 705px;
+top: 385px;
+
+
+
+/* 9.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 705px;
+top: 385px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 5.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 802px;
+top: 386px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 4.7 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 849px;
+top: 386px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.01 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 914px;
+top: 386px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 1.6 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 754px;
+top: 386px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.02 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 978px;
+top: 386px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 7.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 1046px;
+top: 386px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 82 */
+
+position: absolute;
+width: 361px;
+height: 20px;
+left: 705px;
+top: 636px;
+
+
+
+/* 4.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 705px;
+top: 637px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.1 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 754px;
+top: 636px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 6.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 802px;
+top: 636px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 4.5 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 849px;
+top: 636px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.01 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 914px;
+top: 636px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.03 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 978px;
+top: 636px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 7.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 1046px;
+top: 636px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 83 */
+
+position: absolute;
+width: 361px;
+height: 19px;
+left: 705px;
+top: 663px;
+
+
+
+/* 9.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 705px;
+top: 663px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 3.4 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 754px;
+top: 663px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 5.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 802px;
+top: 663px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 7.1 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 849px;
+top: 663px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.01 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 914px;
+top: 663px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.02 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 978px;
+top: 663px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 8.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 1046px;
+top: 663px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 84 */
+
+position: absolute;
+width: 361px;
+height: 19px;
+left: 705px;
+top: 686px;
+
+
+
+/* 10.0 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 705px;
+top: 686px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.7 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 754px;
+top: 686px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 3.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 802px;
+top: 686px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 6.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 849px;
+top: 686px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.06 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 914px;
+top: 686px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.00 */
+
+position: absolute;
+width: 28px;
+height: 19px;
+left: 978px;
+top: 686px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 6.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 1046px;
+top: 686px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 85 */
+
+position: absolute;
+width: 361px;
+height: 19px;
+left: 705px;
+top: 711px;
+
+
+
+/* 0.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 705px;
+top: 711px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 754px;
+top: 711px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 802px;
+top: 711px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 849px;
+top: 711px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 914px;
+top: 711px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 978px;
+top: 711px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 0.0 */
+
+position: absolute;
+width: 20px;
+height: 19px;
+left: 1046px;
+top: 711px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 44 */
+
+position: absolute;
+width: 51px;
+height: 16px;
+left: 614px;
+top: 380px;
+
+
+
+/* Seasonal */
+
+position: absolute;
+width: 51px;
+height: 16px;
+left: 614px;
+top: 380px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Group 86 */
+
+position: absolute;
+width: 61px;
+height: 27px;
+left: 610px;
+top: 404px;
+
+
+
+/* Group 45 */
+
+position: absolute;
+width: 43px;
+height: 16px;
+left: 615px;
+top: 404px;
+
+
+
+/* v. UCLA */
+
+position: absolute;
+width: 43px;
+height: 16px;
+left: 615px;
+top: 404px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* May 16, 2021 */
+
+position: absolute;
+width: 61px;
+height: 14px;
+left: 610px;
+top: 417px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+color: #5C5C5C;
+
+
+
+/* Group 87 */
+
+position: absolute;
+width: 55px;
+height: 27px;
+left: 611px;
+top: 429px;
+
+
+
+/* Group 46 */
+
+position: absolute;
+width: 49px;
+height: 16px;
+left: 613px;
+top: 429px;
+
+
+
+/* Stanford */
+
+position: absolute;
+width: 49px;
+height: 16px;
+left: 613px;
+top: 429px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* May 9, 2021 */
+
+position: absolute;
+width: 55px;
+height: 14px;
+left: 611px;
+top: 442px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+color: #5C5C5C;
+
+
+
+/* 20-21 */
+
+position: absolute;
+width: 27px;
+height: 14px;
+left: 627px;
+top: 392px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+color: #5C5C5C;
+
+
+
+/* Group 88 */
+
+position: absolute;
+width: 55px;
+height: 27px;
+left: 611px;
+top: 453px;
+
+
+
+/* May 8, 2021 */
+
+position: absolute;
+width: 55px;
+height: 14px;
+left: 611px;
+top: 466px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+color: #5C5C5C;
+
+
+
+/* vs. USC */
+
+position: absolute;
+width: 41px;
+height: 16px;
+left: 618px;
+top: 453px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Group 89 */
+
+position: absolute;
+width: 55px;
+height: 27px;
+left: 611px;
+top: 478px;
+
+
+
+/* May 1, 2021 */
+
+position: absolute;
+width: 55px;
+height: 14px;
+left: 611px;
+top: 491px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+color: #5C5C5C;
+
+
+
+/* Game 12 */
+
+position: absolute;
+width: 51px;
+height: 16px;
+left: 613px;
+top: 478px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Group 90 */
+
+position: absolute;
+width: 63px;
+height: 27px;
+left: 608px;
+top: 503px;
+
+
+
+/* April 23, 2021 */
+
+position: absolute;
+width: 63px;
+height: 14px;
+left: 608px;
+top: 516px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+color: #5C5C5C;
+
+
+
+/* Game 11 */
+
+position: absolute;
+width: 51px;
+height: 16px;
+left: 613px;
+top: 503px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Group 91 */
+
+position: absolute;
+width: 63px;
+height: 27px;
+left: 607px;
+top: 528px;
+
+
+
+/* April 19, 2021 */
+
+position: absolute;
+width: 63px;
+height: 14px;
+left: 607px;
+top: 541px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+color: #5C5C5C;
+
+
+
+/* Game 10 */
+
+position: absolute;
+width: 51px;
+height: 16px;
+left: 612px;
+top: 528px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Group 92 */
+
+position: absolute;
+width: 63px;
+height: 27px;
+left: 608px;
+top: 553px;
+
+
+
+/* April 10, 2021 */
+
+position: absolute;
+width: 63px;
+height: 14px;
+left: 608px;
+top: 566px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+color: #5C5C5C;
+
+
+
+/* Game 09 */
+
+position: absolute;
+width: 51px;
+height: 16px;
+left: 613px;
+top: 553px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Group 93 */
+
+position: absolute;
+width: 57px;
+height: 27px;
+left: 608px;
+top: 579px;
+
+
+
+/* April 9, 2021 */
+
+position: absolute;
+width: 57px;
+height: 14px;
+left: 608px;
+top: 592px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+color: #5C5C5C;
+
+
+
+/* Game 08 */
+
+position: absolute;
+width: 51px;
+height: 16px;
+left: 613px;
+top: 579px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Group 94 */
+
+position: absolute;
+width: 57px;
+height: 27px;
+left: 607px;
+top: 604px;
+
+
+
+/* April 2, 2021 */
+
+position: absolute;
+width: 57px;
+height: 14px;
+left: 607px;
+top: 617px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+color: #5C5C5C;
+
+
+
+/* Game 07 */
+
+position: absolute;
+width: 51px;
+height: 16px;
+left: 612px;
+top: 604px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Group 95 */
+
+position: absolute;
+width: 71px;
+height: 27px;
+left: 604px;
+top: 629px;
+
+
+
+/* March 29, 2021 */
+
+position: absolute;
+width: 71px;
+height: 14px;
+left: 604px;
+top: 642px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+color: #5C5C5C;
+
+
+
+/* Game 06 */
+
+position: absolute;
+width: 51px;
+height: 16px;
+left: 612px;
+top: 629px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Group 96 */
+
+position: absolute;
+width: 71px;
+height: 27px;
+left: 604px;
+top: 654px;
+
+
+
+/* March 22, 2021 */
+
+position: absolute;
+width: 71px;
+height: 14px;
+left: 604px;
+top: 667px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+color: #5C5C5C;
+
+
+
+/* Game 05 */
+
+position: absolute;
+width: 51px;
+height: 16px;
+left: 612px;
+top: 654px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Group 97 */
+
+position: absolute;
+width: 71px;
+height: 27px;
+left: 604px;
+top: 678px;
+
+
+
+/* March 17, 2021 */
+
+position: absolute;
+width: 71px;
+height: 14px;
+left: 604px;
+top: 691px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+color: #5C5C5C;
+
+
+
+/* Game 04 */
+
+position: absolute;
+width: 51px;
+height: 16px;
+left: 612px;
+top: 678px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Group 98 */
+
+position: absolute;
+width: 71px;
+height: 27px;
+left: 603px;
+top: 706px;
+
+
+
+/* March 10, 2021 */
+
+position: absolute;
+width: 71px;
+height: 14px;
+left: 603px;
+top: 719px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+color: #5C5C5C;
+
+
+
+/* Game 03 */
+
+position: absolute;
+width: 51px;
+height: 16px;
+left: 611px;
+top: 706px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Group 38 */
+
+position: absolute;
+width: 212.67px;
+height: 21px;
+left: 904px;
+top: 34px;
+
+
+
+/* redo-2 2 */
+
+position: absolute;
+width: 18.67px;
+height: 18px;
+left: 1098px;
+top: 34px;
+
+background: url(redo-2.png);
+
+
+/* Updated 5/13/2020 9:37:55 AM */
+
+position: absolute;
+width: 176px;
+height: 16px;
+left: 904px;
+top: 39px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: rgba(0, 0, 0, 0.67);
+
+
+
+/* Line 11 */
+
+position: absolute;
+width: 517px;
+height: 0px;
+left: 1117px;
+top: 555px;
+
+transform: rotate(180deg);
+
+
+/* Line 12 */
+
+position: absolute;
+width: 517px;
+height: 0px;
+left: 1117px;
+top: 579px;
+
+transform: rotate(179.89deg);
+
+
+/* Line 11 */
+
+position: absolute;
+width: 517px;
+height: 0px;
+left: 1117px;
+top: 505px;
+
+transform: rotate(180deg);
+
+
+/* Line 18 */
+
+position: absolute;
+width: 386px;
+height: 0px;
+left: 1117px;
+top: 348px;
+
+transform: rotate(90deg);
+
+
+/* Line 12 */
+
+position: absolute;
+width: 517px;
+height: 0px;
+left: 1117px;
+top: 529px;
+
+transform: rotate(179.89deg);
+
+
+/* Line 11 */
+
+position: absolute;
+width: 517px;
+height: 0px;
+left: 1117px;
+top: 455px;
+
+transform: rotate(180deg);
+
+
+/* Line 12 */
+
+position: absolute;
+width: 517px;
+height: 0px;
+left: 1117px;
+top: 479px;
+
+transform: rotate(179.89deg);
+
+
+/* Line 11 */
+
+position: absolute;
+width: 517px;
+height: 0px;
+left: 1117px;
+top: 406px;
+
+transform: rotate(180deg);
+
+
+/* Line 12 */
+
+position: absolute;
+width: 517px;
+height: 0px;
+left: 1117px;
+top: 430px;
+
+transform: rotate(179.89deg);
+
+
+/* Line 13 */
+
+position: absolute;
+width: 517px;
+height: 0px;
+left: 1117px;
+top: 604px;
+
+transform: rotate(179.89deg);
+
+
+/* Line 14 */
+
+position: absolute;
+width: 517px;
+height: 0px;
+left: 1117px;
+top: 630px;
+
+transform: rotate(180deg);
+
+
+/* Line 15 */
+
+position: absolute;
+width: 517px;
+height: 0px;
+left: 1117px;
+top: 655px;
+
+transform: rotate(180deg);
+
+
+/* Line 16 */
+
+position: absolute;
+width: 517px;
+height: 0px;
+left: 1117px;
+top: 681px;
+
+transform: rotate(-179.89deg);
+
+
+/* Line 17 */
+
+position: absolute;
+width: 517px;
+height: 0px;
+left: 1117px;
+top: 707px;
+
+transform: rotate(180deg);
+
+
+/* Group 77 */
+
+position: absolute;
+width: 517px;
+height: 30px;
+left: 600px;
+top: 348px;
+
+
+
+/* Rectangle 99 */
+
+position: absolute;
+width: 517px;
+height: 30px;
+left: 600px;
+top: 348px;
+
+background: #FFFFFF;
+border: 0.5px solid #727272;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+/* aGp90 */
+
+position: absolute;
+width: 39px;
+height: 20px;
+left: 692px;
+top: 354px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* xgp90 */
+
+position: absolute;
+width: 34px;
+height: 20px;
+left: 748px;
+top: 354px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Perf */
+
+position: absolute;
+width: 23px;
+height: 19px;
+left: 799px;
+top: 354px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Perfp90 */
+
+position: absolute;
+width: 43px;
+height: 19px;
+left: 839px;
+top: 354px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* agConvR */
+
+position: absolute;
+width: 47px;
+height: 20px;
+left: 899px;
+top: 353px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* xgConvR */
+
+position: absolute;
+width: 47px;
+height: 20px;
+left: 963px;
+top: 353px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* shotsP90 */
+
+position: absolute;
+width: 56px;
+height: 20px;
+left: 1027px;
+top: 354px;
+
+font-family: Open Sans Hebrew;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Line 31 */
+
+position: absolute;
+width: 356px;
+height: 0px;
+left: 758px;
+top: 265px;
+
+border: 1px solid #C4C4C4;
+
+
+/* Rectangle 153 */
+
+position: absolute;
+width: 84px;
+height: 19px;
+left: 601px;
+top: 353px;
+
+background: #E8E8E8;
+border-radius: 10px;
+
+
+/* Date */
+
+position: absolute;
+width: 23px;
+height: 14px;
+left: 644px;
+top: 355px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Sort by: */
+
+position: absolute;
+width: 36px;
+height: 14px;
+left: 606px;
+top: 355px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Arrow 12 */
+
+position: absolute;
+width: 1px;
+height: 0px;
+left: 675px;
+top: 364px;
+
+border: 1.5px solid #898989;
+box-sizing: border-box;
+transform: rotate(90deg);
+
+
+/* PlayerPage : Shots on Target w/Logo */
+
+position: absolute;
+width: 111px;
+height: 42px;
+left: 867px;
+top: 293px;
+
+
+
+/* Rectangle 141 */
+
+position: absolute;
+width: 111px;
+height: 42px;
+left: 867px;
+top: 293px;
+
+background: #E2F4FF;
+border-radius: 5px;
+
+
+/* Group 71 */
+
+position: absolute;
+width: 71px;
+height: 34px;
+left: 900px;
+top: 296px;
+
+
+
+/* 03 */
+
+position: absolute;
+width: 24px;
+height: 23px;
+left: 920px;
+top: 296px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+
+color: #000000;
+
+
+
+/* Shots on Target */
+
+position: absolute;
+width: 71px;
+height: 13px;
+left: 900px;
+top: 317px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 8px;
+line-height: 11px;
+text-align: center;
+
+color: #676767;
+
+
+
+/* darts 1 */
+
+position: absolute;
+width: 26px;
+height: 26px;
+left: 874px;
+top: 301px;
+
+background: url(darts.png);
+
+
+/* Group 110 */
+
+position: absolute;
+width: 111px;
+height: 42px;
+left: 750px;
+top: 293px;
+
+
+
+/* PlayerPage : Shots on Target w/Logo */
+
+position: absolute;
+width: 111px;
+height: 42px;
+left: 750px;
+top: 293px;
+
+
+
+/* Rectangle 141 */
+
+position: absolute;
+width: 111px;
+height: 42px;
+left: 750px;
+top: 293px;
+
+background: #E2F4FF;
+border-radius: 5px;
+
+
+/* Group 71 */
+
+position: absolute;
+width: 71px;
+height: 35px;
+left: 790px;
+top: 296px;
+
+
+
+/* 07 */
+
+position: absolute;
+width: 24px;
+height: 23px;
+left: 814px;
+top: 296px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+
+color: #000000;
+
+
+
+/* Total Shots */
+
+position: absolute;
+width: 71px;
+height: 13px;
+left: 790px;
+top: 318px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 8px;
+line-height: 11px;
+text-align: center;
+
+color: #676767;
+
+
+
+/* Group 109 */
+
+position: absolute;
+width: 34px;
+height: 19px;
+left: 762px;
+top: 306px;
+
+
+
+/* Line 39 */
+
+position: absolute;
+width: 16.76px;
+height: 0px;
+left: 762px;
+top: 324px;
+
+border: 2px solid #000000;
+transform: rotate(-72.65deg);
+
+
+/* Line 41 */
+
+position: absolute;
+width: 18.68px;
+height: 0px;
+left: 791px;
+top: 307px;
+
+border: 2px solid #000000;
+transform: rotate(74.48deg);
+
+
+/* Rectangle 154 */
+
+position: absolute;
+width: 27px;
+height: 17px;
+left: 766px;
+top: 306px;
+
+border: 2px solid #000000;
+box-sizing: border-box;
+border-radius: 2px;
+
+
+/* Group 72 */
+
+position: absolute;
+width: 130.61px;
+height: 38.79px;
+left: 986px;
+top: 296px;
+
+
+
+/* Rectangle 142 */
+
+position: absolute;
+width: 127px;
+height: 38.79px;
+left: 986px;
+top: 296px;
+
+background: #E2F4FF;
+border-radius: 5px;
+
+
+/* Group 71 */
+
+position: absolute;
+width: 105.61px;
+height: 38.4px;
+left: 1011px;
+top: 296px;
+
+
+
+/* On Par */
+
+position: absolute;
+width: 94.92px;
+height: 24px;
+left: 1016.35px;
+top: 296px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+
+color: #0C9C00;
+
+
+
+/* Performance */
+
+position: absolute;
+width: 105.61px;
+height: 19.4px;
+left: 1011px;
+top: 315px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+
+color: #676767;
+
+
+
+/* Vector 13 */
+
+position: absolute;
+width: 18px;
+height: 28px;
+left: 1016px;
+top: 331px;
+
+border: 2px solid #000000;
+transform: rotate(-180deg);
+
+
+/* Left Sidebar */
+
+position: absolute;
+width: 58px;
+height: 705px;
+left: 0px;
+top: 2px;
+
+
+
+/* Rectangle 85 */
+
+position: absolute;
+width: 58px;
+height: 705px;
+left: 0px;
+top: 2px;
+
+background: #FFFFFF;
+
+
+/* Settings Icon */
+
+position: absolute;
+width: 33px;
+height: 33px;
+left: 13px;
+top: 648px;
+
+background: url(settings.png);
+
+
+/* image 5 */
+
+position: absolute;
+width: 50px;
+height: 49px;
+left: 4px;
+top: 16px;
+
+background: url(image.png);
+
+
+/* Team Icon */
+
+position: absolute;
+width: 32.55px;
+height: 30px;
+left: 13px;
+top: 142px;
+
+background: url(thick black team logo.png);
+
+
+/* Rectangle 86 */
+
+position: absolute;
+width: 50px;
+height: 40px;
+left: 5px;
+top: 136px;
+
+background: rgba(39, 176, 255, 0.1);
+border-radius: 10px;
+
+
+/* Dashboard Icon */
+
+position: absolute;
+width: 25px;
+height: 26px;
+left: 17px;
+top: 102px;
+
+background: url(home.png);
+
+
+/* rounded pie icon vector 1 */
+
+position: absolute;
+width: 29.03px;
+height: 30px;
+left: 15px;
+top: 179px;
+
+background: url(rounded pie icon vector.png);
+
+
+/* Rectangle 89 */
+
+position: absolute;
+width: 5px;
+height: 40px;
+left: 5px;
+top: 137px;
+
+background: #27B0FF;
+border-radius: 10px;

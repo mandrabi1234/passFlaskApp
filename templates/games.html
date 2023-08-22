@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+<meta charset = "utf-8">
+<meta name = "viewport" content = "width=1024">
+
+<link rel = "stylesheet" href = "../static/style.css">
+<title> Oxy Analytics </title> 
+
+   <!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link rel = "StyleSheets.css" href = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"> 
+    -->
+</head>
+<body id = "body">
+    <!--<canvas id = "myChart" width = "400" height = "400"></canvas>
+   <script src = "chart.js"></script> -->
+
+<h1> Oxy Analytics</h1>
+<p>Occidental College's student-run sports analysis service</p>
+
+
+<div>
+<h3 id= "game_title"> Game: Most_Recent_Competition</h3>
+</div>
+<!--
+    <div id = "wrapper" align = "right", vertical-align: top, margin: 0>
+        <div class = "chart">
+            <h3 Population of Endangered Species from 2012 to 2016</h3>
+            <table id = "data-table" border = "1" cellpadding = "100" cellspacing = "5"
+            summary = "The effects of the zombie outbreak on the population of endangered species from 2012 to 2016">
+                <caption> Best/Worst (Teams)</caption>
+               <tbody>
+                  <tr>
+                     <th scope="row">Conversion Rate</th>
+                     <td>Best: Pomona-Pitzer (80%)</td>
+                     <td>Worst: Occidental (30%)</td>
+                  </tr>
+                  <tr>
+                     <th scope="row">Chance Quality</th>
+                     <td>Best: Occidental (60%)</td>
+                     <td>Worst: Pomona-Pitzer (40%)</td>
+                  </tr>
+                  <tr>
+                     <th scope="row">Other Metrics...</th>
+                     <td>Best: Team (%)</td>
+                     <td>Worst: Team (%)</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>-->
+<nav vertical-align: top>
+    <ul>
+        
+        <li><a href = "index">
+            <i class = "fab fa-instagram"></i><span>Home</span>
+        </a></li>
+        
+        <li><a href = "players">
+            <i class = "fab fa-facebook-f"></i><span>Player</span>
+        </a></li>
+        
+        <li><a href = "season">
+            <i class = "fab fa-twitter"></i><span>Seasonal</span>
+        </a></li>
+
+        <li><a href = "games">
+            <i class = "fab fa-instagram"></i><span>Games</span>
+        </a></li>
+
+         
+    </ul>
+</nav>
+<!--
+<div>
+    <h1 id = "xgtitle" align = "center" style = "text-decoration: underline;">xG: Home_Team vs Away_Team</h1>
+    <img src="xGChart.jpg" alt="Game xG Chart" width="500" height="300" id = "xgchart" align = "center">
+</div>
+
+<table id="q-graph" align = "center" border = "1" cellpadding = "5" cellspacing = "5">
+    <caption id = "caption" style = "text-decoration: underline" align = "center">Best/Worst (Teams)</caption>
+    <thead>
+        <tr>
+         <th></th>
+            <th class="convR">Conversion Rate</th>
+            <th class="ChQ">Chance Quality</th>
+            <th class = "OM"> Other Metrics...</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="qtr" id="q1">
+        <th scope="column"></th>
+        <td class="convR bar" ><p>Best: Pomona-Pitzer (80%)</p></td>
+        <td class="convR bar" id = "B2"><p> Best: Occidental (60%)</p></td>
+        <td class="OM bar"><p>Best: Team_Name (x %)</p></td>
+
+    </tr>
+        <tr class="qtr" id="q2">
+        <th scope="column"></th>
+        <td class="ChQ bar"><p>Worst: Occidental (30%)</p></td>
+        <td class="ChQ bar" id = "W2"><p>Worst: Pomona-Pitzer (20%)</p></td>
+        <td class="OM bar"><p>Worst: Team_Name (y %)</p></td>
+
+    </tr>
+    </tbody>
+-->
+
+
+    <h1 id = "oxy_title" align = "center" style="text-decoration: underline;">Oxy Specs</h1>
+    <img src="ShotPerc.png" alt="Shot % Chart" width="425" height="350" id = "shotperc" align = "center">
+    <h5 id = "perctitle" align = "center" style = "text-decoration: underline;"> Shot Location Tracker (% of total shots taken in different field locations)</h5>
+
+
+
+</table>
+
+<table id="q-graph2" align = "center" border = "1" cellpadding = "5" cellspacing = "5">
+    <caption id = "caption" align = "center"style = "text-decoration: underline" >Best/Worst (Individual Players)</caption>
+    <thead>
+        <tr>
+         <th></th>
+            <th class="convR">Conversion Rate</th>
+            <th class="ChQ">Chance Quality</th>
+            <th class = "OM"> Other Metrics...</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="qtr" id="q1">
+        <th scope="column"></th>
+        <td class="convR bar" ><p>Best: Nicolas Eble (80%)</p></td>
+        <td class="convR bar" id = "B2"><p> Best: Marcus Blumenfeld (60%)</p></td>
+        <td class="OM bar"><p>Best: Player_Name (x %)</p></td>
+
+    </tr>
+        <tr class="qtr" id="q2">
+        <th scope="column"></th>
+        <td class="ChQ bar"><p>Worst: Adrian Paredes (30%)</p></td>
+        <td class="ChQ bar" id = "W2"><p>Worst: Adrian Paredes (20%)</p></td>
+        <td class="OM bar"><p>Worst: Player_Name (y %)</p></td>
+
+    </tr>
+ <!--   <tr class="qtr" id="q3">
+        <th scope="column"></th>
+        <td class="OM bar"><p>Best: Team_Name (x %)</p></td>
+        <td class="OM bar"><p>Worst: Team_Name (y %)</p></td>
+    </tr>-->
+    </tbody>
+</table>
+<br>
+<br>
+<table id="q-graph3" align = "left" border = "1" cellpadding = "5" cellspacing = "5">
+    <caption id = "caption" align = "center"style = "text-decoration: underline" > xG Per Player</caption>
+    <thead>
+        <tr>
+         <th></th>
+            <th class = "jersey" style="text-decoration: underline;"><u>Player No.</u></th>
+            <th class="PLr"style="text-decoration: underline;"><u>Player Name</u></th>
+            <th class="xG"style="text-decoration: underline;"><u>xG</u></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="qtr" id="q1">
+        <th scope="column"></th>
+        <td class = "convR bar"><p><b>Jersey No.</b></p></td>
+        <td class="convR bar" ><p><b>Name (Pos.)</b></p></td>
+        <td class="convR bar" id = "B2"><p> <b># xG</b></p></td>
+    </tr>
+        <tr class="qtr" id="q2">
+        <th scope="column"></th>
+        <td class = "ChQ bar"><p> 25</p></td>
+        <td class="ChQ bar"><p>Benjamin Tucker (CB)</p></td>
+        <td class="ChQ bar" id = "W2"><p>0.0</p></td>
+    </tr>
+    
+    </table>
+        <h1 id = "xg_analysis" align = "center" style="text-decoration: underline;">xG Analysis</h1>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+</body>
+</html>

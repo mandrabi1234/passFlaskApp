@@ -1,0 +1,277 @@
+
+
+<html>
+    <head>
+      <link rel = "stylesheet" href = "../static/sideBar.css">
+      <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  
+    <style>
+        body{
+          font-family: 'Open Sans';font-size: 22px;
+  
+        }
+  
+        .matchResult {
+       position: absolute;
+        float: center;
+        width: 800px;
+        height: 100px;
+        padding: 0 5px;
+        margin-left: 95px;
+        margin-right: auto;
+        margin-bottom: 25px;
+      }
+  
+      .matchStats {
+        /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+        padding: 5px;
+        text-align: center;
+        background-color: #ffffff;
+        color: white;
+        height: 150px;
+        width: auto;
+        border-radius: 4px;
+  
+      }
+  
+      .columnStats{
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      display: inline-block;
+    }
+  
+    .flex-parent-element {
+    display: flex;
+    width: 100%;
+  }
+  
+  .flex-child-element {
+    flex: 1;
+    background-color:#FFFFFF;
+    border-radius: 4px;
+    margin: 10px;
+    width: 100px;
+  }
+  
+  .flex-child-element:first-child {
+    margin-right: 5px;
+  }
+  
+  .shotChart{
+  
+  }
+  .vertical-menu {
+    width: auto;
+    height: 597px;
+    overflow-y: auto;
+    font-size: 25px;
+  }
+  
+  .vertical-menu a {
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc;
+  }
+  
+  .vertical-menu a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .home{
+      background-color: #E2F4FF;
+      color: #27B0FF;
+  }
+  .opponent{
+   background-color: #FFF0D2;
+   color: #ECA720;
+  }
+  .doughnut {
+      display: block;
+      border-radius: 100%;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(25deg);
+      border: 10px solid grey;
+      border-top: 10px solid #00C820;
+      border-left: 10px solid #00C820;
+      border-right: 10px solid #00C820;
+  }
+    </style>
+    </head>
+    <body style = "background-color: #e6ecf0;">
+      <div class="area" >
+          <h1 style = "margin-left: 100px;"> Dashboard</h1>
+      <div class = "dashboardStats" style = "position: relative; right: 30px;">    
+      <div class="matchResult">
+      
+      <div class="matchStats">
+      <h2 align = "left" style = "margin-top: -5px; color: #000000">Scoreboard</h2>
+      <h1 align = "center" style = "font-size: 40; color: #333"><b>Occidental College 3 - Pomona College 1</b></h1>
+      </div>
+      
+      <div class="flex-parent-element" style = "position: relative; right: 10px; width: 820px;">
+          <div class="flex-child-element magenta" style =  "background-color: #FFFFFF;">
+              <h3 style = "margin-top: 5px; margin-left: 5px;">Shot Stats</h3>
+              <h5 style = "margin-top: 5px; margin-left: 10px;"> Shots on Target</h5>
+          
+          <div class = "home" style = "padding-left: 15px; border-radius: 12px; margin-left: 325px; position: relative; right: 280px; top: 10px;">Home </div>
+          <div class = "opponent" style = " padding-left: 10px; padding-right: 75px; padding-top: 2px; padding-bottom: 2px; border-radius: 12px; margin-left: 325px; position: relative; right: 65px; bottom: 10px;">Opponent </div>
+                  
+          <div class = "doughnut" style = "position: relative; left: 80px; top: 65px;"></div>
+          
+          <div class = "doughnut" style = "position: relative; top: -55px; left: 300px;"></div>
+         
+          <div class = "home" style = "padding-left: 15px; border-radius: 12px; margin-left: 325px; position: relative; right: 280px; top: 45px;">Home </div>
+          <div class = "opponent" style = " padding-left: 10px; padding-right: 75px; padding-top: 2px; padding-bottom: 2px; border-radius: 12px; margin-left: 325px; position: relative; right: 65px; top: 25px;">Opponent </div>
+  
+          
+          <div class = "doughnut" style = "position: relative; top: 100px; left: 80px;"></div>
+  
+          <div class = "doughnut" style = "position: relative; top: -20px; left: 300px;"></div>
+  
+                       
+          </div>
+          <div class="flex-child-element green">
+              <h3 style = "margin-top: 5px; margin-left: 5px;">Player Peformance Data</h3>
+             
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+              <table id="myTable">
+                <tr class="header">
+                  <th style="width:40%;">Name</th>
+                  <th style="width:20%;">Number</th>
+                  <th style = "width: 40%;"> Position</th>
+                </tr>
+                <tr>
+                  <td>Alfreds Futterkiste</td>
+                  <td>Germany</td>
+                </tr>
+                <tr>
+                  <td>Berglunds snabbkop</td>
+                  <td>Sweden</td>
+                </tr>
+                <tr>
+                  <td>Island Trading</td>
+                  <td>UK</td>
+                </tr>
+                <tr>
+                  <td>Koniglich Essen</td>
+                  <td>Germany</td>
+                </tr>
+                <tr>
+                  <td>Laughing Bacchus Winecellars</td>
+                  <td>Canada</td>
+                </tr>
+                <tr>
+                  <td>Magazzini Alimentari Riuniti</td>
+                  <td>Italy</td>
+                </tr>
+                <tr>
+                  <td>North/South</td>
+                  <td>UK</td>
+                </tr>
+                <tr>
+                  <td>Paris specialites</td>
+                  <td>France</td>
+                </tr>
+              </table>
+              
+              <div class="vertical-menu">
+      <a href="../analysis-home/playerBreakdown-benHarding">  <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">    Ben Harding - 0</a>
+      <a href="../analysis-home/playerBreakdown-jacobGitin"> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">     Jacob Gitin - 00</a>
+      <a href="../analysis-home/playerBreakdown-scottDrazan"> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Scott Drazan -01</a>
+      <a href="../analysis-home/playerBreakdown-rileyMccabe"> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Riley Mccabe - 02</a>
+        <a href="../analysis-home/playerBreakdown-davidPaine"> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  David Paine - 05</a>
+      <a href="../analysis-home/playerBreakdown-mattAnzalone"> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Matthew Anzalone - 11</a>
+        <a href="../analysis-home/playerBreakdown-jackMeeker"> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Jack Meeker - 13</a>
+          <a href="../analysis-home/playerBreakdown-milesRobertson"> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Miles Robertson - 23</a>
+    <a href="../analysis-home/playerBreakdown-neythonStreitz"> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Neython Streitz - 25</a>
+      <a href="../analysis-home/playerBreakdown-benTucker"> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Ben Tucker - 27</a>
+      <a href="../analysis-home/playerBreakdown-lukeHaas"> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Luke Haas - 30</a>
+      <a href="../analysis-home/playerBreakdown-ericDacosta"> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Eric Dacosta - 31</a>
+  
+      <a href="../analysis-home/playerBreakdown-spencerShearer"> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Spencer Shearer - 03</a>
+      <a href="../analysis-home/playerBreakdown-ryanWilson"> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Ryan Wilson - 04</a>
+      <a href="../analysis-home/playerBreakdown-nicEble"> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Nicolas Eble - 06</a>
+   <a href="../analysis-home/playerBreakdown-benSimon"><img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Ben Simon - 08</a>
+    <a href="../analysis-home/playerBreakdown-jasperBrannon"><img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Jasper Brannon - 10</a>
+    <a href="../analysis-home/playerBreakdown-adrianParedes"><img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Adrian Paredes - 14</a>
+  <a href="../analysis-home/playerBreakdown-loganMyers"><img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Logan Myers - 16</a>
+  <a href="../analysis-home/playerBreakdown-jakeFoster"><img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Jake Foster - 18</a>
+  <a href="../analysis-home/playerBreakdown-joeySchwartz"><img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Joey Schwartz - 19</a>
+  <a href="../analysis-home/playerBreakdown-tyeHernandez"><img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Tye Hernandez - 22</a>
+  
+  <a href="../analysis-home/playerBreakdown-mattTeplitz"><img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Matthew Teplitz - 07</a>
+  <a href="../analysis-home/playerBreakdown-marcBlumenfeld"><img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Marcus Blumenfeld - 09</a>
+    <a href="../analysis-home/playerBreakdown-seanKim"><img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Sean Kim - 12</a>
+      <a href="../analysis-home/playerBreakdown-tylerWray"> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Tyler Wray - 17</a>
+      <a href="../analysis-home/playerBreakdown-jazzHenry"><img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Jazz Henry - 20</a>
+  <a href="../analysis-home/playerBreakdown-teaganJarvis"><img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Teagan Jarvis - 21</a>
+    <a href="../analysis-home/playerBreakdown-calebJordening"><img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 10px;">  Caleb Jordening - 24</a>
+    
+    </div>
+  
+          </div>
+      </div>
+  
+      </div>
+      </div>
+  
+      <div class = "shotChart" style = " position: relative; left: 880px; width: 380px;">
+      <img src="..\static\Game 5 Shot Map.png" alt="Flowers in Chania" width="370" height="812" style = "border-radius: 8px;">
+   
+          <br>
+      </div>
+  
+  </div>
+  <nav class="main-menu">
+              <ul>
+                  <li>
+                      <a href="http://justinfarrow.com">
+                          <i class="fa fa-home fa-2x"></i>
+                          <span class="nav-text">
+                              Dashboard
+                          </span>
+                      </a>
+                    
+                  </li>
+                  <li class="has-subnav">
+                      <a href="#">
+                          <i class="fa fa-laptop fa-2x"></i>
+                          <span class="nav-text">
+                              Players
+                          </span>
+                      </a>
+                      
+                  </li>
+                  <li class="has-subnav">
+                      <a href="#">
+                         <i class="fa fa-list fa-2x"></i>
+                          <span class="nav-text">
+                              Data
+                          </span>
+                      </a>
+                      
+                  </li>
+                  <li class="has-subnav">
+                      <a href="#">
+                         <i class="fa fa-folder-open fa-2x"></i>
+                          <span class="nav-text">
+                              Settings
+                          </span>
+                      </a>
+                  </li>  
+              </ul>
+          </nav>
+  
+    </body>
+      </html>

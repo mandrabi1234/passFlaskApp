@@ -1,0 +1,2893 @@
+/* Dashboard (hifi) */
+
+position: relative;
+width: 1152px;
+height: 705px;
+overflow-y: scroll;
+
+background: #E6ECF0;
+
+
+/* Vector 3 */
+
+position: absolute;
+width: 883px;
+height: 794px;
+left: 325px;
+top: -84px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Vector 4 */
+
+position: absolute;
+width: 883px;
+height: 794px;
+left: 280px;
+top: -63.76px;
+
+background: rgba(255, 255, 255, 0.2);
+transform: rotate(-4.43deg);
+
+
+/* Vector 5 */
+
+position: absolute;
+width: 883px;
+height: 794px;
+left: 325px;
+top: -84px;
+
+background: rgba(255, 255, 255, 0.4);
+
+
+/* Vector 6 */
+
+position: absolute;
+width: 883px;
+height: 794px;
+left: 280px;
+top: -63.76px;
+
+background: rgba(255, 255, 255, 0.2);
+transform: rotate(-4.43deg);
+
+
+/* Rectangle 118 */
+
+position: absolute;
+width: 349px;
+height: 434px;
+left: 106px;
+top: 356px;
+
+background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+border-radius: 10px;
+
+
+/* Dashboard */
+
+position: absolute;
+width: 175px;
+height: 43px;
+left: 106px;
+top: 64px;
+
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 43px;
+
+color: #000000;
+
+
+
+/* Scoreboard Block */
+
+position: absolute;
+width: 709.35px;
+height: 170px;
+left: 106px;
+top: 176px;
+
+
+
+/* Rectangle 103 */
+
+position: absolute;
+width: 692.72px;
+height: 170px;
+left: 106px;
+top: 176px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* image 2 */
+
+position: absolute;
+width: 86.72px;
+height: 78px;
+left: 643.65px;
+top: 221px;
+
+background: url(image.png);
+
+
+/* image 3 */
+
+position: absolute;
+width: 84px;
+height: 85px;
+left: 178px;
+top: 213px;
+
+background: url(image.png);
+
+
+/* 3 */
+
+position: absolute;
+width: 34.97px;
+height: 44.55px;
+left: 310.82px;
+top: 245.09px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 49px;
+
+color: #000000;
+
+
+
+/* Scoreboard */
+
+position: absolute;
+width: 142.87px;
+height: 17px;
+left: 119.26px;
+top: 187px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* - */
+
+position: absolute;
+width: 19.98px;
+height: 44.55px;
+left: 452.36px;
+top: 245.09px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 49px;
+
+color: #000000;
+
+
+
+/* 1 */
+
+position: absolute;
+width: 34.97px;
+height: 44.55px;
+left: 580.58px;
+top: 245.09px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 49px;
+
+color: #000000;
+
+
+
+/* Occidental College */
+
+position: absolute;
+width: 195.99px;
+height: 15px;
+left: 170px;
+top: 300px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: rgba(0, 0, 0, 0.57);
+
+
+
+/* Pomona College */
+
+position: absolute;
+width: 170.35px;
+height: 14px;
+left: 645px;
+top: 302px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: rgba(0, 0, 0, 0.57);
+
+
+
+/* redo-2 1 */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 1073px;
+top: 62px;
+
+background: url(redo-2.png);
+
+
+/* Updated 5/13/2020 9:37:55 AM */
+
+position: absolute;
+width: 176px;
+height: 16px;
+left: 879px;
+top: 63px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: rgba(0, 0, 0, 0.67);
+
+
+
+/* image 5 */
+
+position: absolute;
+width: 50px;
+height: 49px;
+left: 4px;
+top: 39px;
+
+background: url(image.png);
+
+
+/* Shots on Target */
+
+position: absolute;
+width: 162.34px;
+height: 152px;
+left: 120px;
+top: 431px;
+
+
+
+/* Rectangle 129 */
+
+position: absolute;
+width: 162.34px;
+height: 152px;
+left: 120px;
+top: 431px;
+
+border-radius: 10px;
+
+
+/* 5 */
+
+position: absolute;
+width: 24.4px;
+height: 55.84px;
+left: 185.78px;
+top: 479.6px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 54px;
+
+color: #000000;
+
+
+
+/* 10 */
+
+position: absolute;
+width: 18.04px;
+height: 19.65px;
+left: 210.19px;
+top: 515.79px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #8F8F8F;
+
+
+
+/* / */
+
+position: absolute;
+width: 6.37px;
+height: 19.65px;
+left: 205.94px;
+top: 510.62px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #8F8F8F;
+
+
+
+/* Progress */
+
+position: absolute;
+width: 85.94px;
+height: 87.89px;
+left: 159.26px;
+top: 466.16px;
+
+
+
+/* Ellipse 9 */
+
+position: absolute;
+width: 85.94px;
+height: 87.89px;
+left: 159.26px;
+top: 466.16px;
+
+border: 7px solid #C4C4C4;
+box-sizing: border-box;
+
+
+/* Vector 2 */
+
+position: absolute;
+width: 45.69px;
+height: 56.57px;
+left: 162.91px;
+top: 469.56px;
+
+border: 9px solid #00C820;
+
+
+/* Shots on Target */
+
+position: absolute;
+width: 88px;
+height: 16px;
+left: 121px;
+top: 410px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Goals Expected */
+
+position: absolute;
+width: 86px;
+height: 16px;
+left: 124px;
+top: 604px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* CR Tag */
+
+position: absolute;
+width: 80px;
+height: 23px;
+left: 124px;
+top: 556px;
+
+
+
+/* Rectangle 132 */
+
+position: absolute;
+width: 65.01px;
+height: 23px;
+left: 124px;
+top: 556px;
+
+background: #D2D2D2;
+border-radius: 10px;
+
+
+/* CR: 0.25 */
+
+position: absolute;
+width: 75.68px;
+height: 17.43px;
+left: 128.32px;
+top: 558px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+
+color: #8A8A8A;
+
+
+
+/* Home Tag */
+
+position: absolute;
+width: 88px;
+height: 23px;
+left: 155px;
+top: 436px;
+
+
+
+/* Rectangle 130 */
+
+position: absolute;
+width: 88px;
+height: 23px;
+left: 155px;
+top: 436px;
+
+background: #E2F4FF;
+border-radius: 10px;
+
+
+/* Home */
+
+position: absolute;
+width: 50px;
+height: 23px;
+left: 170px;
+top: 436px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 23px;
+
+color: #27B0FF;
+
+
+
+/* CQ Tag */
+
+position: absolute;
+width: 67px;
+height: 24px;
+left: 210px;
+top: 555px;
+
+
+
+/* Rectangle 133 */
+
+position: absolute;
+width: 67px;
+height: 24px;
+left: 210px;
+top: 555px;
+
+background: rgba(210, 210, 210, 0.76);
+border-radius: 10px;
+
+
+/* CQ: 0.75 */
+
+position: absolute;
+width: 56.78px;
+height: 19px;
+left: 214.14px;
+top: 558px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #8A8A8A;
+
+
+
+/* Goals Expected HOME */
+
+position: absolute;
+width: 156px;
+height: 147px;
+left: 121px;
+top: 628px;
+
+
+
+/* Expected Goals */
+
+position: absolute;
+width: 156px;
+height: 147px;
+left: 121px;
+top: 628px;
+
+
+
+/* Rectangle 129 */
+
+position: absolute;
+width: 156px;
+height: 147px;
+left: 121px;
+top: 628px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* 5 */
+
+position: absolute;
+width: 23.45px;
+height: 54px;
+left: 184.22px;
+top: 675px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 54px;
+
+color: #000000;
+
+
+
+/* 10 */
+
+position: absolute;
+width: 17.33px;
+height: 19px;
+left: 207.67px;
+top: 710px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #8F8F8F;
+
+
+
+/* / */
+
+position: absolute;
+width: 6.12px;
+height: 19px;
+left: 203.59px;
+top: 705px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #8F8F8F;
+
+
+
+/* Progress */
+
+position: absolute;
+width: 82.59px;
+height: 85px;
+left: 158.73px;
+top: 662px;
+
+
+
+/* Ellipse 9 */
+
+position: absolute;
+width: 82.59px;
+height: 85px;
+left: 158.73px;
+top: 662px;
+
+border: 7px solid #C4C4C4;
+box-sizing: border-box;
+
+
+/* Vector 2 */
+
+position: absolute;
+width: 43.9px;
+height: 54.71px;
+left: 162.23px;
+top: 665.29px;
+
+border: 9px solid #00C820;
+
+
+/* CR Tag */
+
+position: absolute;
+width: 80px;
+height: 23px;
+left: 127px;
+top: 747px;
+
+
+
+/* Rectangle 132 */
+
+position: absolute;
+width: 65.01px;
+height: 23px;
+left: 127px;
+top: 747px;
+
+background: #D2D2D2;
+border-radius: 10px;
+
+
+/* CR: 0.25 */
+
+position: absolute;
+width: 75.68px;
+height: 17.43px;
+left: 131.32px;
+top: 749px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+
+color: #8A8A8A;
+
+
+
+/* CQ Tag */
+
+position: absolute;
+width: 67px;
+height: 24px;
+left: 202px;
+top: 747px;
+
+
+
+/* Rectangle 133 */
+
+position: absolute;
+width: 67px;
+height: 24px;
+left: 202px;
+top: 747px;
+
+background: rgba(210, 210, 210, 0.76);
+border-radius: 10px;
+
+
+/* CQ: 0.75 */
+
+position: absolute;
+width: 56.78px;
+height: 19px;
+left: 206.14px;
+top: 750px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #8A8A8A;
+
+
+
+/* Shots on Target */
+
+position: absolute;
+width: 157px;
+height: 147px;
+left: 290px;
+top: 431px;
+
+
+
+/* Rectangle 129 */
+
+position: absolute;
+width: 157px;
+height: 147px;
+left: 290px;
+top: 431px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* 5 */
+
+position: absolute;
+width: 23.6px;
+height: 54px;
+left: 353.62px;
+top: 478px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 54px;
+
+color: #000000;
+
+
+
+/* 10 */
+
+position: absolute;
+width: 17.44px;
+height: 19px;
+left: 377.22px;
+top: 513px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #8F8F8F;
+
+
+
+/* / */
+
+position: absolute;
+width: 6.16px;
+height: 19px;
+left: 373.12px;
+top: 508px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #8F8F8F;
+
+
+
+/* Progress */
+
+position: absolute;
+width: 83.12px;
+height: 85px;
+left: 327.97px;
+top: 465px;
+
+
+
+/* Ellipse 9 */
+
+position: absolute;
+width: 83.12px;
+height: 85px;
+left: 327.97px;
+top: 465px;
+
+border: 7px solid #C4C4C4;
+box-sizing: border-box;
+
+
+/* Vector 2 */
+
+position: absolute;
+width: 44.19px;
+height: 54.71px;
+left: 331.5px;
+top: 468.29px;
+
+border: 9px solid #00C820;
+
+
+/* CR Tag */
+
+position: absolute;
+width: 80px;
+height: 23px;
+left: 299px;
+top: 552px;
+
+
+
+/* Rectangle 132 */
+
+position: absolute;
+width: 65.01px;
+height: 23px;
+left: 299px;
+top: 552px;
+
+background: #D2D2D2;
+border-radius: 10px;
+
+
+/* CR: 0.25 */
+
+position: absolute;
+width: 75.68px;
+height: 17.43px;
+left: 303.32px;
+top: 554px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+
+color: #8A8A8A;
+
+
+
+/* CQ Tag */
+
+position: absolute;
+width: 67px;
+height: 24px;
+left: 373px;
+top: 552px;
+
+
+
+/* Rectangle 133 */
+
+position: absolute;
+width: 67px;
+height: 24px;
+left: 373px;
+top: 552px;
+
+background: rgba(210, 210, 210, 0.76);
+border-radius: 10px;
+
+
+/* CQ: 0.75 */
+
+position: absolute;
+width: 56.78px;
+height: 19px;
+left: 377.14px;
+top: 555px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #8A8A8A;
+
+
+
+/* Goals Expected HOME */
+
+position: absolute;
+width: 156px;
+height: 147px;
+left: 287px;
+top: 628px;
+
+
+
+/* Expected Goals */
+
+position: absolute;
+width: 156px;
+height: 147px;
+left: 287px;
+top: 628px;
+
+
+
+/* Rectangle 129 */
+
+position: absolute;
+width: 156px;
+height: 147px;
+left: 287px;
+top: 628px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* 5 */
+
+position: absolute;
+width: 23.45px;
+height: 54px;
+left: 350.22px;
+top: 675px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 54px;
+
+color: #000000;
+
+
+
+/* 10 */
+
+position: absolute;
+width: 17.33px;
+height: 19px;
+left: 373.67px;
+top: 710px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #8F8F8F;
+
+
+
+/* / */
+
+position: absolute;
+width: 6.12px;
+height: 19px;
+left: 369.59px;
+top: 705px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #8F8F8F;
+
+
+
+/* Progress */
+
+position: absolute;
+width: 82.59px;
+height: 85px;
+left: 324.73px;
+top: 662px;
+
+
+
+/* Ellipse 9 */
+
+position: absolute;
+width: 82.59px;
+height: 85px;
+left: 324.73px;
+top: 662px;
+
+border: 7px solid #C4C4C4;
+box-sizing: border-box;
+
+
+/* Vector 2 */
+
+position: absolute;
+width: 43.9px;
+height: 54.71px;
+left: 328.23px;
+top: 665.29px;
+
+border: 9px solid #00C820;
+
+
+/* CR Tag */
+
+position: absolute;
+width: 80px;
+height: 23px;
+left: 293px;
+top: 747px;
+
+
+
+/* Rectangle 132 */
+
+position: absolute;
+width: 65.01px;
+height: 23px;
+left: 293px;
+top: 747px;
+
+background: #D2D2D2;
+border-radius: 10px;
+
+
+/* CR: 0.25 */
+
+position: absolute;
+width: 75.68px;
+height: 17.43px;
+left: 297.32px;
+top: 749px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+
+color: #8A8A8A;
+
+
+
+/* CQ Tag */
+
+position: absolute;
+width: 67px;
+height: 24px;
+left: 368px;
+top: 747px;
+
+
+
+/* Rectangle 133 */
+
+position: absolute;
+width: 67px;
+height: 24px;
+left: 368px;
+top: 747px;
+
+background: rgba(210, 210, 210, 0.76);
+border-radius: 10px;
+
+
+/* CQ: 0.75 */
+
+position: absolute;
+width: 56.78px;
+height: 19px;
+left: 372.14px;
+top: 750px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #8A8A8A;
+
+
+
+/* PlayerPerformance:Live */
+
+position: absolute;
+width: 336px;
+height: 354px;
+left: 465px;
+top: 356px;
+
+
+
+/* Rectangle 117 */
+
+position: absolute;
+width: 336px;
+height: 354px;
+left: 465px;
+top: 356px;
+
+background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+border-radius: 10px;
+
+
+/* Group 54 */
+
+position: absolute;
+width: 295.69px;
+height: 47.33px;
+left: 485.75px;
+top: 452.72px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 295.69px;
+height: 47.33px;
+left: 485.75px;
+top: 452.72px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Spencer Shearer */
+
+position: absolute;
+width: 92px;
+height: 16.05px;
+left: 538px;
+top: 469.28px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* #03 */
+
+position: absolute;
+width: 27px;
+height: 16.05px;
+left: 641px;
+top: 469.28px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* Midfield */
+
+position: absolute;
+width: 57.56px;
+height: 16.35px;
+left: 705.98px;
+top: 469.07px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* Group 55 */
+
+position: absolute;
+width: 295.69px;
+height: 47.33px;
+left: 485.75px;
+top: 513.81px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 295.69px;
+height: 47.33px;
+left: 485.75px;
+top: 513.81px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Ryan Wilson */
+
+position: absolute;
+width: 93px;
+height: 16.05px;
+left: 538px;
+top: 530.46px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* #04 */
+
+position: absolute;
+width: 27px;
+height: 16.05px;
+left: 641px;
+top: 530.46px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* Midfield */
+
+position: absolute;
+width: 57.56px;
+height: 16.35px;
+left: 705.98px;
+top: 530.16px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* Group 56 */
+
+position: absolute;
+width: 295.69px;
+height: 47.33px;
+left: 485.07px;
+top: 574.91px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 295.69px;
+height: 47.33px;
+left: 485.07px;
+top: 574.91px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* David Paine */
+
+position: absolute;
+width: 83.01px;
+height: 16.35px;
+left: 537.21px;
+top: 591.26px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* #05 */
+
+position: absolute;
+width: 30px;
+height: 16.05px;
+left: 641px;
+top: 591.64px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* Defense */
+
+position: absolute;
+width: 57.56px;
+height: 16.35px;
+left: 705.29px;
+top: 591.26px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* Group 57 */
+
+position: absolute;
+width: 295.69px;
+height: 47.33px;
+left: 485.07px;
+top: 636px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 295.69px;
+height: 47.33px;
+left: 485.07px;
+top: 636px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Teagan Jarvis */
+
+position: absolute;
+width: 94px;
+height: 16.05px;
+left: 537px;
+top: 652.83px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* #06 */
+
+position: absolute;
+width: 27px;
+height: 16.05px;
+left: 641px;
+top: 652.83px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* Forward */
+
+position: absolute;
+width: 57.56px;
+height: 16.35px;
+left: 705.29px;
+top: 652.35px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* Group 58 */
+
+position: absolute;
+width: 42.15px;
+height: 38.85px;
+left: 485px;
+top: 402.33px;
+
+
+
+/* Group 25 */
+
+position: absolute;
+width: 42.15px;
+height: 38.85px;
+left: 485px;
+top: 402.33px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 42.1%;
+right: 54.24%;
+top: 57.07%;
+bottom: 37.42%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 46.98px;
+height: 47.31px;
+left: 482.37px;
+top: 460.28px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 59 */
+
+position: absolute;
+width: 43.15px;
+height: 38.18px;
+left: 484px;
+top: 452.97px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 42.01%;
+right: 54.24%;
+top: 64.25%;
+bottom: 30.33%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 48.09px;
+height: 46.5px;
+left: 481.3px;
+top: 518.49px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 60 */
+
+position: absolute;
+width: 42.17px;
+height: 39.01px;
+left: 485px;
+top: 500.98px;
+
+
+
+/* Group 27 */
+
+position: absolute;
+width: 42.17px;
+height: 39.01px;
+left: 485px;
+top: 500.98px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 42.1%;
+right: 54.24%;
+top: 71.06%;
+bottom: 23.41%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 47px;
+height: 47.51px;
+left: 482.36px;
+top: 573.61px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 61 */
+
+position: absolute;
+width: 45.17px;
+height: 40.96px;
+left: 482px;
+top: 556.85px;
+
+
+
+/* Group 27 */
+
+position: absolute;
+width: 45.17px;
+height: 40.96px;
+left: 482px;
+top: 556.85px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 41.84%;
+right: 54.24%;
+top: 78.99%;
+bottom: 15.2%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 50.34px;
+height: 49.88px;
+left: 479.74px;
+top: 638.67px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Rectangle 89 */
+
+position: absolute;
+width: 184px;
+height: 23.07px;
+left: 608px;
+top: 403px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.14);
+box-sizing: border-box;
+border-radius: 10px;
+
+
+/* Expected Goals */
+
+position: absolute;
+width: 158.43px;
+height: 13.77px;
+left: 620px;
+top: 405px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #838383;
+
+
+
+/* Filter by Performance: */
+
+position: absolute;
+width: 166px;
+height: 14px;
+left: 478px;
+top: 405px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #838383;
+
+
+
+/* Arrow 10 */
+
+position: absolute;
+width: 1px;
+height: 0px;
+left: 774px;
+top: 417px;
+
+border: 1.5px solid #898989;
+box-sizing: border-box;
+transform: rotate(90deg);
+
+
+/* Arrow 12 */
+
+position: absolute;
+width: 17.3px;
+height: 0px;
+left: 773.33px;
+top: 546.93px;
+
+transform: matrix(0.36, -1.05, 0.77, 0.5, 0, 0);
+
+
+/* Arrow 15 */
+
+position: absolute;
+width: 17.51px;
+height: 0px;
+left: 773.73px;
+top: 484.96px;
+
+transform: matrix(0.3, -1.04, 0.82, 0.44, 0, 0);
+
+
+/* Arrow 13 */
+
+position: absolute;
+width: 15.82px;
+height: 0px;
+left: 773.7px;
+top: 595.96px;
+
+border: 1.5px solid #D70000;
+box-sizing: border-box;
+transform: rotate(62.53deg);
+
+
+/* Arrow 16 */
+
+position: absolute;
+width: 15.82px;
+height: 0px;
+left: 776px;
+top: 657px;
+
+border: 1.5px solid #D70000;
+box-sizing: border-box;
+transform: rotate(62.53deg);
+
+
+/* Player Performance */
+
+position: absolute;
+width: 140.04px;
+height: 17px;
+left: 479px;
+top: 370px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* PlayerPerformance:Live */
+
+position: absolute;
+width: 340px;
+height: 354px;
+left: 465px;
+top: 356px;
+
+
+
+/* Rectangle 117 */
+
+position: absolute;
+width: 340px;
+height: 354px;
+left: 465px;
+top: 356px;
+
+background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+border-radius: 10px;
+
+
+/* Group 54 */
+
+position: absolute;
+width: 311px;
+height: 43px;
+left: 479px;
+top: 440px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 311px;
+height: 43px;
+left: 479px;
+top: 440px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Spencer Shearer */
+
+position: absolute;
+width: 118px;
+height: 14.54px;
+left: 552px;
+top: 456px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* #03 */
+
+position: absolute;
+width: 28.4px;
+height: 14.58px;
+left: 670px;
+top: 454px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Midfield */
+
+position: absolute;
+width: 60.55px;
+height: 14.85px;
+left: 713px;
+top: 454px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Group 55 */
+
+position: absolute;
+width: 311px;
+height: 43px;
+left: 481px;
+top: 496px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 311px;
+height: 43px;
+left: 481px;
+top: 496px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Ryan Wilson */
+
+position: absolute;
+width: 97.82px;
+height: 14.58px;
+left: 552px;
+top: 508px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* #04 */
+
+position: absolute;
+width: 28.4px;
+height: 14.58px;
+left: 670px;
+top: 507px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Midfield */
+
+position: absolute;
+width: 60.55px;
+height: 14.85px;
+left: 713px;
+top: 509px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Group 56 */
+
+position: absolute;
+width: 311px;
+height: 43px;
+left: 484px;
+top: 547px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 311px;
+height: 43px;
+left: 484px;
+top: 547px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* David Paine */
+
+position: absolute;
+width: 87.31px;
+height: 16.74px;
+left: 553px;
+top: 557px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* #05 */
+
+position: absolute;
+width: 31.55px;
+height: 16.43px;
+left: 671px;
+top: 561px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Defense */
+
+position: absolute;
+width: 60.55px;
+height: 16.74px;
+left: 714px;
+top: 562px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Group 57 */
+
+position: absolute;
+width: 311px;
+height: 43px;
+left: 480px;
+top: 602px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 311px;
+height: 43px;
+left: 480px;
+top: 602px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Teagan Jarvis */
+
+position: absolute;
+width: 84px;
+height: 15px;
+left: 554px;
+top: 614px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* #06 */
+
+position: absolute;
+width: 27.35px;
+height: 14.68px;
+left: 673px;
+top: 615px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Forward */
+
+position: absolute;
+width: 58.31px;
+height: 14.96px;
+left: 714px;
+top: 614px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Group 63 */
+
+position: absolute;
+width: 311px;
+height: 43px;
+left: 482px;
+top: 658px;
+
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 311px;
+height: 43px;
+left: 482px;
+top: 658px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Ty Brown */
+
+position: absolute;
+width: 84px;
+height: 15px;
+left: 556px;
+top: 670px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* #10 */
+
+position: absolute;
+width: 27.35px;
+height: 14.68px;
+left: 675px;
+top: 671px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Defense */
+
+position: absolute;
+width: 58.31px;
+height: 14.96px;
+left: 716px;
+top: 670px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+/* Group 58 */
+
+position: absolute;
+width: 42px;
+height: 41.05px;
+left: 492px;
+top: 444px;
+
+
+
+/* Group 25 */
+
+position: absolute;
+width: 42px;
+height: 41.05px;
+left: 492px;
+top: 444px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 42.71%;
+right: 53.65%;
+top: 62.98%;
+bottom: 31.2%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 46.81px;
+height: 49.99px;
+left: 490.01px;
+top: 438.72px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 59 */
+
+position: absolute;
+width: 40px;
+height: 38.94px;
+left: 492px;
+top: 496px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 42.71%;
+right: 53.82%;
+top: 70.35%;
+bottom: 24.12%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 44.58px;
+height: 47.42px;
+left: 489.22px;
+top: 490.9px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 60 */
+
+position: absolute;
+width: 41px;
+height: 39.86px;
+left: 492px;
+top: 548px;
+
+
+
+/* Group 27 */
+
+position: absolute;
+width: 41px;
+height: 39.86px;
+left: 492px;
+top: 548px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 42.71%;
+right: 53.73%;
+top: 77.73%;
+bottom: 16.61%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 45.7px;
+height: 48.55px;
+left: 490.06px;
+top: 542.89px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 62 */
+
+position: absolute;
+width: 41px;
+height: 39.86px;
+left: 491px;
+top: 658px;
+
+
+
+/* Group 27 */
+
+position: absolute;
+width: 41px;
+height: 39.86px;
+left: 491px;
+top: 658px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 42.62%;
+right: 53.82%;
+top: 93.33%;
+bottom: 1.01%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 45.7px;
+height: 48.55px;
+left: 489.06px;
+top: 652.89px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Group 61 */
+
+position: absolute;
+width: 41px;
+height: 39.97px;
+left: 492px;
+top: 603px;
+
+
+
+/* Group 27 */
+
+position: absolute;
+width: 41px;
+height: 39.97px;
+left: 492px;
+top: 603px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+left: 42.71%;
+right: 53.73%;
+top: 85.53%;
+bottom: 8.8%;
+
+background: #FFFFFF;
+
+
+/* Screen Shot 2021-04-08 at 1.04 1 */
+
+position: absolute;
+width: 45.7px;
+height: 48.68px;
+left: 490.18px;
+top: 598.12px;
+
+background: url(Screen Shot 2021-04-08 at 1.04.png);
+
+
+/* Rectangle 89 */
+
+position: absolute;
+width: 184px;
+height: 23.07px;
+left: 608px;
+top: 403px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.14);
+box-sizing: border-box;
+border-radius: 10px;
+
+
+/* Expected Goals */
+
+position: absolute;
+width: 158.43px;
+height: 13.77px;
+left: 620px;
+top: 405px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #838383;
+
+
+
+/* Filter by Performance: */
+
+position: absolute;
+width: 166px;
+height: 14px;
+left: 478px;
+top: 405px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+
+color: #838383;
+
+
+
+/* Arrow 10 */
+
+position: absolute;
+width: 1px;
+height: 0px;
+left: 774px;
+top: 417px;
+
+border: 1.5px solid #898989;
+box-sizing: border-box;
+transform: rotate(90deg);
+
+
+/* Arrow 12 */
+
+position: absolute;
+width: 17.3px;
+height: 0px;
+left: 777px;
+top: 525.35px;
+
+transform: matrix(0.36, -1.05, 0.77, 0.5, 0, 0);
+
+
+/* Arrow 15 */
+
+position: absolute;
+width: 17.51px;
+height: 0px;
+left: 780px;
+top: 471.83px;
+
+transform: matrix(0.3, -1.04, 0.82, 0.44, 0, 0);
+
+
+/* Arrow 13 */
+
+position: absolute;
+width: 15.82px;
+height: 0px;
+left: 777px;
+top: 567px;
+
+border: 1.5px solid #D70000;
+box-sizing: border-box;
+transform: rotate(62.53deg);
+
+
+/* Arrow 16 */
+
+position: absolute;
+width: 15.82px;
+height: 0px;
+left: 776px;
+top: 620px;
+
+border: 1.5px solid #D70000;
+box-sizing: border-box;
+transform: rotate(62.53deg);
+
+
+/* Arrow 17 */
+
+position: absolute;
+width: 15.82px;
+height: 0px;
+left: 776px;
+top: 671px;
+
+border: 1.5px solid #D70000;
+box-sizing: border-box;
+transform: rotate(62.53deg);
+
+
+/* Player Performance */
+
+position: absolute;
+width: 140.04px;
+height: 17px;
+left: 479px;
+top: 370px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* Opponent Tag */
+
+position: absolute;
+width: 188px;
+height: 23px;
+left: 307px;
+top: 633px;
+
+
+
+/* Rectangle 131 */
+
+position: absolute;
+width: 113px;
+height: 23px;
+left: 307px;
+top: 633px;
+
+background: #FFF0D2;
+border-radius: 10px;
+
+
+/* Opponent */
+
+position: absolute;
+width: 173px;
+height: 16.03px;
+left: 322px;
+top: 633px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 23px;
+
+color: #ECA720;
+
+
+
+/* Opponent Tag */
+
+position: absolute;
+width: 188px;
+height: 23px;
+left: 311px;
+top: 436px;
+
+
+
+/* Rectangle 131 */
+
+position: absolute;
+width: 113px;
+height: 23px;
+left: 311px;
+top: 436px;
+
+background: #FFF0D2;
+border-radius: 10px;
+
+
+/* Opponent */
+
+position: absolute;
+width: 173px;
+height: 16.03px;
+left: 326px;
+top: 436px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 23px;
+
+color: #ECA720;
+
+
+
+/* Home Tag */
+
+position: absolute;
+width: 88px;
+height: 23px;
+left: 149px;
+top: 633px;
+
+
+
+/* Rectangle 130 */
+
+position: absolute;
+width: 88px;
+height: 23px;
+left: 149px;
+top: 633px;
+
+background: #E2F4FF;
+border-radius: 10px;
+
+
+/* Home */
+
+position: absolute;
+width: 50px;
+height: 23px;
+left: 164px;
+top: 633px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 23px;
+
+color: #27B0FF;
+
+
+
+/* Field Map */
+
+position: absolute;
+width: 291px;
+height: 557px;
+left: 811px;
+top: 178px;
+
+
+
+/* Rectangle 112 */
+
+position: absolute;
+width: 291px;
+height: 557px;
+left: 811px;
+top: 178px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+/* Rectangle 13 */
+
+position: absolute;
+width: 273.46px;
+height: 499.75px;
+left: 818.97px;
+top: 221px;
+
+border: 3px solid #000000;
+box-sizing: border-box;
+
+
+/* Rectangle 11 */
+
+position: absolute;
+width: 171.54px;
+height: 68.19px;
+left: 872.01px;
+top: 221px;
+
+border: 3px solid #000000;
+box-sizing: border-box;
+
+
+/* Rectangle 14 */
+
+position: absolute;
+width: 172.37px;
+height: 67.35px;
+left: 869.52px;
+top: 653.39px;
+
+border: 3px solid #000000;
+box-sizing: border-box;
+
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 58.01px;
+height: 20.79px;
+left: 927.53px;
+top: 241.79px;
+
+border: 3px solid #000000;
+box-sizing: border-box;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Rectangle 15 */
+
+position: absolute;
+width: 60.49px;
+height: 22.45px;
+left: 924.21px;
+top: 720.75px;
+
+border: 3px solid #000000;
+box-sizing: border-box;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Ellipse 3 */
+
+position: absolute;
+width: 62.98px;
+height: 61.53px;
+left: 925.87px;
+top: 428.05px;
+
+border: 3px solid #000000;
+box-sizing: border-box;
+
+
+/* Line 1 */
+
+position: absolute;
+width: 271.81px;
+height: 0px;
+left: 820.63px;
+top: 458.82px;
+
+border: 3px solid #000000;
+
+
+/* Field Map */
+
+position: absolute;
+width: 139.56px;
+height: 17px;
+left: 816.98px;
+top: 188px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* Left Sidebar */
+
+position: absolute;
+width: 58px;
+height: 705px;
+left: 0px;
+top: 0px;
+
+
+
+/* Rectangle 85 */
+
+position: absolute;
+width: 58px;
+height: 705px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+
+
+/* Settings Icon */
+
+position: absolute;
+width: 33px;
+height: 33px;
+left: 13px;
+top: 646px;
+
+background: url(settings.png);
+
+
+/* image 5 */
+
+position: absolute;
+width: 50px;
+height: 49px;
+left: 4px;
+top: 14px;
+
+background: url(image.png);
+
+
+/* Team Icon */
+
+position: absolute;
+width: 32.55px;
+height: 30px;
+left: 13px;
+top: 140px;
+
+background: url(thick black team logo.png);
+
+
+/* Dashboard Icon */
+
+position: absolute;
+width: 25px;
+height: 26px;
+left: 17px;
+top: 100px;
+
+background: url(home.png);
+
+
+/* rounded pie icon vector 1 */
+
+position: absolute;
+width: 29.03px;
+height: 30px;
+left: 15px;
+top: 177px;
+
+background: url(rounded pie icon vector.png);
+
+
+/* Rectangle 17 */
+
+position: absolute;
+width: 50px;
+height: 40px;
+left: 4px;
+top: 93px;
+
+background: rgba(39, 176, 255, 0.1);
+border-radius: 10px;
+
+
+/* Rectangle 89 */
+
+position: absolute;
+width: 5px;
+height: 40px;
+left: 4px;
+top: 93px;
+
+background: #27B0FF;
+border-radius: 10px;
+
+
+/* Hamburger Collapsed */
+
+position: absolute;
+width: 19px;
+height: 12px;
+
+
+
+/* Line 28 */
+
+position: absolute;
+width: 19px;
+height: 0px;
+
+border: 3px solid #8F8F8F;
+
+
+/* Line 30 */
+
+position: absolute;
+width: 19px;
+height: 0px;
+
+border: 3px solid #8F8F8F;
+
+
+/* Line 29 */
+
+position: absolute;
+width: 19px;
+height: 0px;
+
+border: 3px solid #8F8F8F;
+
+
+/* Expected Analytics */
+
+position: absolute;
+width: 140.04px;
+height: 17px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+

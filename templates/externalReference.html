@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>External References</title>
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel = "stylesheet" href = "../static/testerstyle.css">
+<link rel = "stylesheet" href = "../static/Menu.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+
+
+    .Sitelink{
+        color: #f2f2f2;
+
+    }
+    .Sitelink:hover{
+        text-decoration: underline;
+    }
+    .columns{
+        float: left;
+        text-align: center;
+        width: 50%;
+        height: auto;
+    }
+    @media screen and (max-width: 650px) {
+  .columns {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+    .Sitelink{
+        text-decoration: underline;
+
+    }
+    }
+</style>
+</head>
+<body id = "body" style="background-image: url('../static/home_background3.jpg'); color: #333; font-family: Arial, Helvetica, sans-serif;">
+
+
+
+<div class="navbar">
+
+<div style = "margin-left: 10px; margin-top: 20px; margin-bottom: 20px; cursor: pointer;" onClick = "window.location.href = '/';">
+    <h1 style = "margin-bottom: 5px; color: #f2f2f2; text-shadow: 0.3px 0.3px #333;"> Oxy Analytics</h1>
+    <p style = "color: #f2f2f2; text-shadow: 0.3px 0.3px #333; margin-top: auto;"><b>Occidental College's student-run sports analysis service</b></p>
+</div>
+
+  <a href="/">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Analytics 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>Analytics Menu</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3 class = "menuSection" onClick = "window.location.href = '../analysis-season/playerSelection';" style = "color: #333;">Data Selection</a></h3>
+          <a href = "../analysis-season"> Team </a>
+          <a href = "../analysis-home/playerSelection">Player Selection</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection" style = "color: #333;" onClick = "window.location.href = '../analysis-home';">Analysis Selection</h3>
+          <a href="../analysis-season">Seasonal Analysis</a>
+          <a href="../analysis-game">per Game Analysis</a>
+          <a href="../analysis-season/teamVisuals">Visual Analysis</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection" style = "color: #333;">Reference Material</h3>
+          <a href="../analysis-home">Analytics Explained</a>
+          <a href="../analysis-home/metric_index">Performance Metric Index</a>
+          <a href="../externalReference">External Resources</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <a href="../about">About</a>
+</div>
+
+
+<h1 id = "oxy_title" align = "center" style=" color: #f2f2f2; text-decoration: underline; margin: 20px 0px 0px 0px">External Analytics Resources</h1>
+
+<div style = "width: 100%;">
+  <div class = "columns">
+      <h2 style = "color: #f2f2f2; text-decoration: underline;">Videos</h2>
+      <h3 onClick = "window.location.href = 'https://www.youtube.com/watch?v=5meVpsaupO4';"class = "Sitelink" >Expected Goals Explanation - Euro Football Daily</h3>
+      <iframe width="auto" height="auto" style = "border-radius: 4px;"src="https://www.youtube.com/embed/5meVpsaupO4" frameborder="0"></iframe>
+      <h3 onClick = "window.location.href = 'https://www.youtube.com/embed/w7zPZsLGK18?feature=oembed';"class = "Sitelink" >Expected Goals Explained - Opta Sports</h3>
+      <iframe width="auto" height="auto" style = "border-radius: 4px;"src="https://www.youtube.com/embed/w7zPZsLGK18?feature=oembed" frameborder="0"></iframe>
+    </div>
+
+
+  <div class = "columns">
+    <h2 style = "color: #f2f2f2; text-decoration: underline;">Articles</h2>
+    <h3 onClick = "window.location.href = 'https://www.infogol.net/en/blog/education/an-introduction-to-expected-goals-11112016';" class = "Sitelink">Expected Goals Introduction - Infogol</a></h3>
+    <img onClick = "window.location.href = 'https://www.infogol.net/en/blog/education/an-introduction-to-expected-goals-11112016';"src = "../static/InfoGol.png" height = "210px" width = "400px" style = "cursor: pointer; margin-top: -40px;">
+    <h3 onClick = "window.location.href = 'https://www.pinnacle.com/en/betting-articles/Soccer/expected-goals-explained/B8Q2HGJ7XMJRZ58C';" class = "Sitelink">What is expected goals? - Pinnacle</a></h3>
+    <img onClick = "window.location.href = 'https://www.pinnacle.com/en/betting-articles/Soccer/expected-goals-explained/B8Q2HGJ7XMJRZ58C';" src = "../static/Pinnacle.png" height = "210px" width = "400px" style = "cursor: pointer; margin-top: -40px;">
+  </div>
+
+</div>
+
+</body>
+</html>

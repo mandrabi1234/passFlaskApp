@@ -1,0 +1,486 @@
+*{
+    box-sizing: border-box;
+}
+
+#body{
+    background-color: rgb(255,255,255);  
+    padding:0; 
+    font-family:'Source Sans Pro', sans-serif; font-size:1rem;
+    color:#333;
+    background:#fff;
+    -webkit-font-smoothing:antialiased;
+    -webkit-text-size-adjust:none 
+    
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  color: #f2f2f2;
+}
+
+.previous {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.next {
+  background-color: #ff751a;
+  color: white;
+}
+
+
+ul li a:hover span{
+  display: block;
+  padding-left: 30%;
+  background-color: #7e837c;
+  color: white;
+  z-index: 1;
+  width: 200px;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+  box-shadow: 0 0 1px 1px rgba(0,0,0,0.3);
+}
+
+
+.responsive{
+  width: auto;
+  height: auto;
+}
+
+img{
+ border-color: black;
+    
+}
+
+img:hover{
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+  border-color: black;
+  border: 2px solid;
+  transition: 0.3s;
+  width: 20%;
+  float: center;
+  background-color: rgb(255,117,26);
+  border-radius: 3px;
+}
+
+.card:hover {
+  box-shadow: 0 24px 24px 0 rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+     width: auto;
+     float: center;
+
+    
+  }
+  .table{
+    width: auto;
+  }
+}
+
+
+.container {
+  padding: 2px 16px;
+}
+
+  
+  #oxy_title{
+    font-size: 32px;
+    margin-top:  20px;
+  
+  }
+  
+  #seasonName{
+  	font-size: 20px;
+    margin-left: 10px;
+  }
+
+.vertical-menu {
+  width: auto;
+  height: 500px;
+  overflow-y: auto;
+  margin-top: 2px;
+  border-radius: 8px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  color: white;
+}
+
+ #shotperc{
+    margin-top: 5px;
+    border-radius: 8px;
+    }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menuSection{
+  text-decoration-color: black;
+}
+.menuSection:hover{
+text-decoration: underline;
+transition: 0.3s;
+
+
+}
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+ background-color:  #ddd;
+  color: black;}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background-color: rgb(255,117,26);
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.btnData {
+  background-color: #2196F3;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.dropdownData {
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdownData-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdownData-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownData-content a:hover {background-color: #ddd}
+
+.dropdownData:hover .dropdownData-content {
+  display: block;
+}
+
+.btnData:hover, .dropdownData:hover .btnData {
+  background-color: #0b7dda;
+}
+
+
+
+.featured-gallery .caption {
+        width:100%;
+        bottom: 0px;
+        position: absolute;
+        background-color: rgba(52,82,80,0.7);
+    }
+
+    .featured-gallery .thumbnail {
+        border: 0 none;
+        box-shadow: none;
+        margin:0 0 30px 0;
+        padding:0;
+    }
+
+    .featured-gallery .caption strong {
+        color: #fff;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 20px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 0px;
+  cursor: hand pointer;
+
+}
+
+.button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: hand pointer;
+}
+
+.button.active {
+  border-radius: 8px;
+}
+
+#q-graph{
+  margin-top: 15px;
+  margin-left: auto;
+  border: 1px solid black;
+border-collapse: collapse;
+width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.columnPerformance {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .columnPerformance {
+    width: 100%;
+    display: block;
+  }
+}
+
+.cardPerformance {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.containerPerformance {
+  padding: 0 16px;
+}
+
+.containerPerformance::after, .rowPerformance::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.buttonPerformance {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonPerformance:hover {
+  background-color: #555;
+}
+
+
+.grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    }
+  .grid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  }
+  .grid > article img {
+    max-width: 100%;
+  }
+  .text {
+    padding: 0 20px 20px;
+  }
+  .text > button {
+    background: gray;
+    border: 0;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    }
+    .text > button:hover{
+        box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+
+    }
+
+.player-link {
+    cursor: pointer;
+    color: #222;
+}
+
+#Mohicard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  background-color: rgb(255,117,26);
+  float: center;
+  
+  
+}
+
+
+.columnCharts {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+/* Float four columns side by side */
+.columnStats {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.rowStats {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.rowStats:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .columnStats {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .columnCharts {
+    width: auto;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+}
+
+@media screen and (min-width: 20px) {
+
+  .columnCharts {
+    width: auto;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+}
+/* Style the counter cards */
+.cardStats {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #ff751a;
+  color: white;
+  height: 502px;
+
+}

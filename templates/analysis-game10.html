@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+<link rel = "stylesheet" href = "../static/testerStyle.css">
+<link rel = "stylesheet" href = "../static/Menu.css">
+<link rel = "stylesheet" href = "../static/gameCard.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.columnPerformance {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .columnPerformance {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .columnStats{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+
+.cardPerformance {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ff751a;
+}
+
+.containerPerformance {
+  padding: 0 16px;
+}
+
+.containerPerformance::after, .rowPerformance::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.buttonPerformance {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonPerformance:hover {
+  background-color: #555;
+}
+
+  th, td {
+    font-size: 30px;
+    color: #333;
+    text-decoration-color: #333;
+  }
+
+  table{
+    width: 100%;
+    
+  }
+  .dropDatabtn {
+  background-color: #808080;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdownData {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownData-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdownData-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownData-content a:hover {background-color: #ddd;}
+
+.dropdownData:hover .dropdownData-content {}
+
+.dropdownData:hover .dropDatabtn {}
+
+.matchResult {
+      float: center;
+      width: 500px;
+      height: 100px;
+      padding: 0 5px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 150px;
+    }
+
+    .matchStats {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #ff751a;
+      color: white;
+      height: 200px;
+      width: auto;
+      border-radius: 4px;
+
+    }
+
+    .legend {
+        background: linear-gradient(90deg, rgba(63,86,106,1) 0%, rgba(58,152,208,1) 43%, rgba(166,202,236,1) 100%);
+        width: 300px;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 4px;
+    }
+</style>
+</head>
+<body id = "body" style = "background-image: url('../static/home_background3.jpg');" class = "responsive">
+
+
+
+<div class="navbar">
+
+<div style = "margin-left: 10px;">
+    <h1 style = "color: #f2f2f2; text-shadow: 0.3px 0.3px #333;"> Oxy Analytics</h1>
+    <p style = "color: #f2f2f2; text-shadow: 0.3px 0.3px #333; margin-top: -15px;"><b>Occidental College's student-run sports analysis service</b></p>
+</div>
+  <a href="/">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Analytics 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>Analytics Menu</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3 class = "menuSection" onClick = "window.location.href = '../analysis-season/playerSelection';">Data Selection</a></h3>
+          <a href = "analysis-season/teamBreakdown"> Team </a>
+          <a href = "../analysis-game/team-game10-playerBreakdown">Player Selection</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Analysis Selection</h3>
+          <a href="../analysis-season">Seasonal Analysis</a>
+          <a href="../analysis-game">per Game Analysis</a>
+          <a href="../analysis-season/teamVisuals">Visual Analysis</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Reference Material</h3>
+          <a href="../analysis-home">Analytics Explained</a>
+          <a href="../analysis-home/metric_index">Performance Metric Index</a>
+          <a href = "../externalReference">External Resources</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <a href="../about">About</a>
+  </div>
+
+  
+<div class="navbar" style = "background-color: #333;">
+  <div class="dropdown">
+    <button class="dropbtn">Player Selection 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" style = "padding-bottom: 500px;">
+      <div class="header">
+        <h2>Choose a player to see their visual breakdown</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3 class = "menuSection" onClick = "window.location.href = '../analysis-season/playerSelection';">Goalkeepers/Defenders</a></h3>
+<a href = "analysis-season/teamVisuals"> Team </a>
+  <a href="../analysis-home/playerBreakdown-benHarding">Ben Harding - 0</a>
+  <a href="../analysis-home/playerBreakdown-jacobGitin">Jacob Gitin - 00</a>
+  <a href="../analysis-home/playerBreakdown-scottDrazan">Scott Drazan -01</a>
+  <a href="../analysis-home/playerBreakdown-rileyMccabe">Riley Mccabe - 02</a>
+    <a href="../analysis-home/playerBreakdown-davidPaine">David Paine - 05</a>
+  <a href="../analysis-home/playerBreakdown-mattAnzalone">Matthew Anzalone - 11</a>
+    <a href="../analysis-home/playerBreakdown-jackMeeker">Jack Meeker - 13</a>
+      <a href="../analysis-home/playerBreakdown-milesRobertson">Miles Robertson - 23</a>
+<a href="../analysis-home/playerBreakdown-neythonStreitz">Neython Streitz - 25</a>
+  <a href="../analysis-home/playerBreakdown-benTucker">Ben Tucker - 27</a>
+  <a href="../analysis-home/playerBreakdown-lukeHaas">Luke Haas - 30</a>
+  <a href="../analysis-home/playerBreakdown-ericDacosta">Eric Dacosta - 31</a>
+
+
+  
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Midfielders</h3>
+           <a href="../analysis-home/playerBreakdown-spencerShearer">Spencer Shearer - 03</a>
+            <a href="../analysis-home/playerBreakdown-ryanWilson">Ryan Wilson - 04</a>
+            <a href="../analysis-home/playerBreakdown-nicEble">Nicolas Eble - 06</a>
+         <a href="../analysis-home/playerBreakdown-benSimon">Ben Simon - 08</a>
+          <a href="../analysis-home/playerBreakdown-jasperBrannon">Jasper Brannon - 10</a>
+          <a href="../analysis-home/playerBreakdown-adrianParedes">Adrian Paredes - 14</a>
+  <a href="../analysis-home/playerBreakdown-loganMyers">Logan Myers - 16</a>
+    <a href="../analysis-home/playerBreakdown-jakeFoster">Jake Foster - 18</a>
+  <a href="../analysis-home/playerBreakdown-joeySchwartz">Joey Schwartz - 19</a>
+   <a href="../analysis-home/playerBreakdown-tyeHernandez">Tye Hernandez - 22</a>
+
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Forwards</h3>
+          <a href="../analysis-home/playerBreakdown-mattTeplitz">Matthew Teplitz - 07</a>
+  <a href="../analysis-home/playerBreakdown-marcBlumenfeld">Marcus Blumenfeld - 09</a>
+    <a href="../analysis-home/playerBreakdown-seanKim">Sean Kim - 12</a>
+      <a href="../analysis-home/playerBreakdown-tylerWray">Tyler Wray - 17</a>
+      <a href="../analysis-home/playerBreakdown-jazzHenry">Jazz Henry - 20</a>
+  <a href="../analysis-home/playerBreakdown-teaganJarvis">Teagan Jarvis - 21</a>
+    <a href="../analysis-home/playerBreakdown-calebJordening">Caleb Jordening - 24</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  </div>
+
+
+<div style = "margin-top: 10px">
+<a href="/analysis-game/team-game9" class="previous">&laquo; Previous: 09/25/2019</a>
+<a href="/analysis-game/team-game11" class="next">Next: 10/02/2019 &raquo;</a>
+</div>
+  
+<div class="dropdownData">
+  <button class="dropDatabtn" style = "background-color: #808080; margin-top: 5px; padding-right: 95px; padding-left:100px;">Data Breakdown
+  <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdownData-content">
+    <a href="../analysis-season/teamBreakdown">Team Performance (Overall)</a>
+    <a href="../analysis-season/playerBreakdown">per Player Performance</a>
+  </div>
+</div>
+
+
+<h1 id = "oxy_title" align = "center" style="text-decoration: underline; text-shadow: 2px 2px #333; color: #f2f2f2;"><i>Performance Analysis: Whittier College (Home) </i></h1>
+
+  <div class="matchResult">
+    <div class="matchStats">
+    <h1 align = "center" style = "text-decoration: underline">Match Results</h1>
+    <h1 align = "center" style = "margin: -15px 0px 0px 0px;"></h1> 
+    <h2 align = "center" style = "color: #333"><b>Actual Result: ({{OxyaG}} - {{OppaG}})</b></h2>
+    <h2 align = "center" style = "color: #333"><b>Expected Result: ({{OxyxG}} - {{OppxG}})</b></h2>
+    </div>
+  </div>
+
+<div class = "columnStats">
+<div class = "cardStats" style = "border-radius: 4px;">
+<h1 align = "center" style = "font-size: 36px; text-decoration: underline;">Occidental Stats</h1>
+<table style = "margin-bottom: 20px;">
+  <tr>
+    <th align = "left" style="width:25%"></th>
+    <th>Actual</th>
+    <th>Expected</th>
+  </tr>
+  <tr>
+    <td>Goals</td>
+    <td  style = "text-align: center; padding: 6px;">{{OxyaG}}</td>
+    <td  style = "text-align: center; padding: 6px;">{{OxyxG}}</td>
+  </tr>
+
+<table style = "margin-bottom: 20px;">
+  <tr>
+    <th align = "left" style="width:25%"></th>
+    <th>Total</th>
+    <th>on Target</th>
+  </tr>
+  <tr>
+    <td>Shots</td>
+    <td  style = "text-align: center; padding: 6px;">{{Oxyshots}}</td>
+    <td  style = "text-align: center; padding: 6px;">{{Oxysot}}</td>
+  </tr>
+</table>
+<hr style = "border-top: 5px solid #333; border-radius: 4px;">
+
+<h2 style = "font-size: 30px; text-align: left; color: #333; margin-left: 44px;"> Conversion Rate: {{OxyconvR}}</h2>
+<h2 style = "font-size: 30px; text-align: left; color: #333; margin-left: 44px;" > Chance Quality: {{OxycQ}}</h2>
+  </div>
+</div>
+
+  <div class="columnStats" style = "margin-bottom: 20px;">
+    <div class="cardStats" style = "border-radius: 4px;">
+<h1 align = "center" style = "font-size: 36px; text-decoration: underline;">Opponent Stats</h1>
+<table style = "margin-bottom: 20px;">
+  <tr>
+    <th align = "left" style="width:25%"></th>
+    <th>Actual</th>
+    <th>Expected</th>
+  </tr>
+  <tr>
+    <td>Goals</td>
+    <td  style = "text-align: center; padding: 6px;">{{OppaG}}</td>
+    <td  style = "text-align: center; padding: 6px;">{{OppxG}}</td>
+  </tr>
+  
+<table style = "margin-bottom: 20px;">
+  <tr>
+    <th align = "left" style="width:25%"></th>
+    <th>Total</th>
+    <th>on Target</th>
+  </tr>
+  <tr>
+    <td>Shots</td>
+    <td  style = "text-align: center; padding: 6px;">{{Oppshots}}</td>
+    <td  style = "text-align: center; padding: 6px;">{{Oppsot}}</td>
+  </tr>
+</table>
+<hr style = "border-top: 5px solid #333; border-radius: 4px;">
+
+<h2 style = "font-size: 30px; text-align: left; color: #333; margin-left: 44px;"> Conversion Rate: {{OppconvR}}</h2>
+<h2 style = "font-size: 30px; text-align: left; color: #333; margin-left: 44px;" > Chance Quality: {{OppcQ}}</h2>
+  </div>
+</div>
+
+
+  
+<div>
+ <h2 align = "center" style = "margin-top:30px; text-decoration: underline; text-shadow: 2px 2px #333; color: #f2f2f2;">Data Visualization</h2>
+  <h2 align = "center" style = "margin-top:10px; text-decoration: underline; text-shadow: 2px 2px #333; color: #f2f2f2;">Shot Location Heat Map</h2>
+<div class = "legend" style = "margin-left: auto; margin-right: auto;"><b>Most shots ————— Fewest shots</b></div>
+
+<img class = "columnCharts" src="../static/Game 10 Shot Map.png"  alt="Adrian Paredes Profile" align = "center" style = "height: auto; width: 100%;">
+
+</div>
+
+<h2 align = "center" style = "margin-top: 70px; text-decoration: underline; text-shadow: 2px 2px #333; color: #f2f2f2;">Player Performance Overview: Best and Worst</h2>
+
+
+<div>
+<h2 align = "left" style = "text-decoration: underline; margin: 0px 0px 10px 20px; text-decoration: underline; text-shadow: 2px 2px #333; color: #f2f2f2;">Highest</h2>
+
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+        <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-45.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+        <h3>Expected Goals</h3>
+        <h3> Nicolas Eble - 0.82 xG </h3>
+        <p>Most xG amongst all Occidental College players.</p>
+        <p><button class="buttonPerformance" onClick = "window.location.href = '../analysis-home/playerBreakdown-nicEble';"> Nicolas's Full Stats</button></p>
+      </div>
+    </div>
+  </div>
+
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+        <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+
+        <h3 style = "text-decoration: underline;">Shots</h3>
+        <h3> Adrian Paredes - 3 shots </h3>
+        <p>Most shots amongst all Occidental College players.</p>
+        <p><button class="buttonPerformance" onClick = "window.location.href = '../analysis-home/playerBreakdown-adrianParedes';"> Adrian's Full Stats</button></p>
+      </div>
+    </div>
+  </div>
+
+
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+        <img src="../static/rosterShot.png" alt="Jane" style="width:100%; height: 100%; margin-top: 10px;">
+        <h3 style = "text-decoration: underline;">Shots on Target</h3>
+        <h3> Multiple Players - 2 SoT </h3>
+        <p>Most SoT amongst all Occidental College players.</p>
+        <p><button class="buttonPerformance" onClick = "window.location.href = '../analysis-game/team-game10-playerBreakdown';"> Team's Full Stats</button></p>
+      </div>
+    </div>
+  </div>  
+  
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+        <img src="../static/rosterShot.png" alt="Jane" style="width:100%; height: 100%; margin-top: 10px;">
+        <h3 style = "text-decoration: underline;">Shot Accuracy</h3>
+        <h3> Multiple Players - 100% </h3>
+        <p>Highest SA amongst all Occidental College players.</p>
+        <p><button class="buttonPerformance" onClick = "window.location.href = '../analysis-game/team-game10-playerBreakdown';"> Team's Full Stats</button></p>
+      </div>
+    </div>
+  </div>
+  
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+      <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-45.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+        <h3 style = "text-decoration: underline;">Chance Quality</h3>
+        <h3> Nicolas Eble - 82 % </h3>
+        <p>Highest CQ amongst all Occidental College players.</p>
+        <p><button class="buttonPerformance" onClick = "window.location.href = '../analysis-home/playerBreakdown-nicEble';"> Nicolas's Full Stats</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+<h2 align = "left" style = "text-decoration: underline; margin: 0px 0px 10px 20px; text-decoration: underline; text-shadow: 2px 2px #333; color: #f2f2f2;">Lowest</h2>
+
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+      <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-53.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+        <h3 style = "text-decoration: underline;">Expected Goals</h3>
+        <h3> Logan Myers - 0.00 xG </h3>
+        <p>Fewest xG amongst all eligible Occidental College players (1+ shots).</p>
+        <p><button class="buttonPerformance" onClick = "window.location.href = '../analysis-home/playerBreakdown-loganMyers';"> Logan's Full Stats</button></p>
+      </div>
+    </div>
+  </div>
+
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+        <img src="../static/rosterShot.png" alt="Jane" style="width:100%; height: 100%; margin-top: 10px;">
+        <h3 style = "text-decoration: underline;">Shots</h3>
+        <h3> Multiple Players - 0 shots</h3>
+        <p>Fewest shots amongst all Occidental College players.</p>
+        <p><button class="buttonPerformance" onClick = "window.location.href = '../analysis-game/team-game10-playerBreakdown';"> Team's Full Stats</button></p>
+      </div>
+    </div>
+  </div>
+
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+      <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-11.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+        <h3 style = "text-decoration: underline;">Shots on Target</h3>
+        <h3> Jack Meeker - 0 SoT </h3>
+        <p>Fewest SoT amongst all eligible Occidental College players (1+ shots).</p>
+        <p><button class="buttonPerformance" onClick = "window.location.href = '../analysis-home/playerBreakdown-jackMeeker';"> Jack's Full Stats</button></p>
+      </div>
+    </div>
+  </div>  
+  
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+      <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-53.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+        <h3 style = "text-decoration: underline;">Shot Accuracy</h3>
+        <h3> Logan Myers - 0.00 % </h3>
+        <p>Lowest SA amongst all eligible Occidental College players (1+ shots).</p>
+        <p><button class="buttonPerformance" onClick = "window.location.href = '../analysis-home/playerBreakdown-loganMyers';"> Logan's Full Stats</button></p>
+      </div>
+    </div>
+  </div>
+
+
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+      <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-53.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+        <h3 style = "text-decoration: underline;">Chance Quality</h3>
+        <h3> Logan Myers - 0.00%</h3>
+        <p>Lowest CQ amongst all eligible Occidental College players (1+ shots).</p>
+        <p><button class="buttonPerformance" onClick = "window.location.href = '../analysis-home/playerBreakdown-loganMyers';"> Logan's Full Stats</button></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html> 

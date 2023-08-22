@@ -1,0 +1,29 @@
+@app.route('/analysis-home/playerProfile-{{playerName}}')
+def playerBreakdown_adrianParedes():
+    playerStat = pd.DataFrame(gamePlayer.loc[gamePlayer['Player'] == 'Adrian Paredes'])
+    game1 = playerStat.loc[playerStat['ID']== 1]
+    game1 = game1.loc[:, ['aG', 'xG', 'Total_Shots', 'Shots_on_Target']]
+    game2 = playerStat.loc[playerStat['ID']== 2]
+    game2 = game2.loc[:, ['aG', 'xG', 'Total_Shots', 'Shots_on_Target']]
+    game3 = playerStat.loc[playerStat['ID'] == 3]
+    game3 = game3.loc[:, ['aG', 'xG', 'Total_Shots', 'Shots_on_Target']]
+    game4 = playerStat.loc[playerStat['ID'] == 4]
+    game5 = playerStat.loc[playerStat['ID'] == 5]
+    game6 = playerStat.loc[playerStat['ID'] == 6]
+    game7 = playerStat.loc[playerStat['ID'] == 7]
+    game8 = playerStat.loc[playerStat['ID'] == 8]
+    game9 = playerStat.loc[playerStat['ID'] == 9]
+    game10 = playerStat.loc[playerStat['ID'] == 10]
+    game11 = playerStat.loc[playerStat['ID'] == 11]
+    game12 = playerStat.loc[playerStat['ID'] == 12]
+    game13 = playerStat.loc[playerStat['ID'] == 13]
+    game14 = playerStat.loc[playerStat['ID'] == 14]
+    game15 = playerStat.loc[playerStat['ID'] == 15]
+    game16 = playerStat.loc[playerStat['ID'] == 16]
+    playerSeason = seasonPlayer.loc[seasonPlayer['Player'] == 'Adrian Paredes']
+
+
+    return render_template('gameBreakdown_aParedes.html',tables=[playerSeason.to_html(classes = 'playerStat'), game1.to_html(classes='game1'), game2.to_html(classes='game2'), game3.to_html(classes='game3'), game4.to_html(classes='game4'), 
+    game5.to_html(classes='game5'), game6.to_html(classes='game6'), game7.to_html(classes='game7'), game8.to_html(classes='game8'), game9.to_html(classes='game9'), game10.to_html(classes='game10'), 
+    game11.to_html(classes='game11'), game12.to_html(classes='game12'), game13.to_html(classes='game13'), game14.to_html(classes='game14'), game15.to_html(classes='game15'), game16.to_html(classes='game16')],
+    titles = ['na', 'Seasonal', 'Game 1', 'Game 2', 'Game 3', 'Game 4', 'Game 5', 'Game 6', 'Game 7', 'Game 8', 'Game 9', 'Game 10', 'Game 11', 'Game 12', 'Game 13', 'Game 14', 'Game 15', 'Game 16'])

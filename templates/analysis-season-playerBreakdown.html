@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang = "en">
+<head>
+<title>Simple tables</title>
+<link rel=stylesheet type=text/css href="../static/TEST.css">
+<link rel = "stylesheet" href = "../static/Menu.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+function returnPage() {
+  window.history.back();
+}
+</script>
+</head>
+<body style = "background: linear-gradient(225deg, rgba(190,193,214,1) 17%, rgba(255,255,255,1) 100%);">
+
+<!-- <div class="navbar" style = "background-color: #333;">
+  <a href="/">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Analytics 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2  style = "color: white;">Analytics Menu</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3 class = "menuSection" onClick = "window.location.href = '../analysis-season/playerSelection';">Data Selection</a></h3>
+          <a href = "../analysis-season"> Team </a>
+          <a href = "../analysis-home/playerSelection">Player Selection</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Analysis Selection</h3>
+          <a href="../analysis-season">Seasonal Analysis</a>
+          <a href="../analysis-game">per Game Analysis</a>
+          <a href="../analysis-season/teamVisuals">Visual Analysis</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Reference Material</h3>
+          <a href="../analysis-home">Analytics Explained</a>
+          <a href="../analysis-home/metric_index">Performance Metric Index</a>
+          <a href="../externalReference">External Resources</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <a href="../about">About</a>
+  <a href = "../analysis-home/metric_index">Performance Metric Index</a>
+  </div> -->
+  <div style = "margin-top: -20px; margin-bottom: 5px;">
+<h4 class = "Occidental" style = "color: #ff751a; text-decoration: underline; cursor: pointer;" onclick ="returnPage()">&laquo;Back</h4>
+<h4 onClick = "window.location.href = '../analysis-season';" style = "text-decoration: underline; margin-top: -20px; color: #ff751a; cursor: pointer;"class = "Occidental">&larr;Seasonal Analysis</h4>
+</div>
+<!--
+  <div class="navbar" style = "background-color: #333;">
+  <div class="dropdown">
+    <button class="dropbtn" onClick = "window.location.href = '../analysis-home/metric_index';">Performance Metric Index 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" style = "padding-bottom: 500px;">
+      <div class="header">
+        <h2 style = "color: white;">Index of the metrics displayed throughout the site</h2>
+      </div>   
+      <div class="row" style = "background-color: #ccc;">
+        <div class="column" style = "background-color: #ccc;">
+          <h3 class = "menuSection" onClick = "window.location.href = '../analysis-season/playerSelection';">Overall Metrics</a></h3>
+            <a><b>Actual Points (aP)</b> - Total points amassed (Win = 3 pts, Draw = 1 pts, Loss = 0 pts)</a>
+            <a><b>Expected Points (xP)</b> - Expected number of points amassed based on quality of chances produced against quality of chances conceded</a>
+        </div>
+        <div class="column" style = "background-color: #ccc;">
+          <h3 class = "menuSection">Offensive Metrics</h3>
+            <a><b>Goals Scored (aG)</b> - Total number of goals scored</a>
+            <a><b>Expected Goals (xG)</b> - Probability of a shot resulting in a goal</a>
+            <a><b>Goals Scored per Game (aGp90)</b> - Average number of aG per game</a>
+            <a><b>Expected Goals Scored per Game (xGp90)</b> - Average number of xG per game</a>
+            <a><b>True Performance (Perf)</b> - Object player quality</a>
+            <a><b>True Performance pre Game (Perfp90)</b> - Object player quality per game</a>
+            <a href = "../analysis-home/metric_index" style = "color: #333;"><b>See Entire Metric Index &ctdot;</b></a>
+        </div>
+        <div class="column" style = "background-color: #ccc;">
+          <h3 class = "menuSection">Defensive Metrics</h3>
+          <a><b>True Defensive Rating (DefPerf)</b> - Ratio of xG conceded to total shots conceded</a>
+          <a><b>Goalkeeper Save Rate (GKRate)</b> - Ratio of goals conceded to total shots on target</a>
+          <a><b>True Goalkeeper Rating (GKPerf)</b> - Objective goalkeeper quality</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  </div>
+-->
+<br>
+<div class=page style = "overflow-x: auto;">    
+  <h1>####-## Player Season Stats</h1>
+  {% for table in tables %}
+    <h2>{{titles[loop.index]}}</h2>
+    {{ table|safe }}
+  {% endfor %}
+</div>
+</body>
+</html>

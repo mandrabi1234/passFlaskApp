@@ -1,0 +1,425 @@
+<html>
+  <head>
+    <link rel = "stylesheet" href = "../static/sideBar.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+    <style>
+        body{
+          font-family: 'Open Sans';font-size: 22px;
+          overflow-x: hidden;
+        }
+  
+      .matchResult {
+     position: absolute;
+      float: center;
+      width: 800px;
+      height: 100px;
+      padding: 0 5px;
+      margin-left: 95px;
+      margin-right: auto;
+      margin-bottom: 25px;
+    }
+
+    .matchStats {
+      /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+      padding: 5px;
+      text-align: center;
+      background-color: #ffffff;
+      color: white;
+      height: 150px;
+      width: auto;
+      border-radius: 4px;
+
+    }
+
+    .columnStats{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  .flex-parent-element {
+  display: flex;
+  width: 500px;
+}
+
+.flex-child-element {
+  flex: 1;
+  background-color: #FFFFFF;
+  margin: 10px;
+  width: 325px;
+  border-radius: 4px;
+}
+
+.flex-child-element:first-child {
+  margin-right: 5px;
+  
+}
+
+.flex-grid-thirds .col {
+  width: 32%;
+}
+.shotChart{
+
+}
+
+.home{
+    background-color: #E2F4FF;
+    color: #27B0FF;
+}
+.opponent{
+ background-color: #FFF0D2;
+ color: #ECA720;
+}
+.doughnut {
+    display: block;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(25deg);
+    border: 10px solid grey;
+    border-top: 10px solid #00C820;
+    border-left: 10px solid #00C820;
+    border-right: 10px solid #00C820;
+}
+.vertical-menu {
+    width: auto;
+    height: 597px;
+    overflow-y: auto;
+    font-size: 25px;
+  }
+  
+  .vertical-menu a {
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc;
+  }
+  
+  .vertical-menu a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  font-size: small;
+
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+ 
+.dropDatabtn {
+  background-color: #808080;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdownData {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownData-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdownData-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownData-content a:hover {background-color: #ddd;}
+  </style>
+  </head>
+  <body style = "background: linear-gradient(225deg, rgba(190,193,214,1) 17%, rgba(255,255,255,1) 100%);">
+  <div><a href="../"><img src="../static/logo-no-background.png" width = "150px;" style = "margin-top: 10px; margin-left: 60px; width: 200px; height: auto;"/></a></div>
+
+    <div class="area" style = "background: transparent;">
+        <h1 style = "margin-left: 70px;"> Season Data</h1>
+        <a href = "../analysis-season/team-SeasonBreakdown" style = "margin-top: -15px; margin-left: 75px;">Tabular Data Breakdown</a>
+        <br>
+
+        <!-- <a href="../analysis-season/team-SeasonBreakdown">Team Performance (Overall)</a>
+            <a href="../analysis-season/playerBreakdown">per Player Performance</a> -->
+          
+        
+    <div class = "dashboardStats" style = "position: relative; right: 30px; width: 3000px; margin-top: 20px;">    
+    <div class="matchResult">
+    <div class="matchStats" style = "margin-right: 450px;">
+    <h3 align = "left" style = "margin-top: -5px; color: #000000">Season Record</h3>
+    <div style = "color: black; position: relative; right: 130px; bottom: 10px; font-size: 65;">--<br> <div style = "font-size: 25px; position: relative; bottom: 20px;">Wins</div></div>
+    <div style = "color: black; position: relative; right: 0px; bottom: 130px; font-size: 65;">--<br>  <div style = "font-size: 25px; position: relative; bottom: 20px;">Draws</div></div>
+    <div style = "color: black; position: relative; right: -130px; bottom: 253px; font-size: 65;">--<br>  <div style = "font-size: 25px; position: relative; bottom: 20px;">Losses</div></div>
+    </div>
+    <div class="matchStats" style = "margin-right: 450px; position: relative; left: 360px; top: -160px; width: 430px;">
+        <table style = "margin-bottom: 20px; font-size: 17px; position: relative; top: 10px; left: 20px;">
+            <tr>
+              <th align = "left" style="width:25%"></th>
+              <th>Actual</th>
+              <th>Expected</th>
+            </tr>
+            <tr>
+              <td>Points</td>
+              <td  style = "text-align: center; padding: 6px;"><b>--</b></td>
+              <td  style = "text-align: center; padding: 6px;">--</td>
+            </tr>
+            <tr>
+              <td>Goals</td>
+              <td style = "text-align: center; padding: 6px;">--</td>
+              <td style = "text-align:center;   padding: 6px;"><b>--</b></td>
+            </tr>
+            <tr>
+              <td>Goalsp90</td>
+              <td style = "text-align: center; padding: 6px;"><b>--</b></td>
+              <td style = "text-align: center; padding: 6px;">--</td>
+            </tr>
+        </table>
+        </div>
+        <div class="matchStats" style = "margin-right: 450px; position: relative; left: 810px; bottom: 320px; width: 430px;">
+            <table style = "margin-bottom: 20px; font-size: small; position: relative; top: 10px; font-size: 22px;">
+                <tr>
+                  <th align = "left" style="width:25%"></th>
+                  <th>Total</th>
+                  <th>on Target</th>
+                </tr>
+                <tr>
+                  <td>Shots</td>
+                  <td  style = "text-align: center; padding: 6px;"><b>--</b></td>
+                  <td  style = "text-align: center; padding: 6px;">--</td>
+                </tr>
+                <tr>
+                  <td>Shots p90</td>
+                  <td style = "text-align: center; padding: 6px;">--</td>
+                  <td style = "text-align:center;   padding: 6px;"><b>--</b></td>
+                </tr>
+               </table>
+           </div>
+        
+    
+    <div class="flex-parent-element" style = "position: relative; right: 10px; width: 1830px; bottom: 300px;">
+        <div class="flex-child-element magenta" style = "width: 900px;">
+            <h3 style = "margin-top: 5px; margin-left: 5px;">Shot Stats</h3>
+            <img src="..\static\ShotPerc.png" alt="Flowers in Chania" width="570" height="712" style = "position: relative; left: 8px; border-radius: 8px; margin-bottom: 20px;">
+
+                     
+        </div>
+        <div class="flex-child-element green" style = "width: 350px;">
+            <h3 style = "margin-top: 5px; margin-left: 5px;">Player Peformance Leaderboard</h3>
+            <div style = "position: relative; left: 10px; overflow-y: auto;">
+            <!-- <input style = "position: relative; right: 10px;" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"> -->
+
+            <table id="myTable" style = "position: relative; right: 10px; overflow-y: auto; ">
+                <tr class="header">
+                <th></th>
+                  <th style="width:40%;" align = "left">Name</th>
+                  <th style="width:20%;" align = "left">Number</th>
+                  <th style = "width: 40%;" align = "left"> Position</th>
+                </tr>
+
+                <tr>
+                <td> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                <td onclick= "window.location.href ='../analysis-home/playerBreakdown-benHarding';">Player Name</td>
+                  <td>--</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                    <td> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                  <td>Player Name</td>
+                  <td>--</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                    <td> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                  <td>Player Name</td>
+                  <td>--</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                    <td> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                  <td>Player Name</td>
+                  <td>--</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                    <td> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                  <td>Player Name</td>
+                  <td>--</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                    <td> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                  <td>Player Name</td>
+                  <td>--</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                    <td> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                  <td>Player Name</td>
+                  <td>--</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                    <td> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                    <td onclick= "window.location.href ='../analysis-home/playerBreakdown-benHarding';">Player Name</td>
+                      <td>--</td>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                        <td> <img src="static/blankProfile.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                        <td onclick= "window.location.href ='../analysis-home/playerBreakdown-benHarding';">Player Name</td>
+                          <td>--</td>
+                          <td>--</td>
+                        </tr>
+                
+
+              </table>
+              </div>
+            
+        </div>
+        <div class="flex-child-element blue" style = "width: 350px;">
+            <div class="flex-child-element magenta" style =  "background-color: #FFFFFF;">
+                <h3 style = "margin-top: 5px; margin-left: 5px;">xG Analytics</h3>
+                <h5 style = "margin-top: 5px; margin-left: 10px;"> Shots on Target</h5>
+            <div>
+            <div class = "home" style = "padding-right: 85px; padding-left: 20px; border-radius: 12px; margin-left: 325px; position: relative; right: 280px; top: 10px;">Home </div>
+            <div class = "opponent" style = " padding-left: 10px; padding-right: 125px; padding-top: 2px; padding-bottom: 2px; border-radius: 12px; margin-left: 325px; position: relative; right: -65px; bottom: 20px;">Opponent </div>
+            <div style = "position: relative; left: 65px; top: 70px; font-size: 32px;"><b>--</b>/ <div style = "font-size: large; position: relative; left: 45px; bottom: 20px;">--</div></div>    
+            <div class = "doughnut" style = "position: relative; left: 100px; top: 30px; width: 160px; height: 160px;"></div>
+    
+            <div style = "position: relative; left: 430px; bottom: 180px; font-size: 32px;"><b>--</b>/ <div style = "font-size: large; position: relative; left: 45px; bottom: 20px;">--</div></div>    
+            <div class = "doughnut" style = "position: relative; top: -220px; left: 460px; width: 160px; height: 160px;"></div>
+    
+        </div>
+        <div style = "margin-top: -100px;">
+        <h5 style = "margin-top: 5px; margin-left: 10px; margin-bottom: -5px;"> Expected Goals</h5>
+        <div class = "home" style = "padding-right: 85px; padding-left: 20px; border-radius: 12px; margin-left: 325px; position: relative; right: 280px; top: 45px;">Home </div>
+            <div class = "opponent" style = " padding-left: 10px; padding-right: 125px; padding-top: 2px; padding-bottom: 2px; border-radius: 12px; margin-left: 325px; position: relative; right: -65px; top: 15px;">Opponent </div>
+            <div class = "doughnut" style = "position: relative; left: 100px; top: 135px; width: 160px; height: 160px;"></div>
+    
+            <div class = "doughnut" style = "position: relative; top: -45px; left: 460px; width: 160px; height: 160px;"></div>
+    
+               
+        </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    
+
+    <div class = "shotChart" style = "background-color: #FFFFFF; position: relative; left: 1360px; width: 550px; height: 160px; border-radius: 4px;">
+        <div style = "color: black; position: relative; left: 20px; top: 35px; font-size: 32;">--% <br>  <div style = "font-size: 15px;">Conversion <br>Rate</div></div>
+       
+        <div style = "color: black; position: relative; left: 140px; bottom: 48px; font-size: 32;">--% <br>  <div style = "font-size: 15px;"> xG Conversion <br>Rate</div></div>
+    
+        <div style = "color: black; position: relative; left: 280px; bottom: 132px; font-size: 32;">--% <br>  <div style = "font-size: 15px;">Chance Quality</div></div>
+        <div style = "color: black; position: relative; left: 465px; bottom: 195px; font-size: 32;">-- <br>  <div style = "font-size: 15px; position: relative; right: 35px;">Goal Difference</div></div>
+
+    
+    </div>
+
+</div>
+<nav class="main-menu">
+  <ul>
+      <li>
+          <a href="/">
+              <i class="fa fa-home fa-2x"></i>
+              <span class="nav-text">
+                  Main Dashboard
+
+              </span>
+          </a>
+        
+      </li>
+
+      <li>
+        <a href="/dashboard-season">
+          <i class="fa fa-home fa-2x"></i>
+          <span class="nav-text">
+              Season Overview
+          </span> 
+      </li>
+
+      <li>
+        <a href="../dashboard-gameData">
+          <i class="fa fa-home fa-2x"></i>
+          <span class="nav-text">
+              Game Data
+          </span> 
+      </li>
+      
+      <li class="has-subnav">
+          <a href="../analysis-home/playerSelection">
+              <i class="fa fa-list fa-2x"></i>
+              <span class="nav-text">
+                  Players
+              </span>
+          </a>
+          
+      </li>  
+  </ul>
+</nav>
+        <script>
+            function myFunction() {
+              var input, filter, table, tr, td, i, txtValue;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              table = document.getElementById("myTable");
+              tr = table.getElementsByTagName("tr");
+              for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                  txtValue = td.textContent || td.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                  } else {
+                    tr[i].style.display = "none";
+                  }
+                }       
+              }
+            }
+            </script>
+            
+  </body>
+    </html>

@@ -1,0 +1,153 @@
+.columnCharts {
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+  }
+  /* Float four columns side by side */
+  .columnStats {
+    float: left;
+    width: 50%;
+    padding: 0 5px;
+  }
+  
+
+    /* Float four columns side by side */
+    .matchResult {
+      float: center;
+      width: 480px;
+      height: 100px;
+      padding: 0 5px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 120px;
+    }
+
+    .matchStats {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #ff751a;
+      color: white;
+      height: 100px;
+      width: auto;
+
+    }
+  .rowStats {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .rowStats:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .columnStats {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .columnCharts {
+      width: auto;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+  }
+  
+  @media screen and (min-width: 20px) {
+  
+    .columnCharts {
+      width: auto;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+  }
+  /* Style the counter cards */
+  .cardStats {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #ff751a;
+    color: white;
+    height: 502px;
+  
+  }
+
+  
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  
+  a:hover {
+    background-color: #333;
+    color: #f2f2f2;
+  }
+  
+  .previous {
+    background-color: #f2f2f2;
+    color: black;
+  }
+  
+  .next {
+    background-color: #ff751a;
+    color: white;
+  }
+
+  
+.btnData {
+    background-color: #808080;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+  }
+  
+  .dropdownData {
+    position: absolute;
+    display: inline-block;
+  }
+  
+  .dropdownData-content {
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdownData-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdownData-content a:hover {background-color: #ddd}
+  
+  .dropdownData:hover .dropdownData-content {
+    display: block;
+  }
+  
+   .dropdownData:hover {
+    background-color: #595959;
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 75%;}
+
+  th, td {
+    font-size: 32px;
+  }
+  

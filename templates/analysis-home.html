@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel = "stylesheet" href = "../static/testerstyle.css">
+<link rel = "stylesheet" href = "../static/Menu.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+#more{
+  display: none;
+}
+</style>
+<title> Analytics Explained </title> 
+
+</head>
+<body id = "body" style="background-image: url('../static/home_background3.jpg'); color: #333; font-family: Arial, Helvetica, sans-serif;">
+
+
+
+<div class="navbar" style = "width: 100%;">
+
+<div style = "cursor: pointer; margin-left: 10px; margin-top: 20px; margin-bottom: 20px;"  onClick = "window.location.href = '/';">
+    <h1 style = "margin-bottom: 5px; color: #f2f2f2; text-shadow: 0.3px 0.3px #333;"> Oxy Analytics</h1>
+    <p style = "color: #f2f2f2; text-shadow: 0.3px 0.3px #333; margin-top: auto;"><b>Occidental College's student-run sports analysis service</b></p>
+</div>
+
+  <a href="/">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Analytics 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>Analytics Menu</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3 class = "menuSection" onClick = "window.location.href = '../analysis-season/playerSelection';" style = "color: #333;">Data Selection</a></h3>
+          <a href = "../analysis-season"> Team </a>
+          <a href = "../analysis-home/playerSelection">Player Selection</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection" style = "color: #333;" onClick = "window.location.href = '../analysis-home';">Analysis Selection</h3>
+          <a href="../analysis-season">Seasonal Analysis</a>
+          <a href="../analysis-game">per Game Analysis</a>
+          <a href="../analysis-season/teamVisuals">Visual Analysis</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection" style = "color: #333;">Reference Material</h3>
+          <a href="../analysis-home">Analytics Explained</a>
+          <a href="../analysis-home/metric_index">Performance Metric Index</a>
+          <a href="../externalReference">External Resources</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <a href="../about">About</a>
+</div>
+
+<h1 id = "oxy_title" align = "center" style=" color: #f2f2f2; text-decoration: underline; margin: 20px 0px 20px 0px; font: Arial;">Analytics Explained</h1>
+<button style = "text-decoration: underline; text-align: left;background-color: #ff751a"class="collapsible">Expected Goals (xG) Explained</button>
+<div class="content" style = "background-color: #ff751a;  font: Arial;" >  
+<ul>
+  In layman’s terms, <b>xG consists of shot 
+    attempts that have been weighted for shot quality</b>. It employs various characteristics 
+    of shots being taken together with historical data said shot-types to predict the likelihood 
+    of a given shot resulting in a goal. 
+    As aforementioned, <b>xG is basically an averaged probability of a shot resulting in a goal</b>, providing
+     a more accurate and objective method of predicting match outcomes than by simply using individual stats. 
+     xG is most often employed to assess various scenarios such as:
+    <ol>
+        <li class = "xGList"><u>Predicting upcoming match outcomes</u> via historical data pertaining to the competing teams.</li>
+        
+        <li class = "xGList"><u>Assessing a given player or team’s “true” performance</u>, regardless of short-term results or
+         individual on-pitch occurrences. This may be viewed through a seasonal or match-based lens. </li>
+        
+        <li><u>Assessing how effectively a team’s defense prevents opposition sides from converting goal-scoring
+         chances</u>, as a means of better understanding their overall defensive quality.</li>
+
+        <li><u>Assessing which players are more effective than their shot quality would suggest</u>. Such is frequently
+         employed to distinguish consistent goal-scoring prowess from a flash in the pan, as it were<span id="dots">...</span></li>    
+  
+    </ol>
+    
+<span id="more"> Elaborating further: xG provides an objective look at how many goals a player should be scoring, based on their shot quality. 
+    Player ability/performance may be assessed by comparing expected and actual output. More specifically, if a player:
+
+    <ul>
+        <li> Underperforms xG (scores fewer goals than expected), one may assume that there's more to come from them. </li>
+
+        <li> Overperforms xG (scores more goals than expected), one may assume that their output isn't actually indicative
+         of their true goal-scoring ability. </li>
+        
+        <li> Performs on par with xG (scores about as many goals as expected), one may assume that their current output is on
+         par with their true ability.</li>
+    </ul>
+    
+    Take, for example, two players with the same average expected goals per game—e.g. 2.5 xGp90. However, one is performing on
+     par with expectation, while the other is grossly overperforming. Upon assessing the two, the former bears greater consideration,
+      as their performance against expectation reflects a very strong true goal-scoring ability. On the other hand, the latter is running
+       a significant run of form and will almost assuredly fizzle out. For context, overperforming 2.5 xGp90 means they're almost averaging
+        a hat trick per match (better than Messi or Ronaldo).
+    </span></p>
+<button style = "   border: none;
+  background-color: grey;
+  padding: 7px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;" onclick="readMore()" id="myBtn">Read more</button>
+</ul>
+</div>
+
+<button style = "text-decoration: underline; text-align: left;background-color: #666666;  font: Arial;"class="collapsible">Our Prediction Model</button>
+<div class="content" style = "background-color: #666666;">
+<div id="Paris" class="tabcontent" style = "color: #f2f2f2;  font: Arial;">
+The selected ML model is a Random Forest regressor, trained and tested, respectively, on a publicly available European soccer data set6 and an Oxy-specific
+data set built from scratch. The latter was constructed by manually scraping
+the team’s 2019-2020 season’s game footage, courtesy of Occidental College
+Men’s Soccer Coach, Rod LaFaurie. Before going any further, it’s important to
+understand the specifics of a Random Forest model.
+<p>Broadly speaking, it is an ensemble ML algorithm which performs classification or regression tasks by using multiple decision trees—hence, Random
+Forest—as well as a technique known as Bootstrap and Aggregation, or bagging. Furthermore, it’s a meta-estimator, meaning the final output
+is a result of combining multiple prediction outputs. The concept
+behind this is to improve the final output by using multiple decision trees as
+base learning models and combining their results, rather than just using any
+individual tree. In this particular case—i.e. regression—the final output is the
+mean prediction of the individual trees.
+Random Forests present a variety of advantages, many of which are applicable to this specific project, including:</p>
+<ul>
+<li>Producing highly accurate results.</li>
+<li>Running efficiently on large databases (especially helpful given the size of
+the training set)</li>
+
+<li>Handling very large amounts of input variables without deletion (useful
+with an expanding project scope).</li>
+<li>Estimating what variables are important for classification output.</li>
+<li>Limiting the number of features that can be split at each node to some
+percentage of the total, thereby avoiding over-reliance on any individual
+feature and ensuring fair use of all potentially predictive features.</li>
+
+<li> Having each tree draw a random sample from the original data set when
+generating splits, thereby introducing further randomness that prevents
+overfitting.</li>
+</ul>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+function readMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<html>
+  <head>
+    <link rel = "stylesheet" href = "../static/sideBar.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+    <style>
+        body{
+          font-family: 'Open Sans';font-size: 22px;
+          background-color: #e6ecf0;
+        }
+        
+        .vl {
+          border-left: 2px solid #e2e2e2;
+          height: 160px;
+            }
+      .matchResult {
+     position: absolute;
+      float: center;
+      width: 800px;
+      height: 100px;
+      padding: 0 5px;
+      margin-left: 95px;
+      margin-right: auto;
+      margin-bottom: 25px;
+    }
+
+    .matchStats {
+      /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+      padding: 5px;
+      text-align: center;
+      background-color: #ffffff;
+      color: white;
+      height: 150px;
+      width: auto;
+      border-radius: 4px;
+
+    }
+
+    .columnStats{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  .flex-parent-element {
+  display: flex;
+  width: 500px;
+}
+
+.flex-child-element {
+  flex: 1;
+  background-color: #FFFFFF;
+  margin: 10px;
+  width: 325px;
+  border-radius: 4px;
+}
+
+.flex-child-element:first-child {
+  margin-right: 5px;
+  
+}
+
+.flex-grid-thirds .col {
+  width: 32%;
+}
+.shotChart{
+
+}
+
+.home{
+    background-color: #E2F4FF;
+    color: #27B0FF;
+}
+.opponent{
+ background-color: #FFF0D2;
+ color: #ECA720;
+}
+.doughnut {
+    display: block;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(25deg);
+    border: 10px solid grey;
+    border-top: 10px solid #00C820;
+    border-left: 10px solid #00C820;
+    border-right: 10px solid #00C820;
+}
+.vertical-menu {
+    width: auto;
+    height: 597px;
+    overflow-y: auto;
+    font-size: 25px;
+  }
+  
+  .vertical-menu a {
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc;
+  }
+  
+  .vertical-menu a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  font-size: small;
+
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+ 
+
+.legend {
+        background: linear-gradient(90deg, rgba(63,86,106,1) 0%, rgba(58,152,208,1) 43%, rgba(166,202,236,1) 100%);
+        width: 300px;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 4px;
+    }
+  </style>
+  </head>
+  <body style = "background: linear-gradient(225deg, rgba(190,193,214,1) 17%, rgba(255,255,255,1) 100%);">
+    <div><a href="../"><img src="../static/logo-no-background.png" width = "150px;" style = "margin-top: 10px; margin-left: 60px; width: 200px; height: auto;"/></a></div>
+
+    <div class="area" style = "background: transparent;">
+        <h1 style = "margin-left: 70px; margin-bottom: 5px;"> Game Data</h1>
+        <a href = "../analysis-game/team-game1-playerBreakdown" style = "margin-top: -15px; margin-left: 75px;">Tabular Data Breakdown</a>
+    
+        <div class = "dashboardStats" style = "position: relative; right: 30px; width: 3000px; margin-top: 10px;">    
+    <div class="matchResult">
+    <div class="matchStats" style = "margin-right: 450px;">
+    <h4 text-align = "left" style = "position: relative; right: 100px;margin-top: -5px; color: #000000">Match Result</h4>
+    <div style = "border-radius: 4px;background-color: #79d279; color: black; position: relative; right: 5px; bottom: 10px; font-size: 65; width: 180px; height: 110px;">02<br> <div style = "font-size: 25px; position: relative; bottom: 20px;">Occidental </div></div>
+    <div style = "border-radius: 4px;background-color: #ffb3b3;color: black; position: relative; left: 175px; bottom: 120px; font-size: 65; width: 170px; height: 110px;">01<br> <div style = "font-size: 25px; position: relative; bottom: 20px;">Pomona</div></div>
+    </div>
+    <div class="matchStats" style = "margin-right: 450px; position: relative; left: 720px; bottom: 160px;">
+        <h4 text-align = "left" style = " position: relative; right: 80px; margin-top: -5px; color: #000000">Expected Result</h4>
+        <div style = "border-radius: 4px;  color: black; position: relative; right: 5px; bottom: 10px; font-size: 65; width: 180px; height: 110px;">3.77<br> <div style = "font-size: 25px; position: relative; bottom: 20px;">Occidental </div></div>
+        <div style = "border-radius: 4px;color: black; position: relative; left: 175px; bottom: 120px; font-size: 65; width: 170px; height: 110px;">2.11<br> <div style = "font-size: 25px; position: relative; bottom: 20px;">Pomona</div></div>
+        </div>
+
+    
+    
+    <div class="flex-parent-element" style = "position: relative; right: 10px; width: 1830px; bottom: 120px;">
+        <div class="flex-child-element magenta" style = "width: 900px;">
+            <h3 style = "margin-top: 5px; margin-left: 5px;">Shot Stats</h3>
+            <div class = "legend" style = "margin-left: auto; margin-right: auto;"><b>Most shots ————— Fewest shots</b></div>
+
+            <img class = "columnCharts" src="../static/Game 14 Shot Map.png"  alt="Adrian Paredes Profile" align = "center" style = "height: auto; width: 100%;">
+            
+
+                     
+        </div>
+        <div class="flex-child-element green" style = "width: 350px;">
+            <h3 style = "margin-top: 5px; margin-left: 5px;">Player Peformance Data</h3>
+            <div style = "position: relative; left: 10px; overflow-y: auto;">
+            <!-- <input style = "position: relative; right: 10px;" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"> -->
+
+            <table id="myTable" style = "position: relative; right: 10px; overflow-y: auto; ">
+                <tr class="header">
+                <th></th>
+                  <th style="width:40%;" align = "left">Name</th>
+                  <th style="width:20%;" align = "left">Number</th>
+                  <th style = "width: 40%;" align = "left"> Position</th>
+                </tr>
+
+                <tr>
+                <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                <td onclick= "window.location.href ='../analysis-home/playerBreakdown-benHarding';">Aiden Aley</td>
+                  <td>0</td>
+                  <td>Goalkeeper</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                  <td>Charlie Miller</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                  <td>Christian Corcoran</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                  <td>Coleman Bellin</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                  <td>Dain Driscoll</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                  <td>Diego Cavalie</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                  <td>Ethan Carr</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                    <td onclick= "window.location.href ='../analysis-home/playerBreakdown-benHarding';">Evan Karp</td>
+                      <td>0</td>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                        <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                        <td onclick= "window.location.href ='../analysis-home/playerBreakdown-benHarding';">George Notter</td>
+                          <td>0</td>
+                          <td>--</td>
+                        </tr>
+                        <tr>
+                          <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                          <td onclick= "window.location.href ='../analysis-home/playerBreakdown-benHarding';">Joseph Schwartz</td>
+                            <td>0</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                          <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                          <td onclick= "window.location.href ='../analysis-home/playerBreakdown-benHarding';">Joseph Bassett</td>
+                            <td>0</td>
+                            <td>--</td>
+                          </tr>
+                
+
+              </table>
+              </div>
+            
+        </div>
+        <div class="flex-child-element blue" style = "width: 350px;">
+            <div class="flex-child-element magenta" style =  "background-color: #FFFFFF;">
+                <h3 style = "margin-top: 5px; margin-left: 5px;">xG Analytics</h3>
+                <h5 style = "margin-top: 5px; margin-left: 10px;"> Shots on Target</h5>
+            <div>
+            <div class = "home" style = "padding-right: 85px; padding-left: 20px; border-radius: 12px; margin-left: 325px; position: relative; right: 280px; top: 10px;">Home </div>
+            <div class = "opponent" style = " padding-left: 10px; padding-right: 125px; padding-top: 2px; padding-bottom: 2px; border-radius: 12px; margin-left: 325px; position: relative; right: -65px; bottom: 20px;">Opponent </div>
+                    
+            <div class = "doughnut" style = "position: relative; left: 100px; top: 100px; width: 160px; height: 160px;"></div>
+    
+            <div class = "doughnut" style = "position: relative; top: -80px; left: 460px; width: 160px; height: 160px;"></div>
+    
+        </div>
+        <div style = "margin-top: -100px;">
+        <h5 style = "margin-top: 5px; margin-left: 10px; margin-bottom: -5px;"> Expected Goals</h5>
+        <div class = "home" style = "padding-right: 85px; padding-left: 20px; border-radius: 12px; margin-left: 325px; position: relative; right: 280px; top: 45px;">Home </div>
+            <div class = "opponent" style = " padding-left: 10px; padding-right: 125px; padding-top: 2px; padding-bottom: 2px; border-radius: 12px; margin-left: 325px; position: relative; right: -65px; top: 15px;">Opponent </div>
+            <div class = "doughnut" style = "position: relative; left: 100px; top: 135px; width: 160px; height: 160px;"></div>
+    
+            <div class = "doughnut" style = "position: relative; top: -45px; left: 460px; width: 160px; height: 160px;"></div>
+    
+               
+        </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    
+
+    <div class = "shotChart" style = "background-color: #FFFFFF; position: relative; left: 1340px; width: 550px; height: 160px; border-radius: 4px;">
+        <div style = "margin-left: 10px;"><b>Occidental</b></div>
+        <div style = "color: black; position: relative; left: 20px; top: 25px; font-size: 32;">12.0% <br>  <div style = "font-size: 15px;">Conversion <br>Rate</div></div>
+       
+        <div style = "color: black; position: relative; left: 140px; bottom: 58px; font-size: 32;">76.0% <br>  <div style = "font-size: 15px;"> Chance Quality</div></div>
+        <div class="vl" style = "position:relative; left: 260px; bottom: 175px;"></div>
+        <div style = "color: black; position: relative; left: 280px; bottom: 280px; font-size: 32;">15.65% <br>  <div style = "font-size: 15px;">Chance Quality</div></div>
+        <div style = "color: black; position: relative; left: 465px; bottom: 342px; font-size: 32;">13 <br>  <div style = "font-size: 15px; position: relative; right: 35px;">Goal Difference</div></div>
+
+    
+    </div>
+
+</div>
+<nav class="main-menu">
+  <ul>
+      <li>
+          <a href="/">
+              <i class="fa fa-home fa-2x"></i>
+              <span class="nav-text">
+                  Main Dashboard
+
+              </span>
+          </a>
+        
+      </li>
+
+      <li>
+        <a href="/dashboard-season">
+          <i class="fa fa-home fa-2x"></i>
+          <span class="nav-text">
+              Season Overview
+          </span> 
+      </li>
+
+      <li>
+        <a href="/dashboard-gameData">
+          <i class="fa fa-home fa-2x"></i>
+          <span class="nav-text">
+              Game Data
+          </span> 
+      </li>
+      
+      <li class="has-subnav">
+          <a href="../analysis-home/playerSelection">
+              <i class="fa fa-list fa-2x"></i>
+              <span class="nav-text">
+                  Players
+              </span>
+          </a>
+          
+      </li>
+  </ul>
+</nav>
+        <script>
+            function myFunction() {
+              var input, filter, table, tr, td, i, txtValue;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              table = document.getElementById("myTable");
+              tr = table.getElementsByTagName("tr");
+              for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                  txtValue = td.textContent || td.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                  } else {
+                    tr[i].style.display = "none";
+                  }
+                }       
+              }
+            }
+            </script>
+            
+  </body>
+    </html>

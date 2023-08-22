@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+
+<link rel = "stylesheet" href = "../static/testerStyle.css">
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<style>
+body {
+    font-family: 'Open Sans';font-size: 22px;
+}
+
+.link{
+    color:aliceblue;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(235, 234, 234);
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(240, 164, 164)
+}
+.site-header { 
+  border-bottom: 1px solid #ccc;
+  padding: .5em 1em;
+}
+
+.site-header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.site-identity {
+  float: left;
+}
+
+.site-identity h1 {
+  font-size: 1.5em;
+  margin: .7em 0 .3em 0;
+  display: inline-block;
+}
+
+.site-identity img {
+  max-width: 150px;
+  float: left;
+  margin: 0 0px 0 0;
+}
+
+.site-navigation {
+    float: none;
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.site-navigation ul, li {
+  margin: 0; 
+  padding: 0;
+}
+
+.site-navigation li {
+  display: inline-block;
+  margin: 1em 2em 1em 0.5em;
+  float: none;
+  left: 50%;
+  font-size: 36px;
+}
+.button {
+  border: 5px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+.button:hover{
+    background-color: aqua;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+<title>PASS Home Page</title> 
+
+</head>
+<body id = "body" style = "background: rgb(25,31,53);
+background: linear-gradient(40deg, rgba(25,31,53,1) 35%, rgba(39,48,84,1) 100%);
+ font-family: 'Open Sans';">
+<header class="site-header">
+    <div class="site-identity" style = "font-family: 'Open Sans';">
+      <a href="../templates/passHome.html"><img src="../static/passLogo.png" alt="Site Name" /></a>
+    </div>  
+    <nav class="site-navigation" style = "margin-top: -325px;">
+      <ul class="nav">
+        <li class="link"><a href="#">About Us</a></li> 
+        <li><a href="#">How it Works</a></li> 
+        <li><a href="#">Sports</a></li> 
+      </ul>
+    </nav>
+  </header>
+  
+<div class="parallax"> <div style = "  max-width: 1000px;">
+  <p style = "font-family: 'Open Sans'; color:white; margin-left: 100px; font-size: 75px;">We simplify <b>athletic data analysis</b> so your team can <b style = "text-decoration: underline;">win more games</b>.
+    <img src="../static/teamDash.png" alt="Site Name" align-right style= " border-radius: 16px; margin-top: -70px; margin-left: 660px;" width = "1100px;" height = "650px;" /></p>
+    
+<!--    <img src="../static/teamDash.png" alt="Site Name" align-right style= />  -->
+</div>
+ <!-- <button class="button button5" style = "border-radius: 16px; margin-left: 100px;">Learn More</button>-->
+
+<div style="height:1000px;">
+  <br>
+  <br>
+  <br>
+  <hr>
+  <div  style = "text-align: center; font-family: 'Open Sans'; color:white; font-size: 70px;" ><b>We utilize machine learning to generate actionable<br> statistics for your team’s and individual player’s <br>performance.</b>
+</div>
+</div>
+
+<div style="height:1000px;">
+<hr>
+</div>
+    <!--
+    https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-59.jpg?max_width=300
+    https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-59.jpg?max_width=160&max_height=210
+    <div id = "wrapper" align = "right", vertical-align: top, margin: 0>
+        <div class = "chart">
+            <h3 Population of Endangered Species from 2012 to 2016</h3>
+            <table id = "data-table" border = "1" cellpadding = "100" cellspacing = "5"
+            summary = "The effects of the zombie outbreak on the population of endangered species from 2012 to 2016">
+                <caption> Best/Worst (Teams)</caption>
+               <tbody>
+                  <tr>
+                     <th scope="row">Conversion Rate</th>
+                     <td>Best: Pomona-Pitzer (80%)</td>
+                     <td>Worst: Occidental (30%)</td>
+                  </tr>
+                  <tr>
+                     <th scope="row">Chance Quality</th>
+                     <td>Best: Occidental (60%)</td>
+                     <td>Worst: Pomona-Pitzer (40%)</td>
+                  </tr>
+                  <tr>
+                     <th scope="row">Other Metrics...</th>
+                     <td>Best: Team (%)</td>
+                     <td>Worst: Team (%)</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+<nav vertical-align: top>
+    <ul>
+        
+        <li><a href = "index">
+            <i class = "fab fa-instagram"></i><span>Home</span>
+        </a></li>
+        
+        <li><a href = "players">
+            <i class = "fab fa-facebook-f"></i><span>Player</span>
+        </a></li>
+        
+        <li><a href = "season">
+            <i class = "fab fa-twitter"></i><span>Seasonal</span>
+        </a></li>
+
+        <li><a href = "games">
+            <i class = "fab fa-instagram"></i><span>Games</span>
+        </a></li>
+
+         
+    </ul>
+</nav>
+
+<div>
+    <h1 id = "xgtitle" align = "center" style = "text-decoration: underline;">xG: Home_Team vs Away_Team</h1>
+    <img src="xGChart.jpg" alt="Game xG Chart" width="500" height="300" id = "xgchart" align = "center">
+</div>
+
+<table id="q-graph" align = "center" border = "1" cellpadding = "5" cellspacing = "5">
+    <caption id = "caption" style = "text-decoration: underline" align = "center">Best/Worst (Teams)</caption>
+    <thead>
+        <tr>
+         <th></th>
+            <th class="convR">Conversion Rate</th>
+            <th class="ChQ">Chance Quality</th>
+            <th class = "OM"> Other Metrics...</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="qtr" id="q1">
+        <th scope="column"></th>
+        <td class="convR bar" ><p>Best: Pomona-Pitzer (80%)</p></td>
+        <td class="convR bar" id = "B2"><p> Best: Occidental (60%)</p></td>
+        <td class="OM bar"><p>Best: Team_Name (x %)</p></td>
+
+    </tr>
+        <tr class="qtr" id="q2">
+        <th scope="column"></th>
+        <td class="ChQ bar"><p>Worst: Occidental (30%)</p></td>
+        <td class="ChQ bar" id = "W2"><p>Worst: Pomona-Pitzer (20%)</p></td>
+        <td class="OM bar"><p>Worst: Team_Name (y %)</p></td>
+
+    </tr>
+    </tbody>
+
+
+
+    <h1 id = "oxy_title" align = "center" style="text-decoration: underline;">Oxy Specs</h1>
+    <img src="ShotPerc.png" alt="Shot % Chart" width="425" height="350" id = "shotperc" align = "center">
+    <h5 id = "perctitle" align = "center" style = "text-decoration: underline;"> Shot Location Tracker (% of total shots taken in different field locations)</h5>
+
+
+
+</table>
+
+<table id="q-graph2" align = "center" border = "1" cellpadding = "5" cellspacing = "5">
+    <caption id = "caption" align = "center"style = "text-decoration: underline" >Best/Worst (Individual Players)</caption>
+    <thead>
+        <tr>
+         <th></th>
+            <th class="convR">Conversion Rate</th>
+            <th class="ChQ">Chance Quality</th>
+            <th class = "OM"> Other Metrics...</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="qtr" id="q1">
+        <th scope="column"></th>
+        <td class="convR bar" ><p>Best: Nicolas Eble (80%)</p></td>
+        <td class="convR bar" id = "B2"><p> Best: Marcus Blumenfeld (60%)</p></td>
+        <td class="OM bar"><p>Best: Player_Name (x %)</p></td>
+
+    </tr>
+        <tr class="qtr" id="q2">
+        <th scope="column"></th>
+        <td class="ChQ bar"><p>Worst: Adrian Paredes (30%)</p></td>
+        <td class="ChQ bar" id = "W2"><p>Worst: Adrian Paredes (20%)</p></td>
+        <td class="OM bar"><p>Worst: Player_Name (y %)</p></td>
+
+    </tr>
+    <tr class="qtr" id="q3">
+        <th scope="column"></th>
+        <td class="OM bar"><p>Best: Team_Name (x %)</p></td>
+        <td class="OM bar"><p>Worst: Team_Name (y %)</p></td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<table id="q-graph3" align = "left" border = "1" cellpadding = "5" cellspacing = "5">
+    <caption id = "caption" align = "center"style = "text-decoration: underline" > xG Per Player</caption>
+    <thead>
+        <tr>
+         <th></th>
+            <th class = "jersey" style="text-decoration: underline;"><u>Player No.</u></th>
+            <th class="PLr"style="text-decoration: underline;"><u>Player Name</u></th>
+            <th class="xG"style="text-decoration: underline;"><u>xG</u></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="qtr" id="q1">
+        <th scope="column"></th>
+        <td class = "convR bar"><p><b>Jersey No.</b></p></td>
+        <td class="convR bar" ><p><b>Name (Pos.)</b></p></td>
+        <td class="convR bar" id = "B2"><p> <b># xG</b></p></td>
+    </tr>
+        <tr class="qtr" id="q2">
+        <th scope="column"></th>
+        <td class = "ChQ bar"><p> 25</p></td>
+        <td class="ChQ bar"><p>Benjamin Tucker (CB)</p></td>
+        <td class="ChQ bar" id = "W2"><p>0.0</p></td>
+    </tr>
+    
+    </table>
+        <h1 id = "xg_analysis" align = "center" style="text-decoration: underline;">xG Analysis</h1>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+-->
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head title = "OxyAnalytics_Home">
+
+<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel = "stylesheet" href = "../static/testerStyle.css">
+<link rel = "stylesheet" href = "../static/Menu.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+
+<style>
+#overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #000;
+filter:alpha(opacity=70);
+-moz-opacity:0.7;
+-khtml-opacity: 0.7;
+opacity: 0.6;
+z-index: 100;
+display: none;
+}
+.cnt223 a{
+text-decoration: none;
+}
+.popup{
+width: 100%;
+margin: 0 auto;
+display: none;
+position: fixed;
+z-index: 101;
+}
+.cnt223{
+min-width: auto;
+width: auto;
+min-height: 150px;
+margin: 100px auto;
+background: #ff751a;
+opacity: 70%;
+position: relative;
+z-index: 103;
+padding: 15px 35px;
+border-radius: 5px;
+box-shadow: 0 2px 5px #000;
+}
+.cnt223 p{
+clear: both;
+    color: #555555;
+    /* text-align: justify; */
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.cnt223 p a{
+color: #d91900;
+font-weight: bold;
+}
+.cnt223 .x{
+float: right;
+height: 35px;
+left: 22px;
+position: relative;
+top: -25px;
+width: 34px;
+}
+.cnt223 .x:hover{
+cursor: pointer;
+}
+
+#logo{
+  margin-left:auto;
+  margin-right: auto;
+  opacity: 60%;
+  }
+
+
+@media screen and (max-width: 650px) {
+  #logo {
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 60%;
+    
+
+  }
+
+
+@media screen and (min-width: 20px) {
+  #logo {
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 60%;
+
+  }
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>
+
+
+<script type='text/javascript'>
+$(function(){
+var overlay = $('<div id="overlay"></div>');
+overlay.show();
+overlay.appendTo(document.body);
+$('.popup').show(); <!--Display the pop up-->
+
+$('.close').click(function(){
+$('.popup').hide();
+overlay.appendTo(document.body).remove();
+return false;
+});
+
+
+ 
+
+$('.x').click(function(){
+$('.popup').hide();
+overlay.appendTo(document.body).remove();
+return false;
+});
+});
+</script>
+
+</head>
+
+
+<body id = "body">
+    <!--<canvas id = "myChart" width = "400" height = "400"></canvas>
+   <sc-->
+
+<div class='popup' style = "margin-top: -35px;">
+<div class='cnt223' style = "font: helvetica; background-color: rgb(230,236,240);">
+<a href='' class='close' style = "margin-left: 0px; padding-left: 0px;"><i class="fa fa-window-close" style = "margin-left: -20px; margin-top: -20px; margin-bottom: 10px; color: black; font-size: 24px;"></i></a>
+<h2 style = "text-decoration: underline; margin-top: -20px;">Welcome to Oxy Analytics</h2>
+<h3 style = "margin-top: -18px;">A performance evaluation site for the Occidental College Soccer program.</h3>
+
+  <h3 style = "margin-top: -15px; margin-bottom: -10px;">Site Navigation (via 'Analytics' tab): </h3>
+  <ul style = "margin-top: -18px;">
+    <h4 style = "text-decoration: underline; margin-bottom: 2px;">-Data Pages: </h4>
+    <ul>
+      <li>Team Breakdown page: numerical seasonal data display</li>
+      <li>Player Selection page: team roster to access seasonal performance</li>
+    </ul>
+      <h4 style = "text-decoration: underline; margin-top: 2px; margin-bottom: 2px;">-Analytics Pages</h4>
+      <ul>
+      <li>Seasonal Analysis page: display of team's seasonal statistics</li>
+        <li>per Game Analysis page: display of team's perGame statistics</li>
+    </ul>
+          <h4 style = "text-decoration: underline; margin-top: 2px; margin-bottom: 2px;">-Reference Material</h4>
+      <ul>
+      <li>Performance Metric Index page: user guide for the site's performance metrics. </li>
+        <li>Analytics Explained page: explaining the site's statistical analysis methods</li>
+        <li>External Reference page: online analytics reference material.</li>
+    </ul>
+
+</div>
+</div>
+
+<div class="navbar" style = "background-color: #333; font-family: 'Open Sans';">
+<div>
+  <a href="../templates/passHome.html"><img src="../static/logo-no-background.png" width = "150px;" style = "padding-top: -50px; margin-top: 40px;"/></a>
+</div>
+  <div style = "margin-left: 10px; margin-top: 20px; margin-bottom: 60px; cursor: pointer;" onClick = "window.location.href = '/';">
+  <!--<h1 style = "margin-bottom: 5px; color: #f2f2f2; text-shadow: 0.3px 0.3px #333;"> Oxy Analytics</h1>
+    <p style = "color: #f2f2f2; text-shadow: 0.3px 0.3px #333; margin-top: auto;"><b>Occidental College's student-run sports analysis service</b></p>-->
+</div>
+  <a href="/"><i class = 'fas fa-home'></i> Home </a>
+  <div class="dropdown">
+    <button class="dropbtn"><i class = 'fas fa-chart-line	'></i> Analytics 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>Analytics Menu</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3 class = "menuSection" onClick = "window.location.href = '#'"><i class = 'fas fa-database'></i> Data Selection</a></h3>
+          <a href = "../analysis-season/teamBreakdown"><i class = 'fas fa-users'></i> Team </a>
+          <a href = "../analysis-home/playerSelection"><i class = 'fas fa-user'></i> Player Selection</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection"><i class = 'fa fa-bolt'></i> Analysis Selection</h3>
+          <a href="../analysis-season"><i class = 'far fa-calendar-alt'></i> Seasonal Analysis</a>
+          <a href="../analysis-game"><i class = 'fas fa-list-ol	'></i> per Game Analysis</a>
+          <a href="../analysis-season/teamVisuals"><i class = 'far fa-chart-bar'></i> Visual Analysis</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection"><i class = 'fas fa-book-reader'></i> Reference Material</h3>
+          <a href="../analysis-home"><i class = 'fas fa-chalkboard-teacher'></i> Analytics Explained</a>
+          <a href="../analysis-home/metric_index"><i class='fas fa-book'></i> Performance Metric Index</a>
+          <a href="../externalReference"><i class = 'fas fa-door-open	'></i> External Resources</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <a href="../about">About</a>
+  </div>
+  <div class="parallax"> <div style = "  max-width: 1000px;">
+  <p style = "font-family: 'Open Sans'; color:black; margin-left: 70px; margin-top: 50px; font-size: 75px;">A <b></b>Machine Learning-based <b style = "text-decoration: underline;">performance evaluation application</b> for the <b>Occidental College Men's Soccer</b> team
+  
+    <img src="../static/teamDash.png" alt="Site Name" align-right style= " margin-top: -380px; margin-left: 890px;" width = "900px;" height = "550px;" /></p>
+<!--    <img src="../static/teamDash.png" alt="Site Name" align-right style= />  -->
+</div>
+ <!-- <button class="button button5" style = "border-radius: 16px; margin-left: 100px;">Learn More</button>-->
+
+<div style="height:1000px;">
+  <br>
+  <br>
+  <br>
+  <hr>
+  <div  style = "text-align: center; font-family: 'Open Sans'; color:white; font-size: 70px;" ><b>We utilize machine learning to generate actionable<br> statistics for your team’s and individual player’s <br>performance.</b>
+</div>
+</div>
+
+<div style="height:1000px;">
+<hr>
+</div>
+
+
+</body>
+</html>

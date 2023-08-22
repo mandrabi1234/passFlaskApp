@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale= 0.8">
+<link rel = "stylesheet" href = "../static/testerStyle.css">
+<link rel = "stylesheet" href = "../static/Menu.css">
+<link rel = "stylesheet" href = "../static/gameCard.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+<style>
+    body{
+      font-family: 'Open Sans';font-size: 22px;
+
+    }
+
+  .matchResult {
+ position: absolute;
+  float: center;
+  width: 800px;
+  height: 100px;
+  padding: 0 5px;
+  margin-left: 95px;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.matchStats {
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+  padding: 5px;
+  text-align: center;
+  background-color: #ffffff;
+  color: white;
+  height: 150px;
+  width: auto;
+  border-radius: 4px;
+
+}
+
+.columnStats{
+width: 100%;
+height: auto;
+margin-top: 20px;
+display: inline-block;
+}
+
+.flex-parent-element {
+display: flex;
+width: 500px;
+}
+
+.flex-child-element {
+flex: 1;
+background-color: #FFFFFF;
+margin: 10px;
+width: 325px;
+border-radius: 4px;
+}
+
+.flex-child-element:first-child {
+margin-right: 5px;
+
+}
+
+.flex-grid-thirds .col {
+width: 32%;
+}
+.shotChart{
+
+}
+
+.home{
+background-color: #E2F4FF;
+color: #27B0FF;
+}
+.opponent{
+background-color: #FFF0D2;
+color: #ECA720;
+}
+.doughnut {
+display: block;
+border-radius: 100%;
+width: 100px;
+height: 100px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) rotate(25deg);
+border: 10px solid grey;
+border-top: 10px solid #00C820;
+border-left: 10px solid #00C820;
+border-right: 10px solid #00C820;
+}
+.vertical-menu {
+width: auto;
+height: 597px;
+overflow-y: auto;
+font-size: 25px;
+}
+
+.vertical-menu a {
+color: black;
+display: block;
+padding: 12px;
+text-decoration: none;
+}
+
+.vertical-menu a:hover {
+background-color: #ccc;
+}
+
+.vertical-menu a.active {
+background-color: #04AA6D;
+color: white;
+}
+
+
+#myInput {
+background-image: url('/css/searchicon.png');
+background-position: 10px 10px;
+background-repeat: no-repeat;
+width: 100%;
+font-size: 16px;
+padding: 12px 20px 12px 40px;
+border: 1px solid #ddd;
+margin-bottom: 12px;
+}
+
+#myTable {
+border-collapse: collapse;
+border: 1px solid #ddd;
+font-size: small;
+
+}
+
+#myTable th, #myTable td {
+text-align: left;
+padding: 12px;
+}
+
+#myTable tr {
+border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+background-color: #f1f1f1;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+  .columnStats {
+    float: left;
+    width: 33.3%;
+    padding: 0 5px;
+  }
+  
+.columnPerformance {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .columnPerformance {
+    width: 100%;
+    display: block;
+  }
+  .columnStats {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+.cardPerformance {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ff751a;
+}
+
+.containerPerformance {
+  padding: 0 16px;
+}
+
+.containerPerformance::after, .rowPerformance::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.buttonPerformance {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonPerformance:hover {
+  background-color: #555;
+}
+
+  th, td {
+    font-size: 30px;
+    color: #333;
+    text-decoration-color: #333;
+  }
+
+  table{
+    width: 100%;
+    
+  }
+  .dropDatabtn {
+  background-color: #808080;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdownData {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownData-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdownData-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownData-content a:hover {background-color: #ddd;}
+
+.dropdownData:hover .dropdownData-content {}
+
+.dropdownData:hover .dropDatabtn {}
+
+.matchResult {
+      float: center;
+      width: 480px;
+      height: 100px;
+      padding: 0 5px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 120px;
+    }
+
+    .matchStats {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #ff751a;
+      color: white;
+      height: 200px;
+      width: auto;
+      border-radius: 4px;
+
+    }
+</style>
+</head>
+
+
+<body id = "body" style = "background-image: url('../static/home_background3.jpg');" class = "responsive">
+
+
+
+<div class="navbar">
+<div style = "margin-left: 10px;cursor: pointer;" onClick = "window.location.href = '/';" >
+    <h1 style = "color: #f2f2f2; text-shadow: 0.3px 0.3px #333;"> Oxy Analytics</h1>
+    <p style = "color: #f2f2f2; text-shadow: 0.3px 0.3px #333; margin-top: -15px;"><b>Occidental College's student-run sports analysis service</b></p>
+</div>
+
+  <a href="/">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Analytics 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>Analytics Menu</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3 class = "menuSection" onClick = "window.location.href = '../analysis-season/playerSelection';">Data Selection</a></h3>
+          <a href = "../analysis-season"> Team </a>
+          <a href = "../analysis-home/playerSelection">Player Selection</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Analysis Selection</h3>
+          <a href="../analysis-season">Seasonal Analysis</a>
+          <a href="../analysis-game">per Game Analysis</a>
+          <a href="../analysis-season/teamVisuals">Visual Analysis</a>
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Reference Material</h3>
+          <a href="../analysis-home">Analytics Explained</a>
+          <a href="../analysis-home/metric_index">Performance Metric Index</a>
+          <a href="../externalReference">External Resources</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <a href="../about">About</a>
+  </div>
+
+  
+<div class="navbar" style = "background-color: #333;">
+  <div class="dropdown">
+    <button class="dropbtn">Player Selection 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" style = "padding-bottom: 500px;">
+      <div class="header">
+        <h2>Choose a player to see their visual breakdown</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3 class = "menuSection" onClick = "window.location.href = '../analysis-season/playerSelection';">Goalkeepers/Defenders</a></h3>
+<a href = "analysis-season/teamVisuals"> Team </a>
+  <a href="../analysis-home/playerBreakdown-benHarding">Ben Harding - 0</a>
+  <a href="../analysis-home/playerBreakdown-jacobGitin">Jacob Gitin - 00</a>
+  <a href="../analysis-home/playerBreakdown-scottDrazan">Scott Drazan -01</a>
+  <a href="../analysis-home/playerBreakdown-rileyMccabe">Riley Mccabe - 02</a>
+    <a href="../analysis-home/playerBreakdown-davidPaine">David Paine - 05</a>
+  <a href="../analysis-home/playerBreakdown-mattAnzalone">Matthew Anzalone - 11</a>
+    <a href="../analysis-home/playerBreakdown-jackMeeker">Jack Meeker - 13</a>
+      <a href="../analysis-home/playerBreakdown-milesRobertson">Miles Robertson - 23</a>
+<a href="../analysis-home/playerBreakdown-neythonStreitz">Neython Streitz - 25</a>
+  <a href="../analysis-home/playerBreakdown-benTucker">Ben Tucker - 27</a>
+  <a href="../analysis-home/playerBreakdown-lukeHaas">Luke Haas - 30</a>
+  <a href="../analysis-home/playerBreakdown-ericDacosta">Eric Dacosta - 31</a>
+
+
+  
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Midfielders</h3>
+           <a href="../analysis-home/playerBreakdown-spencerShearer">Spencer Shearer - 03</a>
+            <a href="../analysis-home/playerBreakdown-ryanWilson">Ryan Wilson - 04</a>
+            <a href="../analysis-home/playerBreakdown-nicEble">Nicolas Eble - 06</a>
+         <a href="../analysis-home/playerBreakdown-benSimon">Ben Simon - 08</a>
+          <a href="../analysis-home/playerBreakdown-jasperBrannon">Jasper Brannon - 10</a>
+          <a href="../analysis-home/playerBreakdown-adrianParedes">Adrian Paredes - 14</a>
+  <a href="../analysis-home/playerBreakdown-loganMyers">Logan Myers - 16</a>
+    <a href="../analysis-home/playerBreakdown-jakeFoster">Jake Foster - 18</a>
+  <a href="../analysis-home/playerBreakdown-joeySchwartz">Joey Schwartz - 19</a>
+   <a href="../analysis-home/playerBreakdown-tyeHernandez">Tye Hernandez - 22</a>
+
+        </div>
+        <div class="column">
+          <h3 class = "menuSection">Forwards</h3>
+          <a href="../analysis-home/playerBreakdown-mattTeplitz">Matthew Teplitz - 07</a>
+  <a href="../analysis-home/playerBreakdown-marcBlumenfeld">Marcus Blumenfeld - 09</a>
+    <a href="../analysis-home/playerBreakdown-seanKim">Sean Kim - 12</a>
+      <a href="../analysis-home/playerBreakdown-tylerWray">Tyler Wray - 17</a>
+      <a href="../analysis-home/playerBreakdown-jazzHenry">Jazz Henry - 20</a>
+  <a href="../analysis-home/playerBreakdown-teaganJarvis">Teagan Jarvis - 21</a>
+    <a href="../analysis-home/playerBreakdown-calebJordening">Caleb Jordening - 24</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  </div>
+
+
+<div class="dropdownData">
+  <button class="dropDatabtn" style = "background-color: #808080; margin-top: 5px; padding-right: 95px; padding-left:100px;">Data Breakdown
+  <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdownData-content">
+    <a href="../analysis-season/team-SeasonBreakdown">Team Performance (Overall)</a>
+    <a href="../analysis-season/playerBreakdown">per Player Performance</a>
+  </div>
+</div>
+<div class="area" >
+  <h1 style = "margin-left: 70px;"> Season Data</h1>
+<div class = "dashboardStats" style = "position: relative; right: 30px; width: 3000px;">    
+<div class="matchResult">
+<div class="matchStats" style = "margin-right: 450px;">
+<h3 align = "left" style = "margin-top: -5px; color: #000000">Season Record</h3>
+<div style = "color: black; position: relative; right: 130px; bottom: 10px; font-size: 65;">09<br> <div style = "font-size: 25px; position: relative; bottom: 20px;">Wins</div></div>
+<div style = "color: black; position: relative; right: 0px; bottom: 130px; font-size: 65;">04 <br>  <div style = "font-size: 25px; position: relative; bottom: 20px;">Draws</div></div>
+<div style = "color: black; position: relative; right: -130px; bottom: 250px; font-size: 65;">03<br>  <div style = "font-size: 25px; position: relative; bottom: 20px;">Losses</div></div>
+</div>
+<div class="matchStats" style = "margin-right: 450px; position: relative; left: 360px; top: -160px; width: 430px;">
+  <table style = "margin-bottom: 20px; font-size: 17px; position: relative; top: 10px; left: 20px;">
+      <tr>
+        <th align = "left" style="width:25%"></th>
+        <th>Actual</th>
+        <th>Expected</th>
+      </tr>
+      <tr>
+        <td>Points</td>
+        <td  style = "text-align: center; padding: 6px;"><b>24</b></td>
+        <td  style = "text-align: center; padding: 6px;">30</td>
+      </tr>
+      <tr>
+        <td>Goals</td>
+        <td style = "text-align: center; padding: 6px;">34.28</td>
+        <td style = "text-align:center;   padding: 6px;"><b>26</b></td>
+      </tr>
+      <tr>
+        <td>Goalsp90</td>
+        <td style = "text-align: center; padding: 6px;"><b>2.14</b></td>
+        <td style = "text-align: center; padding: 6px;">1.62</td>
+      </tr>
+  </table>
+  </div>
+  <div class="matchStats" style = "margin-right: 450px; position: relative; left: 810px; bottom: 320px; width: 430px;">
+      <table style = "margin-bottom: 20px; font-size: small; position: relative; top: 10px; font-size: 22px;">
+          <tr>
+            <th align = "left" style="width:25%"></th>
+            <th>Total</th>
+            <th>on Target</th>
+          </tr>
+          <tr>
+            <td>Shots</td>
+            <td  style = "text-align: center; padding: 6px;"><b>24</b></td>
+            <td  style = "text-align: center; padding: 6px;">30</td>
+          </tr>
+          <tr>
+            <td>Shots p90</td>
+            <td style = "text-align: center; padding: 6px;">34.28</td>
+            <td style = "text-align:center;   padding: 6px;"><b>26</b></td>
+          </tr>
+         </table>
+     </div>
+  
+
+<div class="flex-parent-element" style = "position: relative; right: 10px; width: 1830px; bottom: 300px;">
+  <div class="flex-child-element magenta" style = "width: 900px;">
+      <h3 style = "margin-top: 5px; margin-left: 5px;">Shot Stats</h3>
+      <img src="..\static\ShotPerc.png" alt="Flowers in Chania" width="570" height="712" style = "position: relative; left: 8px; border-radius: 8px; margin-bottom: 20px;">
+
+               
+  </div>
+  <div class="flex-child-element green" style = "width: 350px;">
+      <h3 style = "margin-top: 5px; margin-left: 5px;">Player Peformance Data</h3>
+      <div style = "position: relative; left: 10px; overflow-y: auto;">
+      <input style = "position: relative; right: 10px;" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+      <table id="myTable" style = "position: relative; right: 10px; overflow-y: auto; ">
+          <tr class="header">
+          <th></th>
+            <th style="width:40%;" align = "left">Name</th>
+            <th style="width:20%;" align = "left">Number</th>
+            <th style = "width: 40%;" align = "left"> Position</th>
+          </tr>
+
+          <tr>
+          <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+          <td onclick= "window.location.href ='../analysis-home/playerBreakdown-benHarding';">Ben Harding</td>
+            <td>0</td>
+            <td>Goalkeeper</td>
+          </tr>
+          <tr>
+              <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+            <td>Berglunds snabbkop</td>
+            <td>Sweden</td>
+          </tr>
+          <tr>
+              <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+            <td>Island Trading</td>
+            <td>UK</td>
+          </tr>
+          <tr>
+              <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+            <td>Koniglich Essen</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+              <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Canada</td>
+          </tr>
+          <tr>
+              <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Italy</td>
+          </tr>
+          <tr>
+              <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+            <td>North/South</td>
+            <td>UK</td>
+          </tr>
+          <tr>
+              <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+              <td onclick= "window.location.href ='../analysis-home/playerBreakdown-benHarding';">Ben Harding</td>
+                <td>0</td>
+                <td>Goalkeeper</td>
+              </tr>
+              <tr>
+                  <td> <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:50px; height: 45px; border-radius: 70px; position: relative; top: 0px; left: 5px;"></td>
+                  <td onclick= "window.location.href ='../analysis-home/playerBreakdown-benHarding';">Ben Harding</td>
+                    <td>0</td>
+                    <td>Goalkeeper</td>
+                  </tr>
+          
+
+        </table>
+        </div>
+      
+  </div>
+  <div class="flex-child-element blue" style = "width: 350px;">
+      <div class="flex-child-element magenta" style =  "background-color: #FFFFFF;">
+          <h3 style = "margin-top: 5px; margin-left: 5px;">xG Analytics</h3>
+          <h5 style = "margin-top: 5px; margin-left: 10px;"> Shots on Target</h5>
+      <div>
+      <div class = "home" style = "padding-right: 85px; padding-left: 20px; border-radius: 12px; margin-left: 325px; position: relative; right: 280px; top: 10px;">Home </div>
+      <div class = "opponent" style = " padding-left: 10px; padding-right: 125px; padding-top: 2px; padding-bottom: 2px; border-radius: 12px; margin-left: 325px; position: relative; right: -65px; bottom: 20px;">Opponent </div>
+              
+      <div class = "doughnut" style = "position: relative; left: 100px; top: 100px; width: 160px; height: 160px;"></div>
+
+      <div class = "doughnut" style = "position: relative; top: -80px; left: 460px; width: 160px; height: 160px;"></div>
+
+  </div>
+  <div style = "margin-top: -100px;">
+  <h5 style = "margin-top: 5px; margin-left: 10px; margin-bottom: -5px;"> Expected Goals</h5>
+  <div class = "home" style = "padding-right: 85px; padding-left: 20px; border-radius: 12px; margin-left: 325px; position: relative; right: 280px; top: 45px;">Home </div>
+      <div class = "opponent" style = " padding-left: 10px; padding-right: 125px; padding-top: 2px; padding-bottom: 2px; border-radius: 12px; margin-left: 325px; position: relative; right: -65px; top: 15px;">Opponent </div>
+      <div class = "doughnut" style = "position: relative; left: 100px; top: 135px; width: 160px; height: 160px;"></div>
+
+      <div class = "doughnut" style = "position: relative; top: -45px; left: 460px; width: 160px; height: 160px;"></div>
+
+         
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class = "shotChart" style = "background-color: #FFFFFF; position: relative; left: 1360px; width: 550px; height: 160px; border-radius: 4px;">
+  <div style = "color: black; position: relative; left: 20px; top: 35px; font-size: 32;">12.0% <br>  <div style = "font-size: 15px;">Conversion <br>Rate</div></div>
+ 
+  <div style = "color: black; position: relative; left: 140px; bottom: 48px; font-size: 32;">76.0% <br>  <div style = "font-size: 15px;"> xG Conversion <br>Rate</div></div>
+
+  <div style = "color: black; position: relative; left: 280px; bottom: 132px; font-size: 32;">15.65% <br>  <div style = "font-size: 15px;">Chance Quality</div></div>
+  <div style = "color: black; position: relative; left: 465px; bottom: 195px; font-size: 32;">13 <br>  <div style = "font-size: 15px; position: relative; right: 35px;">Goal Difference</div></div>
+
+
+</div>
+
+</div>
+  <script>
+      function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }       
+        }
+      }
+      </script>
+<!--     
+<div>
+  <div class="columnStats" style = "margin-top: 20px;">
+    <div class="matchStats">
+      <h1 align = "center" style = "text-decoration: underline; font-size: 30px; margin-bottom: 35px;">Season Stats ({{numGames}} Games ToW)</h1>
+      <h1 style = "font-size: 28px; color: #333;"><b>Record: 9-4-3 (W-L-D)</b></h1>
+    </div>
+  </div>
+
+<div class = "columnStats">
+<div class = "cardStats" style = "border-radius: 4px;">
+<h1 align = "center" style = "font-size: 36px; text-decoration: underline;">Actual/Expected Stats</h1>
+<table style = "margin-bottom: 20px;">
+  <tr>
+    <th align = "left" style="width:25%"></th>
+    <th>Actual</th>
+    <th>Expected</th>
+  </tr>
+  <tr>
+    <td>Points</td>
+    <td  style = "text-align: center; padding: 6px;"><b>{{aP}}</b></td>
+    <td  style = "text-align: center; padding: 6px;">{{xP}}</td>
+  </tr>
+  <tr>
+    <td>Goals</td>
+    <td style = "text-align: center; padding: 6px;">{{aG}}</td>
+    <td style = "text-align:center;   padding: 6px;"><b>{{xG}}</b></td>
+  </tr>
+  <tr>
+    <td>Goalsp90</td>
+    <td style = "text-align: center; padding: 6px;"><b>{{aGp90}}</b></td>
+    <td style = "text-align: center; padding: 6px;">{{xGp90}}</td>
+  </tr>
+
+<table style = "margin-bottom: 20px;">
+<hr style = "border-top: 5px solid #333; border-radius: 4px;">
+
+  <tr>
+    <th align = "left" style="width:25%"></th>
+    <th>Total</th>
+    <th>on Target</th>
+  </tr>
+  <tr>
+    <td>Shots</td>
+    <td  style = "text-align: center; padding: 6px;"><b>{{shots}}</b></td>
+    <td  style = "text-align: center; padding: 6px;">{{sot}}</td>
+  </tr>
+  <tr>
+  <td>Shotsp90</td>
+    <td  style = "text-align: center; padding: 6px;"><b>{{shotsp90}}</b></td>
+    <td  style = "text-align: center; padding: 6px;">{{sotp90}}</td>
+  </tr>
+</table>
+  </div>
+</div>
+
+<div class="columnStats" style = "margin-bottom: 30px;">
+  <div class="cardStats" style = "border-radius: 4px;">
+    <h1 align = "center" style = "font-size: 36px; text-decoration: underline;">Additional Stats</h1>
+  
+  <table style = "margin-bottom: auto; margin-top: 30px;" align = "left">
+  
+  <tr>
+    <td style = "text-decoration: underline; padding-bottom: 40px;" align = "left">Conversion Rate:</td>
+    <td  style = "text-align: center; padding-bottom: 40px;"><b>{{aGconvR}}%</b></td>
+  </tr>
+  <tr>
+  <td style = "text-decoration: underline; padding-bottom: 40px;" align = "left">xG Conversion Rate:</td>
+    <td  style = "text-align: center; padding-bottom: 40px;"><b>{{xGconvR}}%</b></td>
+  </tr>
+
+  <tr>
+  <td style = "text-decoration: underline; padding-bottom: 40px;" align = "left">Chance Quality:</td>
+    <td  style = "text-align: center; padding-bottom: 40px;"><b>{{cQ}}%</b></td>
+  </tr>
+
+  <tr>
+  <td style = "text-decoration: underline; padding-bottom: 5px;" align = "left">Goal Difference:</td>
+    <td  style = "text-align: center; padding-bottom: 5px;"><b>{{gD}}</b></td>
+  </tr>
+</table>
+  </div>
+</div>
+</div>
+<div>
+<h2 align = "center" style = " text-decoration: underline; text-shadow: 2px 2px #333; color: #f2f2f2;">Shot Location Breakdown</h2>
+<h3 align = "center" style = " text-decoration: underline; text-shadow: 2px 2px #333; color: #f2f2f2;">Percentage of total shots taken from each location on the field</h3>
+<img class = "columnCharts" src="../static/ShotPerc.png"  alt="Adrian Paredes Profile" align = "center" style = "height: 75%; width: 75%; margin-left: auto; margin-right: auto; float: center;">
+</div>
+
+
+<h2 align = "center" style = "margin-top: 70px; text-decoration: underline; text-shadow: 2px 2px #333; color: #f2f2f2;">Player Performance Overview: Best and Worst</h2>
+
+
+<div>
+<h2 align = "left" style = "text-decoration: underline; margin: 0px 0px 10px 20px; text-decoration: underline; text-shadow: 2px 2px #333; color: #f2f2f2;">Highest</h2>
+
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+      <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+
+        <h3 style = "text-decoration: underline">Expected Goals</h3>
+        <h3> Adrian Paredes - 9.92 xG </h3>
+        <p>Highest xG among all qualified shooters (10+ shots).</p>
+        <p><button class="buttonPerformance" style = "cursor: hand pointer;" onClick = "window.location.href = '../analysis-home/playerBreakdown-adrianParedes';"> Adrian's Full Stats</button></p>
+      </div>
+    </div>
+  </div>
+
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+      <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-45.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+
+        <h3 style = "text-decoration: underline">xG Conversion Rate</h3>
+        <h3>Nicolas Eble  -  93% </h3>
+        <p> Highest xG efficiency among qualified scorers (2+ goals).</p>
+      <button class="buttonPerformance" style = "cursor: hand pointer;" onclick = "window.location.href = '../analysis-home/playerBreakdown-nicEble';">Nicolas's Full Stats</button></p>
+      </div>
+    </div>
+  </div>
+
+
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+      <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-39.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+
+        <h3 style = "text-decoration: underline">Goals-to-Game Ratio</h3> 
+      <h3>Tyler Wray - 0.67 aGp90</h3>
+      <p> Highest p90 scoring efficiency among qualified scorers (2+ goals).</p>
+      <p><button class = "buttonPerformance" onclick = "window.location.href = '../analysis-home/playerBreakdown-tylerWray';">Tyler's Full Stats</button></p>
+      </div>
+    </div>
+  </div>  
+  
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+      <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-39.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+
+      <h3 style = "text-decoration: underline">Shot Conversion Rate</h3>
+      <h3> Tyler Wray - 40%</h3>
+      <p> Highest goal-scoring efficiency among qualified scorers (2+ goals).</p>
+      <p><button class = "buttonPerformance" onclick = "window.location.href = '../analysis-home/playerBreakdown-tylerWray';">Tyler's Full Stats</button></p>
+      </div>
+    </div>
+  </div>
+  
+      
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+      <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-11.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+
+        <h3 style = "text-decoration: underline">True Performance</h3> 
+        <h3> Jack Meeker - 2 aG : 1.03 xG</h3>
+      <p> Most efficient xG v aG performance among qualified scorers (2+ goals).</p>
+      <p><button class = "buttonPerformance" onclick = "window.location.href = '../analysis-home/playerBreakdown-jackMeeker';">Jacks's Full Stats</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+<h2 align = "left" style = "text-decoration: underline; margin: 20px 0px 10px 20px; text-decoration: underline; text-shadow: 2px 2px #333; color: #f2f2f2;">Lowest</h2>
+
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+      <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-43.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+       <h3 style = "text-decoration: underline"> Expected Goals (xG)</h3>
+      <h3> David Paine - 0.81 xG</h3>
+      <p>Fewest xG among all qualified shooters (10+ shots).</p>
+      <p><button class = "buttonPerformance" onclick = "window.location.href = '../analysis-home/playerBreakdown-davidPaine';">David's Full Stats</button></p>
+      </div>
+    </div>
+  </div>
+
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+      <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-15.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+
+      <h3 style = "text-decoration: underline">xG Conversion Rate</h3>
+      <h3>Marcus Blumenfeld - 58%</h3>
+      <p>Lowest xG efficiency among qualified scorers (2+ goals).</p>
+      <p><button class = "buttonPerformance" onclick = "window.location.href = '../analysis-home/playerBreakdown-marcBlumenfeld';">Marcus's Full Stats</button></p>
+
+      </div>
+    </div>
+  </div>
+
+
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+      <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-15.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+
+        <h3 style = "text-decoration: underline">Goals-to-Game Ratio</h3>
+      <h3>Marcus Blumenfeld - 0.20 aGp90</h3>
+      <p>Lowest p90 scoring efficiency among qualified scorers (2+ goals).</p>
+      <p><button class = "buttonPerformance" onclick = "window.location.href = '../analysis-home/playerBreakdown-marcBlumenfeld';">Marcus's Full Stats</button></p>
+      </div>
+    </div>
+  </div>  
+  
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+      <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-15.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+
+        <h3 style = "text-decoration: underline">Shot Conversion Rate</h3>
+      <h3>Marcus Blumenfeld - 10%</h3>
+      <p>Lowest goal-scoring efficiency among qualified scorers (2+ goals).</p>
+      <p><button class = "buttonPerformance" onclick = "window.location.href = '../analysis-home/playerBreakdown-marcBlumenfeld';">Marcus's Full Stats</button></p>
+
+      </div>
+    </div>
+  </div>
+  
+<div class="rowPerformance">
+  <div class="columnPerformance">
+    <div class="cardPerformance">
+      <div class="containerPerformance">
+      <img src="https://www.oxyathletics.com/sports/msoc/2019-20/photos/oxy-msoc-headshots-57.jpg" alt="Jane" style="width:100%; height: auto; margin-top: 10px;">
+
+       <h3 style = "text-decoration: underline">True Performance</h3>
+      <h3> Adrian Paredes - <br>6 aG : 9.92 xG </h3>
+      <p> Least efficient xG v aG performance among qualified scorers (2+ goals).</p>
+      <p><button class = "buttonPerformance" onclick = "window.location.href = '../analysis-home/playerBreakdown-adrianParedes';">Adrian's Full Stats</button></p>
+      </div>
+    </div>
+  </div>
+-->
+
+</body>
+</html> 
